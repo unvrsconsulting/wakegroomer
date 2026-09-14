@@ -2,20 +2,27 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getGroomerById } from "@/lib/groomerEdits";
 import { getGroomerAnalytics } from "@/lib/analytics";
+import { parseTimeRange } from "@/lib/timeRange";
 import AdminGroomerEditForm from "@/components/AdminGroomerEditForm";
+import TimeRangeTabs from "@/components/TimeRangeTabs";
+import PublicPreview from "@/components/PublicPreview";
 
 type PageProps = {
   params: Promise<{ id: string }>;
+  searchParams: Promise<{ range?: string }>;
 };
 
-export default async function AdminGroomerEditPage({ params }: PageProps) {
+export default async function AdminGroomerEditPage({ params, searchParams }: PageProps) {
   const { id } = await params;
+  const { range } = await searchParams;
   const groomerId = Number(id);
   if (!Number.isFinite(groomerId)) notFound();
 
+  const timeRange = parseTimeRange(range);
+
   const [groomer, analytics] = await Promise.all([
     getGroomerById(groomerId),
-    getGroomerAnalytics(groomerId),
+    getGroomerAnalytics(groomerId, timeRange.days),
   ]);
   if (!groomer) notFound();
 
@@ -31,7 +38,7 @@ export default async function AdminGroomerEditPage({ params }: PageProps) {
           rel="noopener noreferrer"
           className="text-sm font-medium text-brand hover:underline"
         >
-          View public profile ↗
+          Open public profile ↗
         </a>
       </div>
 
@@ -39,18 +46,19 @@ export default async function AdminGroomerEditPage({ params }: PageProps) {
         {groomer.business_name}
       </h1>
 
-      <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <StatCard label="Views (30d)" value={analytics.last30.views} />
-        <StatCard label="Calls (30d)" value={analytics.last30.telClicks} />
-        <StatCard label="Views (all time)" value={analytics.allTime.views} />
-        <StatCard label="Calls (all time)" value={analytics.allTime.telClicks} />
+      <div className="mt-6 flex items-center justify-between gap-3">
+        <h2 className="text-sm font-bold uppercase tracking-wide text-foreground">Analytics</h2>
+        <TimeRangeTabs basePath={`/admin/groomer/${groomerId}/edit`} current={timeRange.value} />
       </div>
 
-      {analytics.dailyLast30.length > 0 && (
+      <div className="mt-4 grid grid-cols-2 gap-3">
+        <StatCard label={`Views (${timeRange.label})`} value={analytics.views} />
+        <StatCard label={`Calls (${timeRange.label})`} value={analytics.telClicks} />
+      </div>
+
+      {analytics.daily.length > 0 && (
         <div className="mt-6">
-          <h2 className="text-sm font-bold uppercase tracking-wide text-foreground">
-            Daily Activity (last 30 days)
-          </h2>
+          <h3 className="text-xs font-semibold uppercase tracking-wide text-muted">Daily Activity</h3>
           <div className="mt-3 max-h-48 overflow-y-auto overflow-x-auto">
             <table className="w-full text-left text-sm">
               <thead>
@@ -61,7 +69,7 @@ export default async function AdminGroomerEditPage({ params }: PageProps) {
                 </tr>
               </thead>
               <tbody>
-                {analytics.dailyLast30.map((d) => (
+                {analytics.daily.map((d) => (
                   <tr key={d.date} className="border-b border-[var(--color-border)] last:border-0">
                     <td className="py-2 pr-4 text-foreground">{d.date}</td>
                     <td className="py-2 pr-4 text-foreground">{d.views}</td>
@@ -73,6 +81,12 @@ export default async function AdminGroomerEditPage({ params }: PageProps) {
           </div>
         </div>
       )}
+
+      <h2 className="mt-10 text-lg font-bold text-foreground">Public Preview</h2>
+      <p className="mt-1 text-sm text-foreground/70">See exactly how this listing appears to pet owners.</p>
+      <div className="mt-4">
+        <PublicPreview slug={groomer.slug} />
+      </div>
 
       <h2 className="mt-10 text-lg font-bold text-foreground">Business Profile</h2>
       <p className="mt-1 text-sm text-foreground/70">

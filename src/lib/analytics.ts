@@ -112,40 +112,58 @@ export async function getSearchStatsByTerm(
 }
 
 export type GroomerAnalytics = {
-  allTime: { views: number; telClicks: number };
-  last30: { views: number; telClicks: number };
-  dailyLast30: { date: string; views: number; telClicks: number }[];
+  views: number;
+  telClicks: number;
+  daily: { date: string; views: number; telClicks: number }[];
 };
 
-export async function getGroomerAnalytics(groomerId: number): Promise<GroomerAnalytics> {
+export async function getGroomerAnalytics(groomerId: number, days: number | null): Promise<GroomerAnalytics> {
   await ensureSchema();
 
-  const totalsRows = (await sql`
-    SELECT
-      COUNT(*) FILTER (WHERE event_type = 'groomer_view')::int AS all_views,
-      COUNT(*) FILTER (WHERE event_type = 'tel_click')::int AS all_tel_clicks,
-      COUNT(*) FILTER (WHERE event_type = 'groomer_view' AND created_at > now() - interval '30 days')::int AS recent_views,
-      COUNT(*) FILTER (WHERE event_type = 'tel_click' AND created_at > now() - interval '30 days')::int AS recent_tel_clicks
-    FROM analytics_events
-    WHERE groomer_id = ${groomerId}
-  `) as unknown as { all_views: number; all_tel_clicks: number; recent_views: number; recent_tel_clicks: number }[];
+  const totalsRows = days
+    ? ((await sql`
+        SELECT
+          COUNT(*) FILTER (WHERE event_type = 'groomer_view')::int AS views,
+          COUNT(*) FILTER (WHERE event_type = 'tel_click')::int AS tel_clicks
+        FROM analytics_events
+        WHERE groomer_id = ${groomerId} AND created_at > now() - (${days} || ' days')::interval
+      `) as unknown as { views: number; tel_clicks: number }[])
+    : ((await sql`
+        SELECT
+          COUNT(*) FILTER (WHERE event_type = 'groomer_view')::int AS views,
+          COUNT(*) FILTER (WHERE event_type = 'tel_click')::int AS tel_clicks
+        FROM analytics_events
+        WHERE groomer_id = ${groomerId}
+      `) as unknown as { views: number; tel_clicks: number }[]);
 
-  const dailyRows = (await sql`
-    SELECT
-      to_char(date_trunc('day', created_at), 'YYYY-MM-DD') AS date,
-      COUNT(*) FILTER (WHERE event_type = 'groomer_view')::int AS views,
-      COUNT(*) FILTER (WHERE event_type = 'tel_click')::int AS tel_clicks
-    FROM analytics_events
-    WHERE groomer_id = ${groomerId} AND created_at > now() - interval '30 days'
-    GROUP BY 1
-    ORDER BY 1 DESC
-  `) as unknown as { date: string; views: number; tel_clicks: number }[];
+  const dailyRows = days
+    ? ((await sql`
+        SELECT
+          to_char(date_trunc('day', created_at), 'YYYY-MM-DD') AS date,
+          COUNT(*) FILTER (WHERE event_type = 'groomer_view')::int AS views,
+          COUNT(*) FILTER (WHERE event_type = 'tel_click')::int AS tel_clicks
+        FROM analytics_events
+        WHERE groomer_id = ${groomerId} AND created_at > now() - (${days} || ' days')::interval
+        GROUP BY 1
+        ORDER BY 1 DESC
+      `) as unknown as { date: string; views: number; tel_clicks: number }[])
+    : ((await sql`
+        SELECT
+          to_char(date_trunc('day', created_at), 'YYYY-MM-DD') AS date,
+          COUNT(*) FILTER (WHERE event_type = 'groomer_view')::int AS views,
+          COUNT(*) FILTER (WHERE event_type = 'tel_click')::int AS tel_clicks
+        FROM analytics_events
+        WHERE groomer_id = ${groomerId}
+        GROUP BY 1
+        ORDER BY 1 DESC
+        LIMIT 366
+      `) as unknown as { date: string; views: number; tel_clicks: number }[]);
 
   const t = totalsRows[0];
   return {
-    allTime: { views: t.all_views, telClicks: t.all_tel_clicks },
-    last30: { views: t.recent_views, telClicks: t.recent_tel_clicks },
-    dailyLast30: dailyRows.map((r) => ({ date: r.date, views: r.views, telClicks: r.tel_clicks })),
+    views: t.views,
+    telClicks: t.tel_clicks,
+    daily: dailyRows.map((r) => ({ date: r.date, views: r.views, telClicks: r.tel_clicks })),
   };
 }
 

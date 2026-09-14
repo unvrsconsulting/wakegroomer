@@ -9,6 +9,8 @@ import {
 } from "@/lib/analytics";
 import AdminLogoutButton from "@/components/AdminLogoutButton";
 import AdminBusinessesTable from "@/components/AdminBusinessesTable";
+import TimeRangeTabs from "@/components/TimeRangeTabs";
+import { parseTimeRange } from "@/lib/timeRange";
 import {
   approveSignupAction,
   rejectSignupAction,
@@ -23,9 +25,14 @@ import {
   deleteGroomerAction,
 } from "./actions";
 
-const ANALYTICS_WINDOW_DAYS = 30;
+type PageProps = {
+  searchParams: Promise<{ range?: string }>;
+};
 
-export default async function AdminPage() {
+export default async function AdminPage({ searchParams }: PageProps) {
+  const { range } = await searchParams;
+  const timeRange = parseTimeRange(range);
+
   const [
     pendingSignups,
     pendingClaims,
@@ -42,10 +49,10 @@ export default async function AdminPage() {
     Promise.resolve(getPendingGroomerEdits()),
     Promise.resolve(getAllGroomersForAdmin()),
     getAdminStats(),
-    getTopViewedGroomers(ANALYTICS_WINDOW_DAYS, 10),
-    getSearchStatsByCity(ANALYTICS_WINDOW_DAYS, 10),
-    getSearchStatsByTerm(ANALYTICS_WINDOW_DAYS, 10),
-    getAnalyticsTotals(ANALYTICS_WINDOW_DAYS),
+    getTopViewedGroomers(timeRange.days, 10),
+    getSearchStatsByCity(timeRange.days, 10),
+    getSearchStatsByTerm(timeRange.days, 10),
+    getAnalyticsTotals(timeRange.days),
   ]);
 
   return (
@@ -63,14 +70,15 @@ export default async function AdminPage() {
         <StatCard label="Verified" value={stats.claimedCount} />
         <StatCard label="Featured" value={stats.featuredCount} />
         <StatCard label="Cities Covered" value={stats.cityCount} />
-        <StatCard label={`Page Views (${ANALYTICS_WINDOW_DAYS}d)`} value={analyticsTotals.totalViews} />
-        <StatCard label={`Searches (${ANALYTICS_WINDOW_DAYS}d)`} value={analyticsTotals.totalSearches} />
+        <StatCard label={`Page Views (${timeRange.label})`} value={analyticsTotals.totalViews} />
+        <StatCard label={`Searches (${timeRange.label})`} value={analyticsTotals.totalSearches} />
       </section>
 
       <section className="mt-10">
-        <h2 className="text-lg font-bold text-foreground">
-          Analytics <span className="text-sm font-normal text-muted">(last {ANALYTICS_WINDOW_DAYS} days)</span>
-        </h2>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <h2 className="text-lg font-bold text-foreground">Analytics</h2>
+          <TimeRangeTabs basePath="/admin" current={timeRange.value} />
+        </div>
         <div className="mt-4 grid grid-cols-1 gap-5 lg:grid-cols-3">
           <AnalyticsCard title="Most Viewed Businesses">
             {topViewed.length === 0 ? (
