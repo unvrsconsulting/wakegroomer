@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { ALL_SERVICES, SERVICE_AREA_CITIES } from "@/lib/constants";
+import Honeypot from "./Honeypot";
 
 type FormState = {
   business_name: string;
@@ -18,6 +19,8 @@ type FormState = {
   services: string[];
   service_radius_miles: string;
   years_experience: string;
+  wants_verified_badge: boolean;
+  wants_featured: boolean;
 };
 
 const initialState: FormState = {
@@ -34,6 +37,8 @@ const initialState: FormState = {
   services: [],
   service_radius_miles: "15",
   years_experience: "",
+  wants_verified_badge: true,
+  wants_featured: true,
 };
 
 const STEPS = ["Business Info", "Online Presence", "Service Details", "Review & Submit"];
@@ -45,6 +50,8 @@ export default function SignupForm() {
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [success, setSuccess] = useState<{ slug: string } | null>(null);
+  const honeypotRef = useRef<HTMLInputElement>(null);
+  const renderedAt = useRef(Date.now());
 
   function update<K extends keyof FormState>(key: K, value: FormState[K]) {
     setForm((f) => ({ ...f, [key]: value }));
@@ -136,6 +143,8 @@ export default function SignupForm() {
             .filter(Boolean),
           service_radius_miles: Number(form.service_radius_miles),
           years_experience: Number(form.years_experience),
+          company_website: honeypotRef.current?.value ?? "",
+          form_rendered_at: renderedAt.current,
         }),
       });
 
@@ -166,7 +175,7 @@ export default function SignupForm() {
         <h2 className="mt-4 text-2xl font-bold text-foreground">You&apos;re all set!</h2>
         <p className="mt-2 text-foreground/70">
           Thanks for listing <strong>{form.business_name}</strong>. Our team reviews every new
-          listing to confirm the Google Business Profile link before it goes live — this usually
+          listing to confirm the Google Business Profile link before it goes live. This usually
           takes 1-2 business days.
         </p>
         <Link
@@ -181,6 +190,7 @@ export default function SignupForm() {
 
   return (
     <div className="mx-auto max-w-2xl">
+      <Honeypot ref={honeypotRef} />
       {/* Stepper */}
       <div className="mb-8 flex items-center justify-between">
         {STEPS.map((label, i) => (
@@ -385,6 +395,39 @@ export default function SignupForm() {
         {step === 3 && (
           <div className="space-y-5">
             <h2 className="text-xl font-bold text-foreground">Review your listing</h2>
+
+            <div className="space-y-3 rounded-xl border border-[var(--color-border)] bg-brand-light/30 p-4">
+              <p className="text-sm font-semibold text-foreground">Enhance your listing (optional)</p>
+              <label className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  className="mt-1"
+                  checked={form.wants_verified_badge}
+                  onChange={(e) => update("wants_verified_badge", e.target.checked)}
+                />
+                <span className="text-sm text-foreground/80">
+                  <strong>Add a Verified badge</strong> — shows pet owners we&apos;ve confirmed you
+                  own this business.
+                </span>
+              </label>
+              <label className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  className="mt-1"
+                  checked={form.wants_featured}
+                  onChange={(e) => update("wants_featured", e.target.checked)}
+                />
+                <span className="text-sm text-foreground/80">
+                  <strong>Request Featured placement</strong> — ask to be highlighted higher in
+                  search results and on the homepage.
+                </span>
+              </label>
+              <p className="text-xs text-muted">
+                Both are optional — uncheck either if you&apos;d rather skip it. Our team reviews
+                every request before anything goes live.
+              </p>
+            </div>
+
             <dl className="divide-y divide-[var(--color-border)] rounded-xl border border-[var(--color-border)]">
               <Row label="Business" value={form.business_name} />
               <Row label="Contact" value={`${form.owner_name} · ${form.email} · ${form.phone}`} />
@@ -473,7 +516,7 @@ function Row({ label, value }: { label: string; value: string }) {
   return (
     <div className="grid grid-cols-3 gap-4 px-4 py-3 text-sm">
       <dt className="font-medium text-muted">{label}</dt>
-      <dd className="col-span-2 break-words text-foreground">{value || "—"}</dd>
+      <dd className="col-span-2 break-words text-foreground">{value || "N/A"}</dd>
     </div>
   );
 }

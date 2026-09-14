@@ -21,13 +21,13 @@ export const PHOTOS = {
     license: "CC BY-SA 4.0",
   },
   groomingAction: {
-    src: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Dog_Groomer_Norwich.jpg",
-    alt: "A groomer trimming a dog's coat",
-    width: 3000,
-    height: 4000,
-    author: "Vipoochie",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Dog_Groomer_Norwich.jpg",
-    license: "CC BY-SA 4.0",
+    src: "https://upload.wikimedia.org/wikipedia/commons/1/11/Happy_golden_dog.jpg",
+    alt: "A happy golden retriever with its tongue out",
+    width: 2299,
+    height: 1551,
+    author: "liz west",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Happy_golden_dog.jpg",
+    license: "CC BY 2.0",
   },
   happyDog: {
     src: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Golden_Retriever_smiling.jpg",
@@ -66,15 +66,3 @@ export const PHOTOS = {
     license: "CC BY 2.0",
   },
 } satisfies Record<string, CreditedPhoto>;
-
-// Ordered pool used to cycle a variety of dogs across repeating UI (hero
-// flourishes, service grid thumbnails) so the same photo doesn't repeat
-// right next to itself.
-export const PHOTO_POOL = [
-  PHOTOS.heroDog,
-  PHOTOS.groomedPoodle,
-  PHOTOS.puppy,
-  PHOTOS.corgi,
-  PHOTOS.happyDog,
-  PHOTOS.groomingAction,
-];

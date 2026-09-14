@@ -12,10 +12,10 @@ export default function ListYourBusinessPage() {
     <div className="bg-[var(--background)] py-12">
       <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-foreground sm:text-4xl">
-          List Your Business — Free
+          List Your Business: Free
         </h1>
         <p className="mt-3 text-foreground/70">
-          Get discovered by pet owners across the Piedmont searching for a mobile groomer in their
+          Get discovered by pet owners across North Carolina searching for a mobile groomer in their
           area. It takes about five minutes.
         </p>
       </div>

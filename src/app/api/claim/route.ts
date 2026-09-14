@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getApprovedGroomerBySlug, getPendingClaimForGroomer, insertClaim } from "@/lib/claims";
 import { EMAIL_RE, PHONE_RE, URL_RE, isLikelyGmbUrl } from "@/lib/validation";
+import { isSpamSubmission } from "@/lib/spam";
+import { sendNotificationEmail, renderNotificationHtml } from "@/lib/email";
 
 export async function POST(req: NextRequest) {
   let body: Record<string, unknown>;
@@ -10,8 +12,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
   }
 
+  if (isSpamSubmission(body)) {
+    // Pretend success so bots don't learn to route around this check.
+    return NextResponse.json({ ok: true }, { status: 201 });
+  }
+
   const slug = String(body.slug ?? "").trim();
-  const groomer = slug ? getApprovedGroomerBySlug(slug) : null;
+  const groomer = slug ? await getApprovedGroomerBySlug(slug) : null;
   if (!groomer) {
     return NextResponse.json({ error: "That business listing could not be found." }, { status: 404 });
   }
@@ -20,7 +27,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "This listing has already been claimed." }, { status: 409 });
   }
 
-  if (getPendingClaimForGroomer(groomer.id)) {
+  if (await getPendingClaimForGroomer(groomer.id)) {
     return NextResponse.json(
       { error: "A claim for this listing is already under review." },
       { status: 409 }
@@ -56,12 +63,14 @@ export async function POST(req: NextRequest) {
   }
 
   const message = String(body.message ?? "").trim();
+  const wants_verified_badge = Boolean(body.wants_verified_badge);
+  const wants_featured = Boolean(body.wants_featured);
 
   if (Object.keys(errors).length > 0) {
     return NextResponse.json({ errors }, { status: 400 });
   }
 
-  insertClaim({
+  await insertClaim({
     groomer_id: groomer.id,
     claimant_name,
     claimant_email,
@@ -69,7 +78,26 @@ export async function POST(req: NextRequest) {
     website,
     gmb_url,
     message,
+    wants_verified_badge,
+    wants_featured,
   });
+
+  await sendNotificationEmail(
+    `New claim request: ${groomer.business_name}`,
+    renderNotificationHtml("New Claim Request", {
+      Listing: groomer.business_name,
+      "Listing URL": `https://mobilepetgroomnc.com/groomer/${groomer.slug}`,
+      "Claimant Name": claimant_name,
+      "Claimant Email": claimant_email,
+      "Claimant Phone": claimant_phone,
+      Website: website,
+      "Google Business Profile": gmb_url,
+      Message: message,
+      "Wants Verified Badge": wants_verified_badge ? "Yes" : "No",
+      "Wants Featured": wants_featured ? "Yes" : "No",
+      "Review in admin": `https://mobilepetgroomnc.com/admin`,
+    })
+  );
 
   return NextResponse.json({ ok: true }, { status: 201 });
 }

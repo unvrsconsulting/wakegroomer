@@ -24,7 +24,7 @@ export default async function OpengraphImage() {
           {SITE_NAME}
         </div>
         <div style={{ fontSize: 32, color: "#e6f2ef", marginTop: 16, textAlign: "center" }}>
-          Find a Mobile Dog Groomer in the NC Piedmont
+          Find a Mobile Dog Groomer Across North Carolina
         </div>
       </div>
     ),

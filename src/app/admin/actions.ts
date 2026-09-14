@@ -3,6 +3,15 @@
 import { revalidatePath } from "next/cache";
 import { approveSignup, rejectSignup } from "@/lib/signup";
 import { approveClaim, rejectClaim } from "@/lib/claims";
+import {
+  approveGroomerEdit,
+  rejectGroomerEdit,
+  generateEditToken,
+  revokeEditToken,
+  toggleFeatured,
+  toggleClaimed,
+  deleteGroomer,
+} from "@/lib/groomerEdits";
 
 function idFromFormData(formData: FormData): number {
   const id = Number(formData.get("id"));
@@ -11,23 +20,62 @@ function idFromFormData(formData: FormData): number {
 }
 
 export async function approveSignupAction(formData: FormData) {
-  approveSignup(idFromFormData(formData));
+  await approveSignup(idFromFormData(formData));
   revalidatePath("/admin");
   revalidatePath("/");
 }
 
 export async function rejectSignupAction(formData: FormData) {
-  rejectSignup(idFromFormData(formData));
+  await rejectSignup(idFromFormData(formData));
   revalidatePath("/admin");
 }
 
 export async function approveClaimAction(formData: FormData) {
-  approveClaim(idFromFormData(formData));
+  await approveClaim(idFromFormData(formData));
   revalidatePath("/admin");
   revalidatePath("/");
 }
 
 export async function rejectClaimAction(formData: FormData) {
-  rejectClaim(idFromFormData(formData));
+  await rejectClaim(idFromFormData(formData));
   revalidatePath("/admin");
+}
+
+export async function approveGroomerEditAction(formData: FormData) {
+  await approveGroomerEdit(idFromFormData(formData));
+  revalidatePath("/admin");
+  revalidatePath("/");
+}
+
+export async function rejectGroomerEditAction(formData: FormData) {
+  await rejectGroomerEdit(idFromFormData(formData));
+  revalidatePath("/admin");
+}
+
+export async function grantEditAccessAction(formData: FormData) {
+  await generateEditToken(idFromFormData(formData));
+  revalidatePath("/admin");
+}
+
+export async function revokeEditAccessAction(formData: FormData) {
+  await revokeEditToken(idFromFormData(formData));
+  revalidatePath("/admin");
+}
+
+export async function toggleFeaturedAction(formData: FormData) {
+  await toggleFeatured(idFromFormData(formData));
+  revalidatePath("/admin");
+  revalidatePath("/");
+}
+
+export async function toggleClaimedAction(formData: FormData) {
+  await toggleClaimed(idFromFormData(formData));
+  revalidatePath("/admin");
+  revalidatePath("/");
+}
+
+export async function deleteGroomerAction(formData: FormData) {
+  await deleteGroomer(idFromFormData(formData));
+  revalidatePath("/admin");
+  revalidatePath("/");
 }

@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { insertSignup, SignupInput } from "@/lib/signup";
 import { SERVICE_AREA_CITIES } from "@/lib/constants";
 import { URL_RE, EMAIL_RE, PHONE_RE, ZIP_RE, isLikelyGmbUrl } from "@/lib/validation";
+import { isSpamSubmission } from "@/lib/spam";
+import { sendNotificationEmail, renderNotificationHtml } from "@/lib/email";
 
 export async function POST(req: NextRequest) {
   let body: Record<string, unknown>;
@@ -9,6 +11,11 @@ export async function POST(req: NextRequest) {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
+  }
+
+  if (isSpamSubmission(body)) {
+    // Pretend success so bots don't learn to route around this check.
+    return NextResponse.json({ ok: true, slug: "" }, { status: 201 });
   }
 
   const errors: Record<string, string> = {};
@@ -79,6 +86,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ errors }, { status: 400 });
   }
 
+  const wants_verified_badge = Boolean(body.wants_verified_badge);
+  const wants_featured = Boolean(body.wants_featured);
+
   const input: SignupInput = {
     business_name,
     owner_name,
@@ -93,9 +103,31 @@ export async function POST(req: NextRequest) {
     services,
     service_radius_miles,
     years_experience,
+    wants_verified_badge,
+    wants_featured,
   };
 
-  const { slug } = insertSignup(input);
+  const { slug } = await insertSignup(input);
+
+  await sendNotificationEmail(
+    `New business signup: ${business_name}`,
+    renderNotificationHtml("New Business Signup", {
+      "Business Name": business_name,
+      "Owner / Contact": owner_name,
+      Email: email,
+      Phone: phone,
+      Website: website,
+      "Google Business Profile": gmb_url,
+      City: city,
+      Zip: zip,
+      Neighborhoods: neighborhoods.join(", "),
+      Services: services.join(", "),
+      Description: description,
+      "Wants Verified Badge": wants_verified_badge ? "Yes" : "No",
+      "Wants Featured": wants_featured ? "Yes" : "No",
+      "Review in admin": `https://mobilepetgroomnc.com/admin`,
+    })
+  );
 
   return NextResponse.json({ ok: true, slug }, { status: 201 });
 }

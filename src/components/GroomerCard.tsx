@@ -1,25 +1,28 @@
+import Image from "next/image";
 import Link from "next/link";
 import { GroomerView } from "@/lib/listings";
+import { GROOMER_PHOTOS } from "@/lib/groomerPhotos.generated";
 import VerifiedBadge from "./VerifiedBadge";
 
-function initials(name: string): string {
-  return name
-    .split(" ")
-    .filter((w) => /^[A-Za-z]/.test(w))
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join("")
-    .toUpperCase();
-}
-
 export default function GroomerCard({ groomer }: { groomer: GroomerView }) {
+  const photo = GROOMER_PHOTOS[groomer.slug];
+  const isCatGroomer = groomer.services.includes("Cat Grooming");
+
   return (
     <Link
       href={`/groomer/${groomer.slug}`}
       className="card-shadow card-shadow-hover group flex flex-col overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] transition"
     >
-      <div className="relative flex h-36 items-center justify-center bg-gradient-to-br from-brand-light to-white">
-        <span className="text-4xl font-bold text-brand/30">{initials(groomer.business_name)}</span>
+      <div className="relative h-36 w-full bg-brand-light">
+        {photo && (
+          <Image
+            src={photo.src}
+            alt={`Happy ${isCatGroomer ? "cat" : "dog"}`}
+            fill
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            className="object-cover"
+          />
+        )}
         {groomer.featured === 1 && (
           <span className="absolute left-3 top-3 rounded-full bg-accent px-3 py-1 text-xs font-semibold text-white">
             Featured
@@ -36,9 +39,15 @@ export default function GroomerCard({ groomer }: { groomer: GroomerView }) {
         </div>
 
         <div className="mt-1 flex items-center gap-1 text-sm text-muted">
-          <span className="text-accent">★</span>
-          <span className="font-semibold text-foreground">{groomer.rating.toFixed(1)}</span>
-          <span>({groomer.review_count} reviews)</span>
+          {groomer.review_count > 0 ? (
+            <>
+              <span className="text-accent">★</span>
+              <span className="font-semibold text-foreground">{groomer.rating.toFixed(1)}</span>
+              <span>({groomer.review_count} reviews)</span>
+            </>
+          ) : (
+            <span className="text-xs font-medium uppercase tracking-wide text-muted">New listing</span>
+          )}
         </div>
 
         <div className="mt-2 text-sm text-muted">
@@ -65,7 +74,9 @@ export default function GroomerCard({ groomer }: { groomer: GroomerView }) {
 
         <div className="mt-4 flex items-center justify-between border-t border-[var(--color-border)] pt-3 text-sm">
           <span className="font-semibold text-brand">View Profile →</span>
-          <span className="text-muted">{groomer.years_experience ?? 0}+ yrs experience</span>
+          {groomer.years_experience != null && (
+            <span className="text-muted">{groomer.years_experience}+ yrs experience</span>
+          )}
         </div>
       </div>
     </Link>

@@ -14,11 +14,11 @@ type PageProps = {
 
 export default async function ClaimPage({ params }: PageProps) {
   const { slug } = await params;
-  const groomer = getApprovedGroomerBySlug(slug);
+  const groomer = await getApprovedGroomerBySlug(slug);
 
   if (!groomer) notFound();
 
-  const pendingClaim = getPendingClaimForGroomer(groomer.id);
+  const pendingClaim = await getPendingClaimForGroomer(groomer.id);
 
   return (
     <div className="mx-auto max-w-xl px-4 py-10 sm:px-6 lg:px-8">
@@ -36,8 +36,8 @@ export default async function ClaimPage({ params }: PageProps) {
           <p className="mt-3 text-foreground/80">
             This listing has already been claimed and verified. If you believe this is a mistake,
             contact us at{" "}
-            <a href="mailto:hello@piedmontmobilegroomers.com" className="text-brand hover:underline">
-              hello@piedmontmobilegroomers.com
+            <a href="mailto:support@mobilepetgroomnc.com" className="text-brand hover:underline">
+              support@mobilepetgroomnc.com
             </a>
             .
           </p>
@@ -56,8 +56,8 @@ export default async function ClaimPage({ params }: PageProps) {
           <ClaimForm
             slug={slug}
             businessName={groomer.business_name}
-            suggestedWebsite={groomer.website}
-            suggestedGmbUrl={groomer.gmb_url}
+            suggestedWebsite={groomer.website ?? ""}
+            suggestedGmbUrl={groomer.gmb_url ?? ""}
           />
         </div>
       )}

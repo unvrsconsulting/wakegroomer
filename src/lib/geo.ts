@@ -14,11 +14,14 @@ function haversineMiles(a: [number, number], b: [number, number]): number {
 
 export function nearestServiceAreaCity(
   lat: number,
-  lng: number
+  lng: number,
+  allowedCities?: string[]
 ): { city: string; distanceMiles: number } | null {
   let closest: { city: string; distanceMiles: number } | null = null;
+  const allowed = allowedCities ? new Set(allowedCities) : null;
 
   for (const [city, coords] of Object.entries(CITY_COORDS)) {
+    if (allowed && !allowed.has(city)) continue;
     const distanceMiles = haversineMiles([lat, lng], coords);
     if (!closest || distanceMiles < closest.distanceMiles) {
       closest = { city, distanceMiles };

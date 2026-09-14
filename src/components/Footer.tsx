@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
-import { PHOTOS } from "@/lib/photos";
+import { citySlug } from "@/lib/slugs";
 
 const FOOTER_CITIES = ["Raleigh", "Durham", "Chapel Hill", "Cary", "Greensboro", "Apex"];
 
@@ -17,8 +17,8 @@ export default function Footer() {
               <span className="font-bold text-foreground">{SITE_NAME}</span>
             </div>
             <p className="mt-3 max-w-xs text-sm text-muted">
-              The free local directory for mobile dog groomers serving North Carolina&apos;s
-              Piedmont — from the Triangle to the Triad.
+              The free local directory for mobile dog groomers serving businesses across North
+              Carolina, from the Triangle to the Triad.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ export default function Footer() {
               {FOOTER_CITIES.map((city) => (
                 <li key={city}>
                   <Link
-                    href={`/search?city=${encodeURIComponent(city)}`}
+                    href={`/groomers/${citySlug(city)}`}
                     className="text-sm text-muted hover:text-brand"
                   >
                     {city}
@@ -51,6 +51,11 @@ export default function Footer() {
                   How It Works
                 </Link>
               </li>
+              <li>
+                <Link href="/blog" className="text-sm text-muted hover:text-brand">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -66,25 +71,25 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-[var(--color-border)] pt-6 text-xs text-muted">
-          © {new Date().getFullYear()} {SITE_NAME}. A local directory for the North Carolina
-          Piedmont. Not affiliated with any city, county, or state government.
+        <div className="mt-10 flex flex-col gap-3 border-t border-[var(--color-border)] pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            © {new Date().getFullYear()} {SITE_NAME}. A local directory for businesses across
+            North Carolina. Not affiliated with any city, county, or state government.
+          </p>
+          <div className="flex shrink-0 gap-4">
+            <Link href="/privacy" className="hover:text-brand hover:underline">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-brand hover:underline">
+              Terms &amp; Conditions
+            </Link>
+          </div>
         </div>
 
-        <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted/80">
-          <span>Photos:</span>
-          {Object.values(PHOTOS).map((p) => (
-            <a
-              key={p.sourceUrl}
-              href={p.sourceUrl}
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              className="hover:text-brand hover:underline"
-            >
-              {p.author} ({p.license})
-            </a>
-          ))}
-          <span>via Wikimedia Commons</span>
+        <div className="mt-3 text-[11px] text-muted/80">
+          <Link href="/photo-credits" className="hover:text-brand hover:underline">
+            photos
+          </Link>
         </div>
       </div>
     </footer>

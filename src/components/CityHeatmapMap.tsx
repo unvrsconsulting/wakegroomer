@@ -6,6 +6,7 @@ import L from "leaflet";
 import { MapContainer, TileLayer, CircleMarker, Tooltip, useMap } from "react-leaflet";
 import { useRouter } from "next/navigation";
 import { CITY_COORDS } from "@/lib/constants";
+import { citySlug } from "@/lib/slugs";
 
 export type CityCount = { city: string; count: number };
 
@@ -28,7 +29,7 @@ function FitBoundsToCities({ coords }: { coords: [number, number][] }) {
 function colorForIntensity(t: number): string {
   // t in [0,1] — light teal (low density) to deep orange (high density)
   const from = { r: 0xe6, g: 0xf2, b: 0xef }; // brand-light
-  const to = { r: 0xea, g: 0x58, b: 0x0c }; // accent-dark
+  const to = { r: 0x9a, g: 0x34, b: 0x12 }; // accent-dark
   const r = Math.round(from.r + (to.r - from.r) * t);
   const g = Math.round(from.g + (to.g - from.g) * t);
   const b = Math.round(from.b + (to.b - from.b) * t);
@@ -73,7 +74,7 @@ export default function CityHeatmapMap({ cityCounts }: { cityCounts: CityCount[]
               className: "cursor-pointer",
             }}
             eventHandlers={{
-              click: () => router.push(`/search?city=${encodeURIComponent(city)}`),
+              click: () => router.push(`/groomers/${citySlug(city)}`),
             }}
           >
             <Tooltip direction="top" offset={[0, -radius]}>

@@ -1,4 +1,4 @@
-import db, { Groomer } from "./db";
+import { sql, ensureSchema, Groomer } from "./db";
 import { ALL_SERVICES } from "./constants";
 
 export type GroomerView = Omit<Groomer, "neighborhoods" | "services"> & {
@@ -22,10 +22,12 @@ export type SearchParams = {
   service?: string;
 };
 
-export function searchGroomers(params: SearchParams): GroomerView[] {
-  const rows = db
-    .prepare(`SELECT * FROM groomers WHERE status = 'approved' ORDER BY is_claimed DESC, featured DESC, rating DESC`)
-    .all() as Groomer[];
+export async function searchGroomers(params: SearchParams): Promise<GroomerView[]> {
+  await ensureSchema();
+  const rows = (await sql`
+    SELECT * FROM groomers WHERE status = 'approved'
+    ORDER BY is_claimed DESC, featured DESC, rating DESC
+  `) as unknown as Groomer[];
 
   let results = rows.map(parse);
 
@@ -41,7 +43,9 @@ export function searchGroomers(params: SearchParams): GroomerView[] {
 
   if (params.city) {
     const city = params.city.toLowerCase();
-    results = results.filter((g) => g.city.toLowerCase() === city);
+    results = results.filter(
+      (g) => g.city.toLowerCase() === city || g.neighborhoods.some((n) => n.toLowerCase() === city)
+    );
   }
 
   if (params.zip) {
@@ -61,22 +65,25 @@ export function searchGroomers(params: SearchParams): GroomerView[] {
   return results;
 }
 
-export function getFeaturedGroomers(limit: number): GroomerView[] {
-  return searchGroomers({}).slice(0, limit);
+export async function getFeaturedGroomers(limit: number): Promise<GroomerView[]> {
+  const all = await searchGroomers({});
+  return all.slice(0, limit);
 }
 
-export function getCityCounts(): { city: string; count: number }[] {
-  return db
-    .prepare(
-      `SELECT city, COUNT(*) as count FROM groomers WHERE status = 'approved' GROUP BY city ORDER BY count DESC`
-    )
-    .all() as { city: string; count: number }[];
+export async function getCityCounts(): Promise<{ city: string; count: number }[]> {
+  await ensureSchema();
+  const rows = (await sql`
+    SELECT city, COUNT(*)::int as count FROM groomers
+    WHERE status = 'approved' GROUP BY city ORDER BY count DESC
+  `) as unknown as { city: string; count: number }[];
+  return rows;
 }
 
-export function getServiceCounts(): { service: string; count: number }[] {
-  const rows = db
-    .prepare(`SELECT services FROM groomers WHERE status = 'approved'`)
-    .all() as { services: string }[];
+export async function getServiceCounts(): Promise<{ service: string; count: number }[]> {
+  await ensureSchema();
+  const rows = (await sql`
+    SELECT services FROM groomers WHERE status = 'approved'
+  `) as unknown as { services: string }[];
 
   const counts = new Map<string, number>();
   rows.forEach((r) => {
@@ -90,42 +97,35 @@ export function getServiceCounts(): { service: string; count: number }[] {
   );
 }
 
-export function getDirectoryStats(): { groomerCount: number; verifiedCount: number } {
-  const row = db
-    .prepare(
-      `SELECT COUNT(*) as groomerCount, SUM(is_claimed) as verifiedCount FROM groomers WHERE status = 'approved'`
-    )
-    .get() as { groomerCount: number; verifiedCount: number | null };
-
-  return { groomerCount: row.groomerCount, verifiedCount: row.verifiedCount ?? 0 };
+export async function getDirectoryStats(): Promise<{ groomerCount: number; verifiedCount: number }> {
+  await ensureSchema();
+  const rows = (await sql`
+    SELECT COUNT(*)::int as "groomerCount", COALESCE(SUM(is_claimed), 0)::int as "verifiedCount"
+    FROM groomers WHERE status = 'approved'
+  `) as unknown as { groomerCount: number; verifiedCount: number }[];
+  return rows[0];
 }
 
-export function getGroomerBySlug(slug: string): GroomerView | null {
-  const row = db
-    .prepare(`SELECT * FROM groomers WHERE slug = ? AND status = 'approved'`)
-    .get(slug) as Groomer | undefined;
-  return row ? parse(row) : null;
+export async function getGroomerBySlug(slug: string): Promise<GroomerView | null> {
+  await ensureSchema();
+  const rows = (await sql`
+    SELECT * FROM groomers WHERE slug = ${slug} AND status = 'approved'
+  `) as unknown as Groomer[];
+  return rows[0] ? parse(rows[0]) : null;
 }
 
-export function getAllCities(): string[] {
-  const rows = db
-    .prepare(`SELECT DISTINCT city FROM groomers WHERE status = 'approved' ORDER BY city`)
-    .all() as { city: string }[];
+export async function getAllCities(): Promise<string[]> {
+  await ensureSchema();
+  const rows = (await sql`
+    SELECT DISTINCT city FROM groomers WHERE status = 'approved' ORDER BY city
+  `) as unknown as { city: string }[];
   return rows.map((r) => r.city);
 }
 
-export function getAllNeighborhoods(): string[] {
-  const rows = db
-    .prepare(`SELECT neighborhoods FROM groomers WHERE status = 'approved'`)
-    .all() as { neighborhoods: string }[];
-  const set = new Set<string>();
-  rows.forEach((r) => (JSON.parse(r.neighborhoods) as string[]).forEach((n) => set.add(n)));
-  return Array.from(set).sort();
-}
-
-export function getAllZips(): string[] {
-  const rows = db
-    .prepare(`SELECT DISTINCT zip FROM groomers WHERE status = 'approved' ORDER BY zip`)
-    .all() as { zip: string }[];
+export async function getAllZips(): Promise<string[]> {
+  await ensureSchema();
+  const rows = (await sql`
+    SELECT DISTINCT zip FROM groomers WHERE status = 'approved' ORDER BY zip
+  `) as unknown as { zip: string }[];
   return rows.map((r) => r.zip);
 }

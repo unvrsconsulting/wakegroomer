@@ -1,10 +1,9 @@
-export const SITE_NAME = "Piedmont Mobile Groomers";
-export const REGION_NAME = "the NC Piedmont";
+export const SITE_NAME = "NC Mobile Pet Groomers";
+export const REGION_NAME = "North Carolina";
 
 // Every incorporated town/city in a roughly 45-mile ring around Raleigh —
 // Wake County plus the neighboring counties in every direction — through
-// Durham/Orange County and up I-40/I-85 toward the Piedmont Triad
-// (Greensboro/High Point).
+// Durham/Orange County and up I-40/I-85 toward Greensboro/High Point.
 export const SERVICE_AREA_CITIES = [
   // Wake County
   "Raleigh",
@@ -50,6 +49,8 @@ export const SERVICE_AREA_CITIES = [
   "Greensboro",
   "High Point",
   "Jamestown",
+  // Davidson County (adjacent to High Point)
+  "Thomasville",
 ];
 
 // Approximate town-center coordinates, used for the homepage coverage map.
@@ -89,17 +90,19 @@ export const CITY_COORDS: Record<string, [number, number]> = {
   Greensboro: [36.0726, -79.792],
   "High Point": [35.9557, -79.9922],
   Jamestown: [35.9979, -79.9331],
+  Thomasville: [35.8829, -80.0831],
 };
 
 export const ALL_SERVICES = [
   "Full Groom",
   "Bath & Brush",
   "Nail Trim",
+  "Nail Grinding",
   "De-Shedding Treatment",
-  "Puppy's First Groom",
-  "Senior Dog Grooming",
   "Cat Grooming",
   "Teeth Brushing",
   "Ear Cleaning",
+  "Anal Gland Expression",
   "Flea & Tick Treatment",
+  "De-Matting",
 ];

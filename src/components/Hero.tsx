@@ -1,10 +1,10 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { SERVICE_AREA_CITIES } from "@/lib/constants";
 import { PHOTOS } from "@/lib/photos";
+import { useDetectedLocation } from "./LocationProvider";
 
 const HERO_DOGS = [
   {
@@ -25,10 +25,18 @@ const HERO_DOGS = [
   },
 ];
 
-export default function Hero() {
+export default function Hero({ cities }: { cities: string[] }) {
   const router = useRouter();
+  const { city: detectedCity } = useDetectedLocation();
   const [q, setQ] = useState("");
   const [city, setCity] = useState("");
+  const [cityTouched, setCityTouched] = useState(false);
+
+  useEffect(() => {
+    if (detectedCity && !cityTouched && cities.includes(detectedCity)) {
+      setCity(detectedCity);
+    }
+  }, [detectedCity, cityTouched, cities]);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -50,16 +58,13 @@ export default function Hero() {
       ))}
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-1.5 text-xs font-semibold text-brand-dark shadow-sm">
-            🐾 The NC Piedmont&apos;s free mobile dog grooming directory
-          </span>
-          <h1 className="mt-5 text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
+          <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
             Find a Mobile Dog Groomer
             <br className="hidden sm:block" /> Near You
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base text-foreground/70 sm:text-lg">
-            Browse trusted, locally-owned mobile groomers from Raleigh to Greensboro — the
-            Triangle, the Triad, and everywhere between — no shop drop-off required.
+            Browse trusted, locally-owned mobile groomers from Raleigh to Greensboro, covering the
+            Triangle, the Triad, and everywhere between. No shop drop-off required.
           </p>
         </div>
 
@@ -71,16 +76,19 @@ export default function Hero() {
             type="text"
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Search by neighborhood, service, or business name"
+            placeholder="Search by city, service, or business"
             className="flex-1 rounded-xl border-0 px-4 py-3 text-sm outline-none placeholder:text-muted"
           />
           <select
             value={city}
-            onChange={(e) => setCity(e.target.value)}
+            onChange={(e) => {
+              setCity(e.target.value);
+              setCityTouched(true);
+            }}
             className="rounded-xl border border-[var(--color-border)] px-4 py-3 text-sm outline-none sm:border-0 sm:bg-[var(--background)]"
           >
             <option value="">Any City</option>
-            {SERVICE_AREA_CITIES.map((c) => (
+            {cities.map((c) => (
               <option key={c} value={c}>
                 {c}
               </option>
@@ -88,9 +96,14 @@ export default function Hero() {
           </select>
           <button
             type="submit"
-            className="rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
+            aria-label="Search"
+            className="flex items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-dark"
           >
-            Search
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4 shrink-0">
+              <circle cx="11" cy="11" r="7" strokeLinecap="round" />
+              <path strokeLinecap="round" d="M20 20l-3.5-3.5" />
+            </svg>
+            <span className="hidden sm:inline">Search</span>
           </button>
         </form>
 

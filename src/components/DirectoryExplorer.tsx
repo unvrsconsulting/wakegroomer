@@ -1,42 +1,39 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState, useTransition } from "react";
+import { useCallback, useEffect, useState, useTransition } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import GroomerCard from "./GroomerCard";
 import { GroomerView } from "@/lib/listings";
-import { ALL_SERVICES, SERVICE_AREA_CITIES } from "@/lib/constants";
+import { ALL_SERVICES } from "@/lib/constants";
 
 type Props = {
   initialResults: GroomerView[];
-  neighborhoods: string[];
   zips: string[];
+  cities: string[];
 };
 
-export default function DirectoryExplorer({ initialResults, neighborhoods, zips }: Props) {
+export default function DirectoryExplorer({ initialResults, zips, cities }: Props) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [isPending, startTransition] = useTransition();
 
   const [q, setQ] = useState(searchParams.get("q") ?? "");
   const [city, setCity] = useState(searchParams.get("city") ?? "");
-  const [neighborhood, setNeighborhood] = useState(searchParams.get("neighborhood") ?? "");
   const [zip, setZip] = useState(searchParams.get("zip") ?? "");
   const [service, setService] = useState(searchParams.get("service") ?? "");
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const [results, setResults] = useState<GroomerView[]>(initialResults);
   const [loading, setLoading] = useState(false);
 
-  const hasFilters = Boolean(q || city || neighborhood || zip || service);
-
-  const filteredNeighborhoods = useMemo(() => neighborhoods, [neighborhoods]);
+  const hasFilters = Boolean(q || city || zip || service);
 
   const runSearch = useCallback(
-    async (params: { q: string; city: string; neighborhood: string; zip: string; service: string }) => {
+    async (params: { q: string; city: string; zip: string; service: string }) => {
       setLoading(true);
       const usp = new URLSearchParams();
       if (params.q) usp.set("q", params.q);
       if (params.city) usp.set("city", params.city);
-      if (params.neighborhood) usp.set("neighborhood", params.neighborhood);
       if (params.zip) usp.set("zip", params.zip);
       if (params.service) usp.set("service", params.service);
 
@@ -58,17 +55,16 @@ export default function DirectoryExplorer({ initialResults, neighborhoods, zips 
   useEffect(() => {
     // Skip initial mount; initialResults already reflects any server-provided params.
     const t = setTimeout(() => {
-      runSearch({ q, city, neighborhood, zip, service });
+      runSearch({ q, city, zip, service });
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, 250);
     return () => clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, city, neighborhood, zip, service]);
+  }, [q, city, zip, service]);
 
   function clearFilters() {
     setQ("");
     setCity("");
-    setNeighborhood("");
     setZip("");
     setService("");
   }
@@ -77,8 +73,28 @@ export default function DirectoryExplorer({ initialResults, neighborhoods, zips 
     <div id="directory" className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-[280px_1fr]">
         {/* Filters sidebar */}
-        <aside className="card-shadow h-fit rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 lg:sticky lg:top-24">
-          <div className="flex items-center justify-between">
+        <aside className="card-shadow h-fit overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] lg:sticky lg:top-24">
+          <button
+            type="button"
+            onClick={() => setFiltersOpen((open) => !open)}
+            aria-expanded={filtersOpen}
+            className="flex w-full items-center justify-between p-5 lg:hidden"
+          >
+            <span className="text-sm font-bold uppercase tracking-wide text-foreground">
+              Filters{hasFilters ? " (active)" : ""}
+            </span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className={`h-4 w-4 shrink-0 text-foreground/70 transition-transform ${filtersOpen ? "rotate-180" : ""}`}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+
+          <div className="hidden items-center justify-between p-5 lg:flex">
             <h2 className="text-sm font-bold uppercase tracking-wide text-foreground">Filters</h2>
             {hasFilters && (
               <button onClick={clearFilters} className="text-xs font-medium text-brand hover:underline">
@@ -87,7 +103,16 @@ export default function DirectoryExplorer({ initialResults, neighborhoods, zips 
             )}
           </div>
 
-          <div className="mt-4 space-y-4">
+          <div className={`${filtersOpen ? "block" : "hidden"} space-y-4 px-5 pb-5 lg:block lg:pt-0`}>
+            {hasFilters && (
+              <button
+                onClick={clearFilters}
+                className="text-xs font-medium text-brand hover:underline lg:hidden"
+              >
+                Clear all
+              </button>
+            )}
+
             <div>
               <label className="mb-1 block text-xs font-semibold text-muted">Keyword</label>
               <input
@@ -107,25 +132,9 @@ export default function DirectoryExplorer({ initialResults, neighborhoods, zips 
                 className="w-full rounded-lg border border-[var(--color-border)] bg-white px-3 py-2 text-sm outline-none focus:border-brand"
               >
                 <option value="">All Cities</option>
-                {SERVICE_AREA_CITIES.map((c) => (
+                {cities.map((c) => (
                   <option key={c} value={c}>
                     {c}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div>
-              <label className="mb-1 block text-xs font-semibold text-muted">Neighborhood</label>
-              <select
-                value={neighborhood}
-                onChange={(e) => setNeighborhood(e.target.value)}
-                className="w-full rounded-lg border border-[var(--color-border)] bg-white px-3 py-2 text-sm outline-none focus:border-brand"
-              >
-                <option value="">All Neighborhoods</option>
-                {filteredNeighborhoods.map((n) => (
-                  <option key={n} value={n}>
-                    {n}
                   </option>
                 ))}
               </select>

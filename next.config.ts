@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
         pathname: "/wikipedia/commons/**",
       },
     ],
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 2592000,
   },
 };
 
