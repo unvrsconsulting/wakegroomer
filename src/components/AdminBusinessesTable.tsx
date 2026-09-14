@@ -87,7 +87,9 @@ export default function AdminBusinessesTable({
               <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
                 <div className="min-w-0">
                   <p className="font-semibold text-foreground">
-                    {g.business_name}{" "}
+                    <Link href={`/admin/groomer/${g.id}/edit`} className="hover:text-brand hover:underline">
+                      {g.business_name}
+                    </Link>{" "}
                     {g.is_claimed === 1 && (
                       <span className="ml-1 rounded-full bg-brand-light px-2 py-0.5 text-xs font-medium text-brand-dark">
                         Verified
@@ -110,7 +112,7 @@ export default function AdminBusinessesTable({
                     href={`/admin/groomer/${g.id}/edit`}
                     className="rounded-full border border-[var(--color-border)] px-3 py-1.5 text-xs font-semibold text-foreground hover:border-brand hover:text-brand"
                   >
-                    Edit
+                    View / Edit
                   </Link>
 
                   <form action={toggleClaimedAction}>

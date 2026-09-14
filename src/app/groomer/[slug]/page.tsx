@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getGroomerBySlug } from "@/lib/listings";
 import { getPendingClaimForGroomer } from "@/lib/claims";
 import { logGroomerView } from "@/lib/analytics";
+import TrackedPhoneLink from "@/components/TrackedPhoneLink";
 import VerifiedBadge from "@/components/VerifiedBadge";
 import { SITE_NAME } from "@/lib/constants";
 import { GROOMER_PHOTOS } from "@/lib/groomerPhotos.generated";
@@ -269,9 +270,11 @@ export default async function GroomerProfile({ params }: PageProps) {
               {groomer.phone && (
                 <div>
                   <div className="text-xs font-semibold uppercase text-muted">Phone</div>
-                  <a href={`tel:${groomer.phone}`} className="text-sm font-medium text-foreground hover:text-brand">
-                    {groomer.phone}
-                  </a>
+                  <TrackedPhoneLink
+                    groomerId={groomer.id}
+                    phone={groomer.phone}
+                    className="text-sm font-medium text-foreground hover:text-brand"
+                  />
                 </div>
               )}
               {groomer.email && (
