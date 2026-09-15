@@ -599,6 +599,60 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "fall-dog-grooming-guide-north-carolina-flea-tick-season",
+    title: "Fall Dog Grooming Guide: What Changes in North Carolina's Mild Autumns",
+    metaDescription:
+      "Fall grooming isn't just about less shedding. Here's what changes for NC dogs as temperatures drop, including why fleas and ticks stay active longer than you'd think.",
+    excerpt:
+      "North Carolina's mild fall means fleas and ticks don't just disappear when the leaves do. Here's what to actually adjust in your dog's grooming routine this season.",
+    publishedAt: "2026-09-15",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Focused_%28105158567%29.jpeg",
+      alt: "Close-up of an alert dog outdoors in warm autumn light",
+      width: 2048,
+      height: 1362,
+      author: "Peter Kiss",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Focused_(105158567).jpeg",
+      license: "CC BY 3.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Once the weather cools off, a lot of NC pet owners quietly stop thinking about grooming until spring. That's a mistake here. North Carolina's fall is mild enough that several of the things you'd normally worry about in summer, fleas, ticks, and shedding, don't actually go away when the calendar says autumn. Here's what genuinely changes this season, and what doesn't.",
+      },
+      { type: "h2", text: "Fleas and Ticks Don't Take the Fall Off in NC" },
+      {
+        type: "p",
+        html: 'Most of the Triangle and Piedmont doesn\'t see a hard, sustained frost until well into November, sometimes later. Fleas and ticks stay active in that window, and fallen leaf piles are actually a favorite hiding spot for ticks looking for a warm, humid place to wait for a host. If your dog spends time in yards, parks, or wooded trails this fall, a <a href="/services/flea-tick-treatment" class="text-brand hover:underline font-medium">Flea &amp; Tick Treatment</a> as part of a regular grooming visit is still worth keeping on the schedule, not just something to think about in July.',
+      },
+      { type: "h2", text: "Your Dog's Coat Still Needs Attention" },
+      {
+        type: "p",
+        html: 'Shedding usually slows down once the heavy summer blowout season passes, but that doesn\'t mean brushing stops mattering. Indoor heat kicks on earlier than most owners expect in NC, and it dries out skin and coat just like it does for people. Dry skin plus a coat that isn\'t being brushed regularly is exactly how small tangles turn into mats, especially for the double-coated and curly breeds covered in our <a href="/blog/grooming-double-coated-dogs-nc-humidity-shedding-season" class="text-brand hover:underline font-medium">guide to grooming double-coated dogs</a>.',
+      },
+      { type: "h2", text: "Watch the Paws on Fall Walks" },
+      {
+        type: "ul",
+        items: [
+          "Fallen leaf piles hide sticks, acorns, and other debris that can get lodged between toe pads",
+          "Longer nails catch more easily on wet leaves and uneven ground. Keep up with a regular <a href=\"/services/nail-trim\" class=\"text-brand hover:underline font-medium\">Nail Trim</a> or <a href=\"/services/nail-grinding\" class=\"text-brand hover:underline font-medium\">Nail Grinding</a>",
+          "Check paw pads after walks for small cuts or irritation, especially if your dog has been in wooded areas",
+          "Mud from fall rain tracks into the house fast. A quick <a href=\"/services/bath-brush\" class=\"text-brand hover:underline font-medium\">Bath &amp; Brush</a> keeps things manageable between full grooms",
+        ],
+      },
+      { type: "h2", text: "Adjusting Your Grooming Schedule for the Season" },
+      {
+        type: "p",
+        html: 'Fall is a good time to reassess how often your dog actually needs to be groomed, rather than sticking to a summer schedule out of habit. Coat type, activity level, and how much time your dog spends outside all factor in. Our <a href="/blog/how-often-should-you-groom-your-dog-breed-guide" class="text-brand hover:underline font-medium">breed-by-breed grooming frequency guide</a> breaks down a realistic interval so you\'re not over- or under-grooming as the seasons shift.',
+      },
+      { type: "h2", text: "Book a Fall Grooming Visit" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, and <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { cookies } from "next/headers";
 import { getGroomerBySlug } from "@/lib/listings";
 import { getPendingClaimForGroomer } from "@/lib/claims";
-import { logGroomerView } from "@/lib/analytics";
+import { logGroomerView, getGroomerAnalytics } from "@/lib/analytics";
+import { ADMIN_COOKIE, isValidSessionToken } from "@/lib/adminAuth";
 import TrackedPhoneLink from "@/components/TrackedPhoneLink";
+import PublicAdminBar from "@/components/PublicAdminBar";
 import VerifiedBadge from "@/components/VerifiedBadge";
 import { SITE_NAME } from "@/lib/constants";
 import { GROOMER_PHOTOS } from "@/lib/groomerPhotos.generated";
@@ -40,7 +43,12 @@ export default async function GroomerProfile({ params }: PageProps) {
 
   if (!groomer) notFound();
 
-  logGroomerView(groomer.id).catch(() => {});
+  const sessionToken = (await cookies()).get(ADMIN_COOKIE)?.value;
+  const isAdmin = await isValidSessionToken(sessionToken);
+
+  if (!isAdmin) {
+    logGroomerView(groomer.id).catch(() => {});
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -69,17 +77,28 @@ export default async function GroomerProfile({ params }: PageProps) {
 
   const pendingClaim = groomer.is_claimed === 0 ? await getPendingClaimForGroomer(groomer.id) : null;
   const hasContactInfo = groomer.phone || groomer.email || groomer.owner_name;
+  const analytics = isAdmin ? await getGroomerAnalytics(groomer.id, 30) : null;
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    <>
+      {isAdmin && analytics && (
+        <PublicAdminBar
+          groomerId={groomer.id}
+          isFeatured={groomer.featured === 1}
+          isClaimed={groomer.is_claimed === 1}
+          hasPendingClaim={Boolean(pendingClaim)}
+          analytics={analytics}
+        />
+      )}
+      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
 
-      <Link href="/" className="text-sm font-medium text-brand hover:underline">
-        ← Back to directory
-      </Link>
+        <Link href="/" className="text-sm font-medium text-brand hover:underline">
+          ← Back to directory
+        </Link>
 
       <div className="card-shadow mt-6 overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)]">
         <div className="relative h-40 w-full bg-brand-light sm:h-52">
@@ -301,6 +320,7 @@ export default async function GroomerProfile({ params }: PageProps) {
           </p>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
