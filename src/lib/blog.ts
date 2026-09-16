@@ -653,6 +653,69 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-choose-a-trustworthy-mobile-dog-groomer-checklist",
+    title: "How to Choose a Trustworthy Mobile Dog Groomer: A Pre-Booking Checklist",
+    metaDescription:
+      "Mobile grooming means a stranger with clippers comes to your driveway. Here's what to actually check before booking, from insurance to how quotes are handled.",
+    excerpt:
+      "Mobile grooming means letting someone you've never met into your driveway with clippers running. Here's what's actually worth checking before you book.",
+    publishedAt: "2026-09-16",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/6/67/Arwen%2C_Corgi.jpg",
+      alt: "An alert, well-groomed Pembroke Welsh Corgi sitting outdoors",
+      width: 6000,
+      height: 4000,
+      author: "Randall R. Saxton",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Arwen,_Corgi.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Mobile grooming is convenient enough that it's easy to book the first name that shows up and move on with your day. But you're letting someone you've likely never met park a van in your driveway, handle your dog one-on-one with no one else around, and run clippers close to their skin. A few minutes of checking before you book is worth it, and most legitimate groomers are happy to answer these questions.",
+      },
+      { type: "h2", text: "Ask About Insurance and Bonding" },
+      {
+        type: "p",
+        html: "A legitimate mobile grooming business carries liability insurance, covering everything from an accidental nick to property damage from the van itself. It's a completely normal question to ask directly: \"Are you insured?\" A groomer who's been in business for a while will usually answer without hesitation. Vague or defensive answers are worth noting.",
+      },
+      { type: "h2", text: "Look Past the Star Rating" },
+      {
+        type: "ul",
+        items: [
+          "A 5.0 rating with 2 reviews tells you a lot less than a 4.8 with 100",
+          'Look for a <a href="/search" class="text-brand hover:underline font-medium">Verified badge</a> on the listing, which means the business owner has confirmed ownership through their own Google Business Profile, not just a name someone else typed in',
+          "Read a few of the actual written reviews, not just the number. Look for mentions of punctuality, communication, and how the groomer handled a nervous or difficult dog",
+        ],
+      },
+      { type: "h2", text: "Get a Clear, Itemized Quote First" },
+      {
+        type: "p",
+        html: 'A trustworthy groomer will tell you upfront what\'s included in a quote, and what counts as an add-on. If your dog\'s coat is matted or overdue for a trim, ask directly whether that changes the price before the appointment, not after. Our <a href="/blog/mobile-dog-grooming-cost-guide-raleigh-durham-triangle" class="text-brand hover:underline font-medium">cost guide for the Triangle</a> breaks down what typical pricing actually looks like by service, so you know if a quote is reasonable.',
+      },
+      { type: "h2", text: "What a Trustworthy Groomer Will Never Do" },
+      {
+        type: "ul",
+        items: [
+          "Refuse to discuss their mat-removal policy. A good groomer explains upfront that severely matted fur may need to be shaved down for your dog's safety, not sprung on you as a surprise. See our guide on <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">why shaving a mat down is sometimes the only humane option</a>",
+          "Rush through the appointment or seem impatient with an anxious dog",
+          "Get defensive when you ask reasonable questions about their process, training, or insurance",
+          "Pressure you to book add-ons you didn't ask about on the spot",
+        ],
+      },
+      { type: "h2", text: "Pay Attention to the First Visit" },
+      {
+        type: "p",
+        html: 'How a groomer handles the first appointment tells you a lot. Do they introduce themselves and let your dog sniff around the van before starting? Do they ask about any health issues, past grooming experiences, or specific concerns? Our guide on <a href="/blog/how-to-prepare-for-first-mobile-grooming-appointment" class="text-brand hover:underline font-medium">preparing for a first mobile grooming appointment</a> covers what a good first visit should look like from your side.',
+      },
+      { type: "h2", text: "Find a Verified Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, <a href="/groomers/chapel-hill-nc" class="text-brand hover:underline font-medium">Chapel Hill</a>, and <a href="/groomers/wake-forest-nc" class="text-brand hover:underline font-medium">Wake Forest</a> to compare real, local groomers before you book.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
