@@ -335,7 +335,10 @@ export default async function Home() {
             <div>
               <h2 className="text-3xl font-bold text-foreground">From the Blog</h2>
               <p className="mt-2 text-foreground/70">
-                Local guides and practical tips for mobile dog grooming across North Carolina.
+                Local guides and practical tips for mobile dog grooming across North Carolina.{" "}
+                <Link href="/guides" className="font-semibold text-brand hover:underline">
+                  Browse the complete guide →
+                </Link>
               </p>
             </div>
             <Link

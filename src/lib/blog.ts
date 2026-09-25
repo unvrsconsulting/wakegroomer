@@ -75,7 +75,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "How to Compare Quotes Across the Triangle" },
       {
         type: "p",
-        html: 'Pricing also shifts a little by area. If you\'re comparing options, browse real local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/chapel-hill-nc" class="text-brand hover:underline font-medium">Chapel Hill</a> to see what groomers in your specific area are charging and offering before you book.',
+        html: 'Pricing also shifts a little by area. If you\'re comparing options, browse real local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, <a href="/groomers/apex-nc" class="text-brand hover:underline font-medium">Apex</a>, and <a href="/groomers/chapel-hill-nc" class="text-brand hover:underline font-medium">Chapel Hill</a> to see what groomers in your specific area are charging and offering before you book.',
       },
       { type: "h2", text: "Getting the Best Value" },
       {
@@ -261,7 +261,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Find a Mobile Groomer Near You" },
       {
         type: "p",
-        html: 'Ready to try mobile grooming? <a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> by city or service, or browse groomers in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a>, and beyond.',
+        html: 'Ready to try mobile grooming? <a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> by city or service, or browse groomers in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, <a href="/groomers/apex-nc" class="text-brand hover:underline font-medium">Apex</a>, <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a>, and beyond.',
       },
     ],
   },
@@ -322,7 +322,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Building a Schedule That Actually Sticks" },
       {
         type: "p",
-        html: 'The easiest way to stay on schedule is to book with the same groomer on a recurring basis rather than waiting until your dog obviously needs it. A mobile groomer coming to your driveway every 4-8 weeks (depending on breed) removes the friction of scheduling a drop-off, which is usually the real reason grooming gets pushed back in the first place. <a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> to find a groomer near you in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, and beyond.',
+        html: 'The easiest way to stay on schedule is to book with the same groomer on a recurring basis rather than waiting until your dog obviously needs it. A mobile groomer coming to your driveway every 4-8 weeks (depending on breed) removes the friction of scheduling a drop-off, which is usually the real reason grooming gets pushed back in the first place. <a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> to find a groomer near you in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, <a href="/groomers/apex-nc" class="text-brand hover:underline font-medium">Apex</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, and beyond.',
       },
     ],
   },
@@ -712,7 +712,414 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Find a Verified Groomer Near You" },
       {
         type: "p",
-        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, <a href="/groomers/chapel-hill-nc" class="text-brand hover:underline font-medium">Chapel Hill</a>, and <a href="/groomers/wake-forest-nc" class="text-brand hover:underline font-medium">Wake Forest</a> to compare real, local groomers before you book.',
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, <a href="/groomers/apex-nc" class="text-brand hover:underline font-medium">Apex</a>, <a href="/groomers/chapel-hill-nc" class="text-brand hover:underline font-medium">Chapel Hill</a>, and <a href="/groomers/wake-forest-nc" class="text-brand hover:underline font-medium">Wake Forest</a> to compare real, local groomers before you book.',
+      },
+    ],
+  },
+  {
+    slug: "doodle-poodle-mix-grooming-guide-different-coat-routine",
+    title: "Doodle and Poodle-Mix Grooming: Why Their Coats Need a Different Routine",
+    metaDescription:
+      "Goldendoodles, Labradoodles, and other poodle mixes don't shed like other dogs, and that changes everything about their grooming schedule. Here's what's actually different.",
+    excerpt:
+      "Doodles don't shed like a Lab or Golden, and treating their coat the same way is how a manageable curl turns into a solid mat. Here's what's actually different.",
+    publishedAt: "2026-09-17",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/8/84/2021-03-30_16_55_16_A_Golden_Doodle_standing_in_a_lawn_in_the_Parkway_Village_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg",
+      alt: "A Goldendoodle with a full curly coat standing in a yard",
+      width: 4032,
+      height: 3024,
+      author: "Famartin",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:2021-03-30_16_55_16_A_Golden_Doodle_standing_in_a_lawn_in_the_Parkway_Village_section_of_Ewing_Township,_Mercer_County,_New_Jersey.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Goldendoodles, Labradoodles, Bernedoodles, and other poodle mixes have exploded in popularity across North Carolina, and for good reason. But a lot of new doodle owners groom them the same way they would a Golden Retriever or a Lab, and that's exactly how a manageable curl turns into a solid mat within a few weeks.",
+      },
+      { type: "h2", text: "Why Doodle Coats Are Fundamentally Different" },
+      {
+        type: "p",
+        html: 'Most dogs shed on a cycle: loose undercoat works its way out and falls away, which is what makes de-shedding tools effective on breeds covered in our <a href="/blog/grooming-double-coated-dogs-nc-humidity-shedding-season" class="text-brand hover:underline font-medium">guide to double-coated dogs</a>. Poodle-mix coats behave more like human hair. They grow continuously and rarely fall out on their own, which sounds convenient until you realize it means loose hair has nowhere to go except tangling into the curl around it.',
+      },
+      { type: "h2", text: "How Often Doodles Actually Need Grooming" },
+      {
+        type: "ul",
+        items: [
+          "A full haircut every 6-8 weeks, regardless of how the coat looks day to day. Waiting until it \"needs\" a cut usually means it's already matting underneath",
+          'Brushing several times a week at minimum, more for longer or wavier coats. See our <a href="/blog/how-often-should-you-groom-your-dog-breed-guide" class="text-brand hover:underline font-medium">breed-by-breed grooming frequency guide</a> for how doodles compare to other coat types',
+          "Extra attention behind the ears, under the collar, in the armpits, and around the tail base, the same friction points that cause trouble on any coat, but faster on a doodle",
+        ],
+      },
+      { type: "h2", text: "Preventing the Matting Doodles Are Famous For" },
+      {
+        type: "p",
+        html: 'Doodle coats need to be brushed all the way down to the skin, not just on the surface. A brush that glides through the top layer while a dense mat forms underneath is one of the most common reasons doodle owners get blindsided by a shave-down recommendation. If it\'s already gotten away from you, our guide on <a href="/blog/matted-dog-fur-when-shaving-is-necessary" class="text-brand hover:underline font-medium">why groomers sometimes have to shave a matted coat down</a> explains why that\'s a safety call, not a shortcut.',
+      },
+      { type: "h2", text: "Choosing a Cut That's Easier to Maintain" },
+      {
+        type: "p",
+        html: 'A shorter "puppy cut" or "teddy bear trim" sheds far less maintenance burden onto you between visits than growing out a longer, fluffier coat. If daily brushing isn\'t realistic for your schedule, ask your groomer for a shorter length at each <a href="/services/full-groom" class="text-brand hover:underline font-medium">Full Groom</a>. It won\'t eliminate brushing entirely, but it buys you more room for error before a tangle becomes a mat.',
+      },
+      { type: "h2", text: "Find a Doodle-Experienced Groomer" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/holly-springs-nc" class="text-brand hover:underline font-medium">Holly Springs</a>, <a href="/groomers/morrisville-nc" class="text-brand hover:underline font-medium">Morrisville</a>, and <a href="/groomers/knightdale-nc" class="text-brand hover:underline font-medium">Knightdale</a> to find a mobile groomer comfortable with curly and doodle coats.',
+      },
+    ],
+  },
+  {
+    slug: "dog-nail-trims-why-they-matter-nick-the-quick",
+    title: "Dog Nail Trims: Why They Matter and What to Do If You Nick the Quick",
+    metaDescription:
+      "Overgrown nails aren't just a cosmetic issue, they change how a dog stands and walks. Here's why regular trims matter and what to do if the quick gets nicked.",
+    excerpt:
+      "Overgrown nails do more than click on hardwood floors. Here's why regular trims actually matter, and what to do (calmly) if the quick gets nicked.",
+    publishedAt: "2026-09-18",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/9/98/Dog_nails_close-up_%2849810706286%29.jpg",
+      alt: "Extreme close-up of a dog's nails showing the pink quick inside",
+      width: 5472,
+      height: 3648,
+      author: "Jernej Furman",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Dog_nails_close-up_(49810706286).jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Nail trims are the grooming task most owners put off the longest, usually because it's the one their dog seems to hate the most. That's a mistake. Overgrown nails aren't just a cosmetic issue or a noisy floor problem, they change how a dog actually stands and walks, and the longer they go untrimmed, the harder they are to fix.",
+      },
+      { type: "h2", text: "Why Overgrown Nails Are a Real Problem" },
+      {
+        type: "ul",
+        items: [
+          "Long nails hit the ground before the paw pad does, which pushes toes back and forces weight onto the wrong part of the foot",
+          "Over time, this can splay the toes and put extra strain on the joints, especially in older dogs already dealing with arthritis",
+          "Nails that curl can grow into the paw pad in extreme cases, which is painful and usually requires a vet visit",
+          "The quick, the blood vessel and nerve inside the nail, grows longer along with an overgrown nail, which is exactly why overdue nails are harder to trim short without discomfort",
+        ],
+      },
+      { type: "h2", text: "Trim or Grind?" },
+      {
+        type: "p",
+        html: 'Mobile groomers typically offer both a <a href="/services/nail-trim" class="text-brand hover:underline font-medium">Nail Trim</a> (clippers) and <a href="/services/nail-grinding" class="text-brand hover:underline font-medium">Nail Grinding</a> (a rotary tool that files the nail down). Grinding tends to leave smoother edges and lets the groomer work more gradually, which can mean less risk of cutting too close on dogs with long-overdue nails. Clippers are faster and quieter, which matters more for dogs who are anxious about vibration or noise. A good groomer will pick based on your dog\'s temperament rather than defaulting to one method for everyone.',
+      },
+      { type: "h2", text: "What to Do If You Nick the Quick" },
+      {
+        type: "p",
+        html: "It happens, even to experienced groomers, especially on dark nails where the quick isn't visible. It looks alarming, nails bleed more than the injury actually warrants, but it's rarely serious. Apply firm, steady pressure with a clean cloth or styptic powder (cornstarch works in a pinch) for a minute or two. Bleeding that doesn't slow down after several minutes, or any sign of infection in the days after, is worth a call to your vet.",
+      },
+      { type: "h2", text: "How Often Dogs Actually Need Nail Trims" },
+      {
+        type: "p",
+        html: "Most dogs need a trim every 3-4 weeks, though it depends on activity level. Dogs that walk mostly on pavement wear their nails down naturally faster than dogs that spend most of their time on grass or carpet. A simple test: if you can hear your dog's nails clicking on a hard floor when they walk normally, they're overdue.",
+      },
+      { type: "h2", text: "Book a Nail Trim" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/clayton-nc" class="text-brand hover:underline font-medium">Clayton</a>, <a href="/groomers/fuquay-varina-nc" class="text-brand hover:underline font-medium">Fuquay-Varina</a>, and <a href="/groomers/garner-nc" class="text-brand hover:underline font-medium">Garner</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
+  {
+    slug: "dog-ear-cleaning-humidity-infection-prevention",
+    title: "Dog Ear Cleaning: Why It Matters More in North Carolina's Humidity",
+    metaDescription:
+      "Floppy-eared breeds are especially prone to ear infections, and NC's humidity makes it worse. Here's what to watch for and how regular ear cleaning helps.",
+    excerpt:
+      "Humidity traps moisture in a dog's ear canal, and floppy ears block airflow even more. Here's why ear infections are so common in NC and how to prevent them.",
+    publishedAt: "2026-09-20",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/0/03/A_basset_hound_in_a_park_on_a_sunny_day.jpg",
+      alt: "A Basset Hound with long floppy ears sitting in a park",
+      width: 3840,
+      height: 5760,
+      author: "Brittbritt80053",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:A_basset_hound_in_a_park_on_a_sunny_day.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Ear infections are one of the most common reasons dogs end up at the vet, and North Carolina's climate doesn't do them any favors. Floppy-eared breeds like Cocker Spaniels, Basset Hounds, and Labradors are especially prone, and the state's long, humid stretches make the underlying problem worse than it would be in a drier climate.",
+      },
+      { type: "h2", text: "Why Humidity Makes Ear Infections More Likely" },
+      {
+        type: "p",
+        html: "A dog's ear canal is naturally warm and dark, which is already a decent environment for bacteria and yeast. Add humidity, and moisture that would otherwise evaporate quickly instead lingers in the canal after a bath, a swim, or just a muggy afternoon outside. Floppy ears make it worse by blocking airflow that would help the canal dry out on its own, which is exactly why breeds like Cocker Spaniels and Basset Hounds see ear infections so much more often than dogs with upright ears.",
+      },
+      { type: "h2", text: "Signs Your Dog's Ears Need Attention" },
+      {
+        type: "ul",
+        items: [
+          "Frequent head shaking or scratching at one or both ears",
+          "A noticeable odor coming from the ear",
+          "Redness, swelling, or visible discharge inside the ear",
+          "Sensitivity or flinching when the ear area is touched",
+        ],
+      },
+      {
+        type: "p",
+        html: "None of these are something to diagnose or treat yourself. If you notice any of them, a vet visit is the right next step. Regular ear cleaning is about prevention, not treating an active infection.",
+      },
+      { type: "h2", text: "What's Included in a Professional Ear Cleaning" },
+      {
+        type: "p",
+        html: 'A groomer offering <a href="/services/ear-cleaning" class="text-brand hover:underline font-medium">Ear Cleaning</a> typically uses a gentle, vet-approved solution and cotton, never a cotton swab pushed deep into the canal, which can pack debris further in rather than remove it. For breeds that grow hair inside the ear canal, like Poodles and some terriers, plucking excess hair as part of the service also helps improve airflow between visits.',
+      },
+      { type: "h2", text: "Helping Between Grooming Visits" },
+      {
+        type: "ul",
+        items: [
+          "Dry your dog's ears thoroughly after baths or swimming, gently patting rather than rubbing",
+          "Check ears periodically for odor or discharge, especially during NC's most humid months",
+          "Avoid over-cleaning. Too-frequent cleaning can irritate the ear canal just as much as neglecting it",
+        ],
+      },
+      { type: "h2", text: "Book an Ear Cleaning" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/youngsville-nc" class="text-brand hover:underline font-medium">Youngsville</a>, <a href="/groomers/zebulon-nc" class="text-brand hover:underline font-medium">Zebulon</a>, and <a href="/groomers/smithfield-nc" class="text-brand hover:underline font-medium">Smithfield</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
+  {
+    slug: "dog-dental-health-teeth-brushing-grooming-routine",
+    title: "Dog Dental Health: Why Teeth Brushing Belongs in Your Grooming Routine",
+    metaDescription:
+      "Most dogs show signs of dental disease by age 3. Here's why teeth brushing matters beyond bad breath, and how to build a routine between grooming visits.",
+    excerpt:
+      "Bad breath is usually the first sign of a much bigger problem. Most dogs show some dental disease by age 3, here's what to actually do about it.",
+    publishedAt: "2026-09-21",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/9/97/BeagleToothbrush.jpg",
+      alt: "A Beagle chewing on a dog toothbrush outdoors",
+      width: 2304,
+      height: 1728,
+      author: "Jrragan",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:BeagleToothbrush.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Dental disease is one of the most common health problems in dogs, and one of the most overlooked. Most dogs show some signs of it by age three, yet teeth brushing rarely makes it into a regular grooming routine the way baths and haircuts do. That gap matters more than most owners realize.",
+      },
+      { type: "h2", text: "Why Dental Health Matters Beyond Bad Breath" },
+      {
+        type: "p",
+        html: "Bad breath is usually the first sign owners notice, but it's rarely the actual problem. Left unaddressed, plaque hardens into tartar, which irritates and infects the gums. Beyond the pain and eventual tooth loss that can cause, the bacteria from advanced gum disease can enter the bloodstream and has been linked to strain on the heart, kidneys, and liver. It's a bigger deal than a haircut, even though it gets far less attention.",
+      },
+      { type: "h2", text: "What Professional Teeth Brushing During Grooming Actually Does" },
+      {
+        type: "p",
+        html: 'A <a href="/services/teeth-brushing" class="text-brand hover:underline font-medium">Teeth Brushing</a> add-on during a grooming visit isn\'t a substitute for regular veterinary dental care, but it helps knock back plaque before it hardens into tartar, and it gets your dog more comfortable with having their mouth handled, which makes home brushing easier too. Groomers use dog-safe enzymatic toothpaste designed to work on contact rather than relying on scrubbing alone.',
+      },
+      { type: "h2", text: "Signs of Dental Problems to Watch For" },
+      {
+        type: "ul",
+        items: [
+          "Persistent bad breath that doesn't improve with a bath or brushing",
+          "Yellow or brown buildup along the gumline",
+          "Red, swollen, or bleeding gums",
+          "Reluctance to chew, dropping food, or pawing at the mouth",
+        ],
+      },
+      {
+        type: "p",
+        html: "As with any health concern, these are signs to bring up with your vet, not something to diagnose or treat on your own. Regular brushing is about prevention, not fixing an active problem.",
+      },
+      { type: "h2", text: "Building a Home Routine Between Visits" },
+      {
+        type: "ul",
+        items: [
+          "Brush a few times a week if daily isn\'t realistic. Any consistent routine beats none",
+          "Only ever use toothpaste made for dogs. Human toothpaste often contains xylitol, which is toxic to dogs, along with foaming agents dogs shouldn\'t swallow",
+          "Dental chews and water additives can help between brushings, but they supplement a routine, they don\'t replace one",
+          "Start slow with a puppy or a dog new to brushing. A few seconds of positive handling around the mouth is more useful early on than trying to brush a full set of teeth on day one",
+        ],
+      },
+      { type: "h2", text: "Book a Grooming Visit with Teeth Brushing" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/wendell-nc" class="text-brand hover:underline font-medium">Wendell</a>, <a href="/groomers/rolesville-nc" class="text-brand hover:underline font-medium">Rolesville</a>, and <a href="/groomers/angier-nc" class="text-brand hover:underline font-medium">Angier</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
+  {
+    slug: "multi-pet-household-mobile-grooming-scheduling-guide",
+    title: "Grooming Multiple Dogs: How Mobile Grooming Handles Multi-Pet Households",
+    metaDescription:
+      "Two or three dogs shouldn't mean two or three separate salon trips. Here's how mobile grooming actually handles multi-pet households, and what to ask about pricing.",
+    excerpt:
+      "Multiple dogs usually means multiple grooming headaches. Here's how mobile grooming actually simplifies it, and what to ask before booking for more than one pet.",
+    publishedAt: "2026-09-22",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/1/1f/2_dogs_in_a_morning_forest.jpg",
+      alt: "Two dogs standing together outdoors in a sunlit forest",
+      width: 4896,
+      height: 3264,
+      author: "Stewart Black",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:2_dogs_in_a_morning_forest.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Multi-dog households are common across North Carolina, and grooming logistics get more complicated fast once you're past one pet. Coordinating two or three separate salon drop-offs, or trying to keep multiple dogs calm in a crowded waiting area, is exactly the kind of hassle mobile grooming was built to solve.",
+      },
+      { type: "h2", text: "Why Mobile Grooming Works Well for Multiple Pets" },
+      {
+        type: "p",
+        html: "One van visit can cover your whole household in a single afternoon instead of multiple separate trips. Dogs not currently being groomed can wait comfortably inside your own house rather than in a crate next to unfamiliar dogs, which tends to keep everyone calmer, including the dog whose turn it is.",
+      },
+      { type: "h2", text: "What to Ask About Multi-Pet Pricing" },
+      {
+        type: "ul",
+        items: [
+          "Some groomers offer a per-additional-pet discount for the same visit. Don't assume it's automatic, ask directly when you book",
+          "Pricing still scales with each dog's size, coat, and condition, so a discount on the second dog doesn't mean a flat rate across very different dogs",
+          "Confirm whether the quote covers the full visit or just the first pet, so there are no surprises when the appointment wraps up",
+        ],
+      },
+      { type: "h2", text: "Scheduling Tips for Multiple Dogs" },
+      {
+        type: "ul",
+        items: [
+          "Groom the calmer dog first when possible. It sets a relaxed tone that can make the next dog easier to handle",
+          "Keep dogs not currently being groomed in a separate room. Even well-behaved dogs get distracted watching a sibling get bathed",
+          "If one dog is notably more anxious, mention it upfront so the groomer can plan the order and pacing around it",
+        ],
+      },
+      { type: "h2", text: "Cats and Dogs in the Same Household" },
+      {
+        type: "p",
+        html: 'If your household includes both, keep them separated during the visit regardless of how well they normally get along. Our guide on <a href="/blog/mobile-cat-grooming-does-your-cat-need-it" class="text-brand hover:underline font-medium">mobile cat grooming</a> covers what a cat-specific appointment typically looks like, which tends to be a slower, gentler process than a dog\'s.',
+      },
+      { type: "h2", text: "Book for Your Whole Household" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/lillington-nc" class="text-brand hover:underline font-medium">Lillington</a>, <a href="/groomers/mebane-nc" class="text-brand hover:underline font-medium">Mebane</a>, and <a href="/groomers/thomasville-nc" class="text-brand hover:underline font-medium">Thomasville</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
+  {
+    slug: "what-happens-during-mobile-dog-grooming-appointment-walkthrough",
+    title: "What Happens During a Mobile Dog Grooming Appointment: A Step-by-Step Walkthrough",
+    metaDescription:
+      "Never booked a mobile groomer before? Here's exactly what happens from the moment the van pulls up to the final brush-out, step by step.",
+    excerpt:
+      "Not sure what actually happens when a mobile groomer shows up? Here's the full appointment, step by step, from arrival to the final brush-out.",
+    publishedAt: "2026-09-23",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/5/58/Chocolate_Lab.jpg",
+      alt: "A content chocolate Labrador with a clean, freshly groomed look",
+      width: 2904,
+      height: 1976,
+      author: "Dsw4",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Chocolate_Lab.jpg",
+      license: "Public domain",
+    },
+    content: [
+      {
+        type: "p",
+        html: "If you've never booked a mobile groomer before, the process can feel like a black box. Someone shows up in a van, takes your dog inside, and comes back out an hour or two later with a cleaner, fluffier dog. Here's what's actually happening in between.",
+      },
+      { type: "h2", text: "Arrival and Check-In" },
+      {
+        type: "p",
+        html: 'The groomer parks in your driveway, introduces themselves, and usually takes a few minutes to say hello to your dog before anything else happens. This is when they\'ll check in about your dog\'s coat condition, any health concerns, and the style you want. It\'s also your chance to bring up anything specific. Our guide on <a href="/blog/how-to-prepare-for-first-mobile-grooming-appointment" class="text-brand hover:underline font-medium">preparing for your first appointment</a> covers what to have ready.',
+      },
+      { type: "h2", text: "The Bath" },
+      {
+        type: "p",
+        html: "Most mobile grooming vans carry their own heated water supply and a tub or bathing station built into the vehicle. Your dog is bathed with shampoo chosen for their coat and skin type, then rinsed thoroughly. For dogs with matted or heavily tangled coats, the groomer may need to address that before the bath rather than after, since water tightens mats.",
+      },
+      { type: "h2", text: "Drying and Brushing" },
+      {
+        type: "p",
+        html: 'A high-velocity dryer blows most of the water out of the coat, and the groomer brushes out tangles and loose hair as they go. For shedding breeds, this is where a <a href="/services/de-shedding-treatment" class="text-brand hover:underline font-medium">de-shedding treatment</a> makes the biggest difference, since most of the loose undercoat comes out during the dry-and-brush stage.',
+      },
+      { type: "h2", text: "The Haircut and Finishing Touches" },
+      {
+        type: "ul",
+        items: [
+          "Clipping or scissoring to the style you agreed on at check-in",
+          "A nail trim or grind, plus any ear cleaning or sanitary trim included in your package",
+          "Any add-ons you booked, like teeth brushing",
+          "A final brush-out and, if you'd like, a finishing spray or bandana",
+        ],
+      },
+      { type: "h2", text: "Wrap-Up and Rebooking" },
+      {
+        type: "p",
+        html: 'Before leaving, a good groomer will walk you through anything they noticed, like skin irritation, a lump, or coat problems worth watching, and suggest a rebooking interval. Our guide on <a href="/blog/how-to-choose-a-trustworthy-mobile-dog-groomer-checklist" class="text-brand hover:underline font-medium">choosing a trustworthy mobile groomer</a> covers what a good visit should look like from start to finish.',
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/pittsboro-nc" class="text-brand hover:underline font-medium">Pittsboro</a>, <a href="/groomers/selma-nc" class="text-brand hover:underline font-medium">Selma</a>, and <a href="/groomers/high-point-nc" class="text-brand hover:underline font-medium">High Point</a> to book your first mobile appointment.',
+      },
+    ],
+  },
+  {
+    slug: "how-much-to-tip-a-mobile-dog-groomer",
+    title: "How Much Should You Tip a Mobile Dog Groomer?",
+    metaDescription:
+      "Tipping a mobile dog groomer isn't always obvious. Here's the common rule of thumb, when to tip more, and when a tip isn't expected at all.",
+    excerpt:
+      "Tipping a groomer who comes to your driveway raises questions the salon never did. Here's the common rule of thumb, and when to adjust it.",
+    publishedAt: "2026-09-24",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/f/f0/A_cute_Maltese_dog.jpg",
+      alt: "A freshly groomed white Maltese dog raising a paw",
+      width: 4256,
+      height: 2828,
+      author: "Ed Yourdon",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:A_cute_Maltese_dog.jpg",
+      license: "CC BY-SA 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Tipping is one of those questions nobody thinks about until the groomer is standing in your driveway waiting to be paid. There's no official rule, and mobile grooming adds a wrinkle: many mobile groomers are owner-operators, and owners don't always expect tips the way an employee at a salon might. Here's how to think about it.",
+      },
+      { type: "h2", text: "The Common Rule of Thumb" },
+      {
+        type: "p",
+        html: "A commonly cited guideline for pet groomers is somewhere around 15 to 20 percent of the service total, similar to other personal-care services. Treat that as a starting point rather than a requirement. Some groomers build their pricing to cover their time fully and don't count on tips, while others rely on them more. When in doubt, it's perfectly fine to ask when you book.",
+      },
+      { type: "h2", text: "When It Makes Sense to Tip More" },
+      {
+        type: "ul",
+        items: [
+          "Your dog was difficult, anxious, or heavily matted and the groomer handled it with patience. Our guide on <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> covers why these appointments take more skill and time",
+          "The groomer squeezed you in on short notice or worked around a tricky schedule",
+          "The result was noticeably above what you expected, or the groomer noticed and flagged something about your dog's health",
+          "It's the holiday season, when many people tip a little extra for personal services",
+        ],
+      },
+      { type: "h2", text: "When a Tip Isn't Expected" },
+      {
+        type: "p",
+        html: "If the groomer owns the business, a tip is a kind gesture rather than an obligation. Some owner-operators say so directly, and it's fine to take them at their word. A good review and a referral to a friend are often just as appreciated, and cost you nothing.",
+      },
+      { type: "h2", text: "Ways to Thank Your Groomer Beyond Cash" },
+      {
+        type: "ul",
+        items: [
+          "Leave a specific, positive online review mentioning what went well",
+          "Recommend them to friends and neighbors",
+          "Keep a regular rebooking schedule, which helps a small business plan its week",
+          "Be ready on time, with your dog leashed and any concerns noted ahead of the visit. Our <a href=\"/blog/how-to-prepare-for-first-mobile-grooming-appointment\" class=\"text-brand hover:underline font-medium\">first appointment prep guide</a> covers how",
+        ],
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/burlington-nc" class="text-brand hover:underline font-medium">Burlington</a>, <a href="/groomers/graham-nc" class="text-brand hover:underline font-medium">Graham</a>, and <a href="/groomers/hillsborough-nc" class="text-brand hover:underline font-medium">Hillsborough</a> to find a mobile groomer near you.',
       },
     ],
   },

@@ -4,6 +4,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllBlogPosts, getBlogPostBySlug, type ContentBlock } from "@/lib/blog";
 import { SITE_NAME } from "@/lib/constants";
+import { SITE_URL } from "@/lib/site";
+import { getRelatedPosts } from "@/lib/guides";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -52,6 +55,8 @@ export default async function BlogPostPage({ params }: PageProps) {
   const post = getBlogPostBySlug(slug);
   if (!post) notFound();
 
+  const related = getRelatedPosts(post.slug, 3);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -61,7 +66,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     image: post.heroImage.src,
     author: { "@type": "Organization", name: SITE_NAME },
     publisher: { "@type": "Organization", name: SITE_NAME },
-    mainEntityOfPage: `https://mobilepetgroomnc.com/blog/${post.slug}`,
+    mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
   };
 
   return (
@@ -71,9 +76,13 @@ export default async function BlogPostPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <Link href="/blog" className="text-sm font-medium text-brand hover:underline">
-        ← Back to blog
-      </Link>
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Guides", href: "/guides" },
+          { name: post.title, href: `/blog/${post.slug}` },
+        ]}
+      />
 
       <h1 className="mt-4 text-3xl font-extrabold text-foreground sm:text-4xl">{post.title}</h1>
       <time dateTime={post.publishedAt} className="mt-2 block text-sm text-muted">
@@ -109,6 +118,27 @@ export default async function BlogPostPage({ params }: PageProps) {
           <Block key={i} block={block} />
         ))}
       </article>
+
+      {related.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-bold text-foreground">Related Guides</h2>
+          <ul className="mt-4 space-y-3">
+            {related.map((p) => (
+              <li key={p.slug}>
+                <Link href={`/blog/${p.slug}`} className="font-semibold text-brand hover:underline">
+                  {p.title}
+                </Link>
+                <p className="text-sm text-foreground/70">{p.excerpt}</p>
+              </li>
+            ))}
+            <li>
+              <Link href="/guides" className="font-semibold text-brand hover:underline">
+                Browse all mobile grooming guides →
+              </Link>
+            </li>
+          </ul>
+        </section>
+      )}
 
       <div className="mt-10 rounded-2xl border border-dashed border-[var(--color-border)] p-6 text-center">
         <p className="text-sm text-foreground/70">

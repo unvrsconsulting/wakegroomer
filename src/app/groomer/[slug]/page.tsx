@@ -3,7 +3,10 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { cookies } from "next/headers";
-import { getGroomerBySlug } from "@/lib/listings";
+import { getGroomerBySlug, searchGroomers, getAllCities } from "@/lib/listings";
+import { nearbyCities } from "@/lib/geo";
+import { getGuidesForServices } from "@/lib/guides";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { getPendingClaimForGroomer } from "@/lib/claims";
 import { logGroomerView, getGroomerAnalytics } from "@/lib/analytics";
 import { ADMIN_COOKIE, isValidSessionToken } from "@/lib/adminAuth";
@@ -79,6 +82,25 @@ export default async function GroomerProfile({ params }: PageProps) {
   const hasContactInfo = groomer.phone || groomer.email || groomer.owner_name;
   const analytics = isAdmin ? await getGroomerAnalytics(groomer.id, 30) : null;
 
+  const [cityGroomersAll, allCities] = await Promise.all([
+    searchGroomers({ city: groomer.city }),
+    getAllCities(),
+  ]);
+  const moreInCity = cityGroomersAll.filter((g) => g.id !== groomer.id).slice(0, 4);
+  const nearby = nearbyCities(groomer.city, allCities, 4);
+  const guides = getGuidesForServices(groomer.services, 3);
+  const cityLower = groomer.city.toLowerCase();
+  const otherAreas = groomer.neighborhoods.filter((n) => n.toLowerCase() !== cityLower);
+  const glance = [
+    `${groomer.business_name} provides mobile dog grooming in ${groomer.city}, NC ${groomer.zip}. The groomer comes to you, so there's no shop drop-off.`,
+    groomer.services.length ? `Listed services: ${groomer.services.join(", ")}.` : "",
+    otherAreas.length ? `Also serves ${otherAreas.join(", ")}.` : "",
+    groomer.years_experience ? `${groomer.years_experience} years in business.` : "",
+    groomer.review_count > 0 ? `Public rating: ${groomer.rating.toFixed(1)} from ${groomer.review_count} reviews.` : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
     <>
       {isAdmin && analytics && (
@@ -96,9 +118,13 @@ export default async function GroomerProfile({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        <Link href="/" className="text-sm font-medium text-brand hover:underline">
-          ← Back to directory
-        </Link>
+        <Breadcrumbs
+          items={[
+            { name: "Home", href: "/" },
+            { name: `${groomer.city}, NC`, href: `/groomers/${citySlug(groomer.city)}` },
+            { name: groomer.business_name, href: `/groomer/${groomer.slug}` },
+          ]}
+        />
 
       <div className="card-shadow mt-6 overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)]">
         <div className="relative h-40 w-full bg-brand-light sm:h-52">
@@ -320,6 +346,68 @@ export default async function GroomerProfile({ params }: PageProps) {
           </p>
         </div>
       </div>
+
+      <section className="mt-10">
+        <h2 className="text-lg font-bold text-foreground">About {groomer.business_name}</h2>
+        <p className="mt-2 max-w-3xl text-foreground/80">{glance}</p>
+      </section>
+
+      {moreInCity.length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-lg font-bold text-foreground">
+            More Mobile Groomers in {groomer.city}
+          </h2>
+          <ul className="mt-3 space-y-2">
+            {moreInCity.map((g) => (
+              <li key={g.id}>
+                <Link href={`/groomer/${g.slug}`} className="font-medium text-brand hover:underline">
+                  {g.business_name}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link
+                href={`/groomers/${citySlug(groomer.city)}`}
+                className="font-medium text-brand hover:underline"
+              >
+                All groomers in {groomer.city} →
+              </Link>
+            </li>
+          </ul>
+        </section>
+      )}
+
+      {nearby.length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-lg font-bold text-foreground">Groomers in Nearby Cities</h2>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {nearby.map((n) => (
+              <Link
+                key={n.city}
+                href={`/groomers/${citySlug(n.city)}`}
+                className="rounded-full border border-[var(--color-border)] px-3 py-1.5 text-sm text-foreground/80 hover:border-brand hover:text-brand"
+              >
+                {n.city}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {guides.length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-lg font-bold text-foreground">Helpful Guides</h2>
+          <ul className="mt-3 space-y-2">
+            {guides.map((p) => (
+              <li key={p.slug}>
+                <Link href={`/blog/${p.slug}`} className="font-medium text-brand hover:underline">
+                  {p.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       </div>
     </>
   );

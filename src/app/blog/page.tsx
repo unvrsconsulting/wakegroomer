@@ -17,7 +17,10 @@ export default function BlogIndexPage() {
     <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <h1 className="text-3xl font-extrabold text-foreground sm:text-4xl">Dog Grooming Blog</h1>
       <p className="mt-3 max-w-2xl text-foreground/70">
-        Local guides and practical tips for mobile dog grooming across North Carolina.
+        Local guides and practical tips for mobile dog grooming across North Carolina.{" "}
+        <Link href="/guides" className="font-semibold text-brand hover:underline">
+          Browse guides by topic →
+        </Link>
       </p>
 
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

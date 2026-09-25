@@ -17,6 +17,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${siteUrl}/search`, changeFrequency: "daily", priority: 0.9 },
     { url: `${siteUrl}/list-your-business`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${siteUrl}/blog`, changeFrequency: "weekly", priority: 0.6 },
+    { url: `${siteUrl}/guides`, changeFrequency: "weekly", priority: 0.8 },
   ];
 
   const blogRoutes: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
@@ -33,8 +34,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  const latestByCity = new Map<string, string>();
+  groomers.forEach((g) => {
+    const stamp = String(g.claimed_at ?? g.created_at);
+    const prev = latestByCity.get(g.city);
+    if (!prev || stamp > prev) latestByCity.set(g.city, stamp);
+  });
+
   const cityRoutes: MetadataRoute.Sitemap = cities.map((city) => ({
     url: `${siteUrl}/groomers/${citySlug(city)}`,
+    lastModified: latestByCity.get(city),
     changeFrequency: "weekly",
     priority: 0.8,
   }));

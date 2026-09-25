@@ -1,5 +1,19 @@
 import { CITY_COORDS } from "./constants";
 
+export function nearbyCities(
+  city: string,
+  availableCities: string[],
+  limit = 4
+): { city: string; miles: number }[] {
+  const origin = CITY_COORDS[city];
+  if (!origin) return [];
+  return availableCities
+    .filter((c) => c !== city && CITY_COORDS[c])
+    .map((c) => ({ city: c, miles: haversineMiles(origin, CITY_COORDS[c]) }))
+    .sort((a, b) => a.miles - b.miles)
+    .slice(0, limit);
+}
+
 function haversineMiles(a: [number, number], b: [number, number]): number {
   const R = 3958.8; // miles
   const [lat1, lon1] = a;

@@ -1,10 +1,20 @@
 import Link from "next/link";
-import { SITE_NAME } from "@/lib/constants";
-import { citySlug } from "@/lib/slugs";
+import { SITE_NAME, SERVICE_AREA_CITIES } from "@/lib/constants";
+import { citySlug, serviceSlug } from "@/lib/slugs";
+import { getAllCities, getServiceCounts } from "@/lib/listings";
 
-const FOOTER_CITIES = ["Raleigh", "Durham", "Chapel Hill", "Cary", "Greensboro", "Apex"];
+async function loadFooterLinks(): Promise<{ cities: string[]; services: string[] }> {
+  try {
+    const [cities, serviceCounts] = await Promise.all([getAllCities(), getServiceCounts()]);
+    return { cities, services: serviceCounts.map((s) => s.service) };
+  } catch {
+    return { cities: SERVICE_AREA_CITIES.slice(0, 12), services: [] };
+  }
+}
 
-export default function Footer() {
+export default async function Footer() {
+  const { cities, services } = await loadFooterLinks();
+
   return (
     <footer className="border-t border-[var(--color-border)] bg-[var(--color-surface)]">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -23,15 +33,15 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-foreground">Cities</h3>
+            <h3 className="text-sm font-semibold text-foreground">Services</h3>
             <ul className="mt-3 space-y-2">
-              {FOOTER_CITIES.map((city) => (
-                <li key={city}>
+              {services.map((service) => (
+                <li key={service}>
                   <Link
-                    href={`/groomers/${citySlug(city)}`}
+                    href={`/services/${serviceSlug(service)}`}
                     className="text-sm text-muted hover:text-brand"
                   >
-                    {city}
+                    {service}
                   </Link>
                 </li>
               ))}
@@ -44,6 +54,11 @@ export default function Footer() {
               <li>
                 <Link href="/search" className="text-sm text-muted hover:text-brand">
                   Search Groomers
+                </Link>
+              </li>
+              <li>
+                <Link href="/guides" className="text-sm text-muted hover:text-brand">
+                  Mobile Grooming Guides
                 </Link>
               </li>
               <li>
@@ -69,6 +84,22 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+        </div>
+
+        <div className="mt-10 border-t border-[var(--color-border)] pt-6">
+          <h3 className="text-sm font-semibold text-foreground">Mobile Dog Groomers by City</h3>
+          <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+            {cities.map((city) => (
+              <li key={city}>
+                <Link
+                  href={`/groomers/${citySlug(city)}`}
+                  className="text-sm text-muted hover:text-brand"
+                >
+                  {city}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="mt-10 flex flex-col gap-3 border-t border-[var(--color-border)] pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">

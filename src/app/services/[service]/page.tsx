@@ -1,10 +1,16 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { searchGroomers, getServiceCounts, getAllCities } from "@/lib/listings";
+import { searchGroomers, getServiceCounts } from "@/lib/listings";
 import { serviceSlug, serviceFromSlug, citySlug } from "@/lib/slugs";
 import { SITE_NAME } from "@/lib/constants";
 import GroomerCard from "@/components/GroomerCard";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { SERVICE_INFO } from "@/lib/serviceInfo";
+import { getGuideForService, getDefaultGuides } from "@/lib/guides";
+import { SITE_URL } from "@/lib/site";
+
+export const revalidate = 3600;
 
 type PageProps = {
   params: Promise<{ service: string }>;
@@ -46,18 +52,23 @@ export default async function ServicePage({ params }: PageProps) {
 
   const groomers = await searchGroomers({ service });
   const citiesForService = Array.from(new Set(groomers.map((g) => g.city))).sort();
+  const info = SERVICE_INFO[service];
+  const mainGuide = getGuideForService(service);
+  const guides = [mainGuide, ...getDefaultGuides(3)].filter(
+    (p, i, arr): p is NonNullable<typeof p> => Boolean(p) && arr.findIndex((q) => q?.slug === p?.slug) === i
+  ).slice(0, 3);
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: `${service} | Mobile Dog Groomers in NC`,
-    url: `https://mobilepetgroomnc.com/services/${serviceSlugParam}`,
+    url: `${SITE_URL}/services/${serviceSlugParam}`,
     mainEntity: {
       "@type": "ItemList",
       itemListElement: groomers.map((g, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `https://mobilepetgroomnc.com/groomer/${g.slug}`,
+        url: `${SITE_URL}/groomer/${g.slug}`,
         name: g.business_name,
       })),
     },
@@ -70,9 +81,13 @@ export default async function ServicePage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <Link href="/search" className="text-sm font-medium text-brand hover:underline">
-        ← Browse all groomers
-      </Link>
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Find a Groomer", href: "/search" },
+          { name: service, href: `/services/${serviceSlugParam}` },
+        ]}
+      />
 
       <h1 className="mt-4 text-3xl font-extrabold text-foreground sm:text-4xl">
         {service} Mobile Dog Groomers in NC
@@ -82,6 +97,8 @@ export default async function ServicePage({ params }: PageProps) {
         Carolina offer {service.toLowerCase()}. Every listing on {SITE_NAME} is a real
         business. No shop drop-off required, they come to you.
       </p>
+
+      {info && <p className="mt-3 max-w-3xl text-foreground/80">{info}</p>}
 
       {citiesForService.length > 0 && (
         <div className="mt-6 flex flex-wrap gap-2">
@@ -102,6 +119,21 @@ export default async function ServicePage({ params }: PageProps) {
           <GroomerCard key={g.id} groomer={g} />
         ))}
       </div>
+
+      {guides.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-bold text-foreground">Helpful Guides</h2>
+          <ul className="mt-4 space-y-2">
+            {guides.map((p) => (
+              <li key={p.slug}>
+                <Link href={`/blog/${p.slug}`} className="font-medium text-brand hover:underline">
+                  {p.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <div className="mt-10 rounded-2xl border border-dashed border-[var(--color-border)] p-6 text-center">
         <p className="text-sm text-foreground/70">
