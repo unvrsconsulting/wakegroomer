@@ -1123,6 +1123,81 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-brush-your-dog-between-grooming-appointments",
+    title: "How to Brush Your Dog at Home Between Grooming Appointments",
+    metaDescription:
+      "The right brush depends on your dog's coat. Learn which tools suit which coats, how to brush without causing mats, and how home brushing fits with mobile grooming.",
+    excerpt:
+      "A few minutes of brushing a week can be the difference between a quick tidy-up and a full de-matting. Here's how to match the tool to the coat and brush the right way.",
+    publishedAt: "2026-09-25",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Australian_Shepherd_Portrait.jpg",
+      alt: "An Australian Shepherd with a long, feathered coat looking at the camera",
+      width: 2048,
+      height: 1369,
+      author: "Thcipriani",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Australian_Shepherd_Portrait.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "A professional groom every four to eight weeks does a lot, but it can't do everything on its own. What happens in the weeks between appointments decides how easy the next one is. Regular brushing keeps loose hair out of your house, keeps the coat from tangling, and gives you a chance to notice lumps, skin irritation, or ticks early. Here's how to do it well.",
+      },
+      { type: "h2", text: "Match the Brush to the Coat" },
+      {
+        type: "p",
+        html: "There's no single best brush. The right tool depends on coat length and texture, and the wrong one can either miss the problem or irritate the skin. These are the general pairings groomers commonly recommend:",
+      },
+      {
+        type: "ul",
+        items: [
+          "<strong>Short, smooth coats (Labs, Beagles, Boxers):</strong> a rubber curry brush or grooming mitt loosens dead hair and spreads skin oils",
+          "<strong>Long or feathered coats (Aussies, Goldens, Setters):</strong> a pin brush for the surface, then a metal comb to check that it reaches the skin",
+          "<strong>Double coats (Huskies, Shepherds, Corgis):</strong> an undercoat rake or a slicker brush to pull out loose undercoat, especially during shedding season",
+          "<strong>Curly or wavy coats (Poodles, doodles, Bichons):</strong> a slicker brush followed by a comb, because curls hide tangles close to the skin",
+          "<strong>Wiry coats (many terriers):</strong> a slicker brush or stripping comb, used gently",
+        ],
+      },
+      { type: "h2", text: "Brush Down to the Skin, Not Just the Top" },
+      {
+        type: "p",
+        html: "The most common mistake is brushing only the top layer. The coat can look smooth while a tangle forms underneath, usually where hair rubs: behind the ears, under the collar or harness, in the armpits, and along the back legs. Use the line-brushing method: hold the hair up with one hand, brush a thin layer down from the skin, then move to the next layer. Finish by running a comb through. If the comb catches, there's still a tangle to work out.",
+      },
+      { type: "h2", text: "How Often to Brush" },
+      {
+        type: "p",
+        html: "Short-coated dogs may only need a weekly pass. Long, curly, and double-coated dogs generally do better with brushing several times a week, and daily during heavy shedding. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers how coat type changes the schedule, and our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">double-coated dogs in North Carolina's humidity</a> explains why shedding season needs extra attention.",
+      },
+      { type: "h2", text: "Tips for a Dog Who Doesn't Like It" },
+      {
+        type: "ul",
+        items: [
+          "Start with very short sessions, a minute or two, and end before your dog gets restless",
+          "Use treats and praise so brushing becomes something to look forward to",
+          "Try a soft brush or a mitt first, and build up to the tool you actually need",
+          "Brush after a walk or play session, when your dog is calmer",
+          "Never yank through a tangle. Work it apart with your fingers or a comb from the tip inward",
+        ],
+      },
+      { type: "h2", text: "What Not to Do With a Mat" },
+      {
+        type: "p",
+        html: "Brushing a tight mat can hurt, and it often just packs the tangle down harder. Bathing a matted coat can also tighten mats as the hair swells. If you find one that won't loosen with gentle work, stop and have a groomer look at it. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">when shaving a matted dog is necessary</a> explains the options and why removing a severe mat is sometimes the kindest choice.",
+      },
+      { type: "h2", text: "How Home Brushing Fits With Mobile Grooming" },
+      {
+        type: "p",
+        html: "A dog who is brushed regularly is easier to groom, and that often means a shorter, more comfortable appointment. Many mobile groomers are happy to show you which tools suit your dog's coat and how to use them, so it's worth asking at your next visit. If you want to know what a full visit involves, see our <a href=\"/blog/what-happens-during-mobile-dog-grooming-appointment-walkthrough\" class=\"text-brand hover:underline font-medium\">step-by-step walkthrough of a mobile grooming appointment</a>.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

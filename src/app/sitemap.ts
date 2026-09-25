@@ -34,16 +34,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  const latestByCity = new Map<string, string>();
+  const latestByCity = new Map<string, number>();
   groomers.forEach((g) => {
-    const stamp = String(g.claimed_at ?? g.created_at);
+    const t = new Date(g.claimed_at ?? g.created_at).getTime();
+    if (Number.isNaN(t)) return;
     const prev = latestByCity.get(g.city);
-    if (!prev || stamp > prev) latestByCity.set(g.city, stamp);
+    if (prev === undefined || t > prev) latestByCity.set(g.city, t);
   });
 
   const cityRoutes: MetadataRoute.Sitemap = cities.map((city) => ({
     url: `${siteUrl}/groomers/${citySlug(city)}`,
-    lastModified: latestByCity.get(city),
+    lastModified: latestByCity.has(city) ? new Date(latestByCity.get(city)!).toISOString() : undefined,
     changeFrequency: "weekly",
     priority: 0.8,
   }));

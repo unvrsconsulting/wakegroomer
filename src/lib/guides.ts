@@ -39,6 +39,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "grooming-double-coated-dogs-nc-humidity-shedding-season",
       "doodle-poodle-mix-grooming-guide-different-coat-routine",
       "matted-dog-fur-when-shaving-is-necessary",
+      "how-to-brush-your-dog-between-grooming-appointments",
     ],
   },
   {
