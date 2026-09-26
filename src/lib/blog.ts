@@ -1198,6 +1198,89 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-often-should-you-bathe-your-dog",
+    title: "How Often Should You Bathe Your Dog? A Guide by Coat and Lifestyle",
+    metaDescription:
+      "There's no single bathing schedule for every dog. Learn how coat type, activity, and skin affect how often to bathe your dog, and the signs you're overdoing it.",
+    excerpt:
+      "Bathing too rarely leaves dirt and odor behind, and bathing too often can dry out the skin. Here's how to find the right rhythm for your dog's coat and lifestyle.",
+    publishedAt: "2026-09-26",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Cute_bath_dog.jpg",
+      alt: "A small brown dog standing wet in a bathtub and looking up at the camera",
+      width: 4032,
+      height: 3024,
+      author: "Kjeldgaardcameron",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cute_bath_dog.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Ask five dog owners how often they bathe their dogs and you'll get five different answers, from every week to a couple of times a year. The truth is that the right schedule depends on the dog. Here's how to work out what fits yours, and how bathing fits alongside brushing and professional grooming.",
+      },
+      { type: "h2", text: "A General Starting Point" },
+      {
+        type: "p",
+        html: "A commonly cited rule of thumb is a bath roughly every four to eight weeks for many healthy dogs, though that range is a guideline rather than a rule. Dogs with oily coats, dogs who roll in things, and dogs with certain skin conditions may need more. Others do fine with less. If your dog has a skin condition, ask your veterinarian before setting a schedule, since some conditions call for specific shampoos and timing.",
+      },
+      { type: "h2", text: "How Coat Type Changes the Answer" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Short, smooth coats:</strong> often need bathing only when dirty or smelly, since the coat doesn't trap much",
+          "<strong>Double coats:</strong> bathe less often, but a bath followed by a thorough blow-out can help release loose undercoat. See our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">grooming double-coated dogs in North Carolina</a>",
+          "<strong>Curly and doodle coats:</strong> usually bathed on a regular grooming cycle, but always brushed out first, because water tightens tangles. Our <a href=\"/blog/doodle-poodle-mix-grooming-guide-different-coat-routine\" class=\"text-brand hover:underline font-medium\">doodle grooming guide</a> explains why",
+          "<strong>Long or silky coats:</strong> typically need more frequent baths and conditioning to keep hair from tangling and picking up debris",
+        ],
+      },
+      { type: "h2", text: "Lifestyle Matters as Much as Coat" },
+      {
+        type: "p",
+        html: "A dog who swims in a pond, digs in red clay, or hikes muddy trails gets dirtier faster than a mostly indoor dog. In North Carolina, humid summers and clay soil can both shorten the time between baths. After a muddy day or a swim, a rinse is often enough, with a full shampoo saved for when the dog actually needs one.",
+      },
+      { type: "h2", text: "Signs You Might Be Bathing Too Often" },
+      {
+        type: "ul",
+        items: [
+          "Dry, flaky skin or a dull coat",
+          "More scratching than usual after baths",
+          "Red or irritated patches of skin",
+          "A coat that feels harsh or brittle",
+        ],
+      },
+      {
+        type: "p",
+        html: "Frequent shampooing can strip the natural oils that protect skin. If you see these signs, stretch the time between baths, use a gentle shampoo made for dogs, and talk to your vet if the irritation doesn't clear up.",
+      },
+      { type: "h2", text: "Signs Your Dog Is Due" },
+      {
+        type: "ul",
+        items: [
+          "A noticeable odor that returns quickly after brushing",
+          "Visible dirt, or a greasy feel to the coat",
+          "Hair that looks clumped or dull",
+          "Your dog was in something you'd rather not describe",
+        ],
+      },
+      { type: "h2", text: "Brush First, Then Bathe" },
+      {
+        type: "p",
+        html: "Whatever your schedule, brush before the bath. Water and shampoo can lock in tangles and turn small knots into tight mats. Our guide to <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing your dog between grooming appointments</a> covers the tools, and our article on <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur and when shaving is necessary</a> explains what happens when a coat is bathed with mats still in it. Ears also need care around bath time, so see our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a>.",
+      },
+      { type: "h2", text: "Where Professional Grooming Fits In" },
+      {
+        type: "p",
+        html: "For many owners, a regular mobile groom replaces most home baths. The groomer bathes, dries, and brushes the coat properly, and you can top up at home with a rinse when needed. See our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> to plan how often to book.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/apex-nc" class="text-brand hover:underline font-medium">Apex</a>, and <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

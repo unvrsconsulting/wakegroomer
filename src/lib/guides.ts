@@ -40,6 +40,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "doodle-poodle-mix-grooming-guide-different-coat-routine",
       "matted-dog-fur-when-shaving-is-necessary",
       "how-to-brush-your-dog-between-grooming-appointments",
+      "how-often-should-you-bathe-your-dog",
     ],
   },
   {
