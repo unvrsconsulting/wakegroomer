@@ -194,23 +194,13 @@ export default async function Home() {
                   />
                   <div className="relative aspect-square w-full overflow-hidden bg-brand-light">
                     {photo && (
-                      <>
-                        <Image
-                          src={photo.src}
-                          alt={`Happy ${service === "Cat Grooming" ? "cat" : "dog"}`}
-                          fill
-                          sizes="(min-width: 1024px) 20vw, (min-width: 640px) 33vw, 50vw"
-                          className="object-cover transition duration-300 group-hover:scale-105"
-                        />
-                        <Link
-                          href={`/photo-credits#service-${serviceSlug(service)}`}
-                          aria-label="Photo credit"
-                          title="Photo credit"
-                          className="relative z-10 absolute bottom-1 right-1 flex h-5 w-5 items-center justify-center rounded-full bg-black/50 text-[11px] font-semibold text-white/90 hover:bg-black/70"
-                        >
-                          i
-                        </Link>
-                      </>
+                      <Image
+                        src={photo.src}
+                        alt={`Happy ${service === "Cat Grooming" ? "cat" : "dog"}`}
+                        fill
+                        sizes="(min-width: 1024px) 20vw, (min-width: 640px) 33vw, 50vw"
+                        className="object-cover transition duration-300 group-hover:scale-105"
+                      />
                     )}
                   </div>
                   <div className="relative z-10 pointer-events-none p-4">

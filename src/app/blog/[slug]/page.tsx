@@ -103,14 +103,6 @@ export default async function BlogPostPage({ params }: PageProps) {
           className="object-cover"
           priority
         />
-        <Link
-          href={`/photo-credits#blog-${post.slug}`}
-          aria-label="Photo credit"
-          title="Photo credit"
-          className="absolute bottom-2 right-2 flex h-5 w-5 items-center justify-center rounded-full bg-black/50 text-[11px] font-semibold text-white/90 hover:bg-black/70"
-        >
-          i
-        </Link>
       </div>
 
       <article className="mt-8">

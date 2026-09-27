@@ -133,23 +133,13 @@ export default async function GroomerProfile({ params }: PageProps) {
             const isCatGroomer = groomer.services.includes("Cat Grooming");
             return (
               photo && (
-                <>
-                  <Image
-                    src={photo.src}
-                    alt={`Happy ${isCatGroomer ? "cat" : "dog"}`}
-                    fill
-                    sizes="(min-width: 1024px) 1024px, 100vw"
-                    className="object-cover"
-                  />
-                  <Link
-                    href={`/photo-credits#groomer-${groomer.slug}`}
-                    aria-label="Photo credit"
-                    title="Photo credit"
-                    className="absolute bottom-2 right-2 flex h-5 w-5 items-center justify-center rounded-full bg-black/50 text-[11px] font-semibold text-white/90 hover:bg-black/70"
-                  >
-                    i
-                  </Link>
-                </>
+                <Image
+                  src={photo.src}
+                  alt={`Happy ${isCatGroomer ? "cat" : "dog"}`}
+                  fill
+                  sizes="(min-width: 1024px) 1024px, 100vw"
+                  className="object-cover"
+                />
               )
             );
           })()}
