@@ -41,6 +41,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "matted-dog-fur-when-shaving-is-necessary",
       "how-to-brush-your-dog-between-grooming-appointments",
       "how-often-should-you-bathe-your-dog",
+      "dog-anal-gland-expression-what-to-know",
     ],
   },
   {

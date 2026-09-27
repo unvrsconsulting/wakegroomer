@@ -1281,6 +1281,71 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "dog-anal-gland-expression-what-to-know",
+    title: "Dog Anal Gland Expression: What It Is and Does Your Dog Need It",
+    metaDescription:
+      "Anal gland expression sounds unpleasant, but it's a routine part of grooming for many dogs. Learn what the glands do, the signs of a problem, and how often it's needed.",
+    excerpt:
+      "It's not the most glamorous topic in dog care, but ignoring it can lead to real discomfort for your dog. Here's what anal glands do and how to tell if yours needs help.",
+    publishedAt: "2026-09-27",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/d/de/Smooth_Dachshund_red_and_tan_portrait.jpg",
+      alt: "Close-up portrait of a smooth-coated Dachshund with long ears in warm sunlight",
+      width: 2352,
+      height: 1960,
+      author: "Raven Underwood",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Smooth_Dachshund_red_and_tan_portrait.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Anal glands aren't a fun topic, but they matter. Every dog has two small glands on either side of the anus that release a distinct-smelling fluid, normally in small amounts whenever your dog has a bowel movement. For most dogs this happens naturally and nobody ever thinks about it. For others, the glands don't empty well on their own, and that's when problems start.",
+      },
+      { type: "h2", text: "What the Glands Are For" },
+      {
+        type: "p",
+        html: "The fluid these glands produce carries scent information dogs use to identify each other, which is part of why dogs sniff each other the way they do. In a healthy dog, normal bowel movements apply enough pressure to empty the glands on their own. Some dogs, though, especially small breeds, overweight dogs, and dogs with softer stools, don't empty them fully through normal activity.",
+      },
+      { type: "h2", text: "Signs Your Dog's Glands Need Attention" },
+      {
+        type: "ul",
+        items: [
+          "Scooting, or dragging their rear end along the ground or carpet",
+          "Excessive licking or biting at the base of the tail",
+          "A strong, fishy odor that doesn't go away with a bath",
+          "Visible discomfort when sitting, or a reluctance to sit",
+          "Swelling or redness near the tail base, which can signal an impacted or infected gland and needs a veterinarian, not a groomer",
+        ],
+      },
+      { type: "h2", text: "Who's More Likely to Need Help" },
+      {
+        type: "p",
+        html: "Small and toy breeds are commonly affected, along with dogs that are overweight or have consistently soft stool. Diet plays a role too. A vet can advise on whether more fiber would help your dog's glands empty more naturally. Plenty of dogs never need manual expression at all, so there's no need to add it to a routine your dog doesn't need.",
+      },
+      { type: "h2", text: "Who Handles Expression" },
+      {
+        type: "p",
+        html: "Many groomers offer external gland expression as an add-on during a regular grooming appointment, done from outside the body. It's a routine service for groomers who offer it, similar to a nail trim. If your dog shows signs of an impacted, infected, or abscessed gland, that's a veterinary matter, since it may need internal treatment or medication that's outside what a groomer provides. When in doubt, or if signs don't improve after a routine expression, see your vet.",
+      },
+      { type: "h2", text: "Should You Do It Yourself?" },
+      {
+        type: "p",
+        html: "It's technically possible to learn, but it's easy to do incorrectly, cause pain, or push fluid the wrong direction, so most owners leave it to a professional. If your dog needs frequent expression, ask your groomer or vet to show you what a normal, healthy gland feels like versus a full one, so you know what to watch for between visits.",
+      },
+      { type: "h2", text: "How This Fits Into a Grooming Routine" },
+      {
+        type: "p",
+        html: "If your dog is prone to gland issues, it's worth mentioning at every grooming appointment rather than waiting for scooting to show up. It pairs naturally with the rest of a routine visit. Our guides to <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">how often to groom by breed</a> and <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">how often to bathe your dog</a> cover the rest of a typical schedule, and our <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a> covers another small but easy-to-overlook part of routine care.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/chapel-hill-nc" class="text-brand hover:underline font-medium">Chapel Hill</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
