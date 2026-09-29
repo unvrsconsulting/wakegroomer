@@ -16,6 +16,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "what-happens-during-mobile-dog-grooming-appointment-walkthrough",
       "how-to-prepare-for-first-mobile-grooming-appointment",
       "mobile-dog-grooming-vs-salon-which-is-right",
+      "mobile-dog-grooming-apartment-no-driveway",
       "puppys-first-grooming-appointment-when-to-start",
     ],
   },

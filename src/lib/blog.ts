@@ -1346,6 +1346,84 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "mobile-dog-grooming-apartment-no-driveway",
+    title: "Can a Mobile Dog Groomer Come to an Apartment or a Home Without a Driveway?",
+    metaDescription:
+      "Live in an apartment, condo, or a home with no driveway? Here's what a mobile dog groomer typically needs, what to check with your landlord or HOA, and how to make booking easy.",
+    excerpt:
+      "No driveway doesn't automatically rule out mobile grooming. Here's what groomers usually need at your address, and what to sort out before booking.",
+    publishedAt: "2026-09-28",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/7/76/Bernese_Mountain_Dog_side_profile.jpg",
+      alt: "A Bernese Mountain Dog standing on grass beside a chain-link fence with its tongue out",
+      width: 2980,
+      height: 1995,
+      author: "Prof helix",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Bernese_Mountain_Dog_side_profile.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "One of the first questions people ask before booking a mobile groomer is whether it will work at their address. If you rent an apartment, own a condo, or live on a street with no driveway, it's natural to wonder where a grooming van or trailer would even go. The short answer is that it often works, but the details depend on the groomer and on your property's parking rules.",
+      },
+      { type: "h2", text: "What a Mobile Groomer Usually Needs" },
+      {
+        type: "p",
+        html: "Setups vary from one business to the next, so treat this as a general picture and confirm with your groomer. Most mobile groomers work from a van or trailer, and many are self-contained, meaning they carry their own water and power. Others may ask for access to an outlet or a hose. The one thing nearly every mobile groomer needs is a legal place to park close to your door for the length of the appointment.",
+      },
+      {
+        type: "ul",
+        items: [
+          "A legal parking spot near your home, on the street, in a lot, or in a driveway",
+          "Enough room for the vehicle, which is larger than a typical car",
+          "A short, safe walk between your door and the vehicle for your dog",
+          "In some cases, access to power or water, if the groomer's setup requires it. Ask when you book",
+        ],
+      },
+      { type: "h2", text: "Apartments and Condos" },
+      {
+        type: "p",
+        html: "In a complex, the main question is parking. Some communities have guest parking, visitor permits, or gated entrances, and some restrict commercial vehicles. Before booking, it helps to check three things: where a visitor can legally park, whether the groomer needs a gate code or a visitor pass, and how far the parking area is from your door. Let the groomer know about stairs, elevators, and the walking distance so they can plan around it.",
+      },
+      { type: "h2", text: "Homes With No Driveway" },
+      {
+        type: "p",
+        html: "If you live on a street with no driveway, the groomer can often park at the curb in front of your home, as long as it's legal and there's room. Give them clear instructions, such as which side of the street is open and any time limits or permit rules. On busy streets, a quick message the day before about where parking tends to be available can save time.",
+      },
+      { type: "h2", text: "HOAs and Neighborhood Rules" },
+      {
+        type: "p",
+        html: "Some homeowner associations limit commercial vehicles or parking on the street. Rules differ widely, so it's worth checking yours if you're unsure. A service visit that lasts an hour or two is different from a vehicle parked overnight, but only your HOA can say how it applies. If there's a rule that could be a problem, ask the association before the appointment rather than during it.",
+      },
+      { type: "h2", text: "Rural Properties and Long Driveways" },
+      {
+        type: "p",
+        html: "The opposite problem comes up on rural properties: gravel roads, soft ground after rain, steep or narrow driveways, or tight turning room. If any of that applies to you, mention it when you book so the groomer can decide where to park safely. North Carolina clay can get slick after a storm, so it's worth planning for that too.",
+      },
+      { type: "h2", text: "How to Make Booking Easy" },
+      {
+        type: "ul",
+        items: [
+          "Give the full address and exact parking instructions when you book",
+          "Share any gate code, visitor pass rules, or building access details ahead of time",
+          "Be ready at the door with your dog leashed so the appointment starts on time",
+          "Mention stairs, long walks, or anything that could affect getting your dog to the vehicle",
+        ],
+      },
+      { type: "h2", text: "What Happens Once You're Set Up" },
+      {
+        type: "p",
+        html: "Once parking is sorted, the appointment itself is the same wherever you live. Our <a href=\"/blog/what-happens-during-mobile-dog-grooming-appointment-walkthrough\" class=\"text-brand hover:underline font-medium\">step-by-step walkthrough of a mobile grooming appointment</a> covers what to expect, and our <a href=\"/blog/how-to-prepare-for-first-mobile-grooming-appointment\" class=\"text-brand hover:underline font-medium\">first appointment prep guide</a> covers how to get ready. If you're still weighing your options, see <a href=\"/blog/mobile-dog-grooming-vs-salon-which-is-right\" class=\"text-brand hover:underline font-medium\">mobile grooming versus a salon</a>.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, and <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
