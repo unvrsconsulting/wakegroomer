@@ -1424,6 +1424,78 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "does-my-dog-need-vaccinations-before-mobile-grooming",
+    title: "Does My Dog Need to Be Vaccinated Before a Mobile Grooming Appointment?",
+    metaDescription:
+      "Most groomers ask about vaccination status before a first appointment. Here's why it matters, what's commonly requested, and how to prepare for booking.",
+    excerpt:
+      "It's a common question before a first booking: does my dog need shots before the groomer comes? Here's why it comes up and what to have ready.",
+    publishedAt: "2026-09-30",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Beagle_puppy_Cadet_2.jpg",
+      alt: "A young Beagle puppy looking up at the camera with an open, happy expression",
+      width: 533,
+      height: 543,
+      author: "Soccersmp",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Beagle_puppy_Cadet_2.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "If this is your first time booking a mobile groomer, you may be asked about your dog's vaccination status before the appointment is confirmed. It's a reasonable question, and knowing why it's asked, and what's typically expected, makes booking faster and less stressful for everyone.",
+      },
+      { type: "h2", text: "Why Groomers Ask" },
+      {
+        type: "p",
+        html: "A mobile groomer works closely with your dog, often in an enclosed van or trailer, and may handle several dogs from different households in a single day. Confirming vaccination status is a common-sense precaution that protects your dog, the groomer, and every other dog on the schedule that day. Policies vary by business, so what's requested at one groomer may differ slightly from another.",
+      },
+      { type: "h2", text: "What's Commonly Requested" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Rabies vaccination:</strong> often required by state or local law regardless of grooming, and commonly the first thing a groomer will ask about",
+          "<strong>Bordetella (kennel cough):</strong> frequently requested by groomers and boarding facilities, since dogs are sometimes in shared spaces or close quarters",
+          "<strong>General up-to-date core vaccines:</strong> many groomers ask that a dog be current on their vet's recommended schedule",
+        ],
+      },
+      {
+        type: "p",
+        html: "This isn't a complete or universal list, and requirements differ by groomer and sometimes by state or county law. Your veterinarian is the right source for what your dog actually needs and when, based on age, health, and lifestyle. When in doubt, ask the groomer directly what they require before you book.",
+      },
+      { type: "h2", text: "What to Have Ready" },
+      {
+        type: "ul",
+        items: [
+          "Your dog's vaccination records, or the name of your veterinary clinic if the groomer wants to verify directly",
+          "The date of the most recent rabies vaccination",
+          "Any known health conditions, allergies, or medications, since a groomer may adjust their approach around these",
+          "Whether your dog is a puppy, and if so, where they are in their vaccination series. See our <a href=\"/blog/puppys-first-grooming-appointment-when-to-start\" class=\"text-brand hover:underline font-medium\">puppy grooming guide</a> for how age affects timing",
+        ],
+      },
+      { type: "h2", text: "What If My Dog Isn't Fully Vaccinated Yet?" },
+      {
+        type: "p",
+        html: "Puppies are usually still completing their vaccination series when owners first start thinking about grooming. Many groomers have their own policy for younger puppies, from waiting until certain vaccines are done to taking extra precautions during the visit. This is worth asking about directly when you book, rather than assuming either way.",
+      },
+      { type: "h2", text: "Health Conditions Are Worth Mentioning Too" },
+      {
+        type: "p",
+        html: "Vaccination status is only part of the picture. If your dog has a skin condition, anxiety, mobility issues, or a history of reacting poorly to handling, telling the groomer ahead of time helps them prepare. Our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> covers how groomers commonly adjust for dogs who need extra patience.",
+      },
+      { type: "h2", text: "Getting Ready for the Appointment" },
+      {
+        type: "p",
+        html: "Once vaccination and health details are sorted, the rest of preparation is straightforward. Our <a href=\"/blog/how-to-prepare-for-first-mobile-grooming-appointment\" class=\"text-brand hover:underline font-medium\">first appointment prep guide</a> covers what else to have ready, and our <a href=\"/blog/what-happens-during-mobile-dog-grooming-appointment-walkthrough\" class=\"text-brand hover:underline font-medium\">appointment walkthrough</a> covers what to expect once the groomer arrives.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, and <a href="/groomers/wake-forest-nc" class="text-brand hover:underline font-medium">Wake Forest</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
