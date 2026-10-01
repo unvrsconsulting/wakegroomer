@@ -1560,6 +1560,147 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "golden-retriever-grooming-guide",
+    title: "Golden Retriever Grooming Guide: Coat Care, Shedding, and What to Expect",
+    metaDescription:
+      "Golden Retrievers have a dense double coat that sheds year-round and heavily twice a year. Here's how to manage it, what a groomer does, and how NC humidity factors in.",
+    excerpt:
+      "That gorgeous Golden Retriever coat takes real upkeep. Here's what the double coat needs, how shedding season works, and what a groomer typically does for the breed.",
+    publishedAt: "2026-10-02",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/1/12/4_years_old_Golden_Retriever.JPG",
+      alt: "A Golden Retriever sitting in a garden, showing its full feathered double coat",
+      width: 1918,
+      height: 1296,
+      author: "BKP",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:4_years_old_Golden_Retriever.JPG",
+      license: "CC BY-SA 3.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Golden Retrievers are bred to carry a dense, water-resistant double coat, and that coat is a big part of what makes the breed look the way it does. It's also real work to maintain. Left alone, it sheds constantly, mats in the feathering behind the ears and legs, and gets noticeably heavier twice a year. Here's what actually goes into keeping a Golden's coat healthy.",
+      },
+      { type: "h2", text: "Understanding the Double Coat" },
+      {
+        type: "p",
+        html: "A Golden Retriever's coat has two layers: a coarser, water-repellent outer coat and a soft, dense undercoat that insulates. The undercoat is the one that sheds heavily, especially during seasonal coat blows in spring and fall. The two layers mean a Golden needs different tools than a single-coated breed, and brushing only the surface misses most of the problem.",
+      },
+      { type: "h2", text: "The Right Tools and Technique" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Undercoat rake or slicker brush:</strong> reaches down to pull loose undercoat out rather than just smoothing the top layer",
+          "<strong>Metal comb:</strong> useful for checking the feathering behind the ears, on the chest, and on the back of the legs, where mats tend to start",
+          "<strong>Line brushing:</strong> working in small sections from the skin outward catches tangles a quick surface brush misses. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique in more detail",
+        ],
+      },
+      { type: "h2", text: "Shedding Season: What to Expect" },
+      {
+        type: "p",
+        html: "Most Golden Retrievers shed year-round at a low level and then substantially more during two seasonal coat blows, typically as the weather changes in spring and fall. During these stretches, more frequent brushing and a de-shedding treatment at grooming appointments can make a real difference in how much hair ends up in the house. See our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">grooming double-coated dogs in North Carolina</a> for how the state's humidity affects the timing.",
+      },
+      { type: "h2", text: "Bathing Without Weighing Down the Coat" },
+      {
+        type: "p",
+        html: "Goldens don't typically need frequent baths, but when they do get one, a thorough rinse and a full dry matter more than people expect. Leaving a damp undercoat can trap moisture against the skin, which in NC's humidity can contribute to skin irritation and a musty odor. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers general timing by coat type.",
+      },
+      { type: "h2", text: "Ears, Which Need Extra Attention" },
+      {
+        type: "p",
+        html: "A Golden Retriever's floppy, well-furred ears limit airflow, which can make them more prone to moisture buildup and ear infections than breeds with upright ears. Regular ear checks and cleaning are worth building into the routine. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to watch for.",
+      },
+      { type: "h2", text: "What a Groomer Typically Does" },
+      {
+        type: "p",
+        html: "A standard groom for a Golden Retriever usually includes a bath, a thorough blow-dry and brush-out to release loose undercoat, a sanitary trim, nail care, and ear cleaning. Most groomers avoid shaving a Golden's coat except in rare medical cases, since the double coat regulates temperature and protects skin, and shaving it can cause the regrowth to come in unevenly. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">when shaving is actually necessary</a> covers the exceptions.",
+      },
+      { type: "h2", text: "A Simple Maintenance Rhythm" },
+      {
+        type: "ul",
+        items: [
+          "Brush two to three times a week most of the year, more often during seasonal coat blows",
+          "Check ears weekly, more often after swimming",
+          "Book a professional groom with a de-shedding treatment every 6-8 weeks, adjusted for shedding season",
+          "Trim nails regularly between grooms if they're audibly clicking on hard floors",
+        ],
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
+  {
+    slug: "dachshund-grooming-guide",
+    title: "Dachshund Grooming Guide: Coat Types, Back Health, and What to Expect",
+    metaDescription:
+      "Dachshunds come in smooth, wirehaired, and longhaired coats, each with different grooming needs. Here's how to care for each, plus handling tips for their long backs.",
+    excerpt:
+      "Smooth, wirehaired, or longhaired, a Dachshund's grooming needs depend heavily on which coat type you have. Here's how each is different, and what to know about handling.",
+    publishedAt: "2026-10-02",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Longhaired_Dachshund_portrait.jpg",
+      alt: "Close-up portrait of a longhaired Dachshund resting its chin on a book",
+      width: 1024,
+      height: 782,
+      author: "Dan Bennett",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Longhaired_Dachshund_portrait.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Dachshunds come in three distinct coat types, and that one detail changes almost everything about how to groom one. A smooth Dachshund needs very little coat care, while a wirehaired or longhaired Dachshund needs a real routine. Add in their famously long back, and there's a bit more to know about this breed than its size suggests.",
+      },
+      { type: "h2", text: "Smooth Coat" },
+      {
+        type: "p",
+        html: "The smooth coat is short, shiny, and low-maintenance. A weekly wipe-down with a rubber curry brush or grooming mitt removes loose hair and keeps the coat glossy. Smooth Dachshunds don't need haircuts, but they can still get cold easily given their short coat and small size, which is more of a comfort note than a grooming one.",
+      },
+      { type: "h2", text: "Wirehaired Coat" },
+      {
+        type: "p",
+        html: "The wirehaired coat is dense, harsh-textured, and benefits from regular brushing to prevent matting, particularly around the beard and eyebrows. Some owners have this coat type hand-stripped periodically, a technique that removes dead hair and maintains the wiry texture, rather than clipped. Not every groomer offers hand-stripping, so it's worth asking specifically if you want that look maintained.",
+      },
+      { type: "h2", text: "Longhaired Coat" },
+      {
+        type: "p",
+        html: "The longhaired coat is the one that needs the most attention. Feathering on the ears, chest, legs, and tail can mat if not brushed regularly, especially behind the ears and in the armpits. A metal comb is useful for checking that brushing is reaching the skin and not just smoothing the surface. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the line-brushing technique that works well for feathered coats.",
+      },
+      { type: "h2", text: "Ear Care Across All Three Types" },
+      {
+        type: "p",
+        html: "All Dachshunds have long, floppy ears regardless of coat type, which limits airflow and can make them more prone to wax buildup and infection. Regular ear checks are worth doing across the board. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to look for.",
+      },
+      { type: "h2", text: "Handling a Long Back" },
+      {
+        type: "p",
+        html: "Dachshunds are prone to back problems because of their long spine and short legs, and this is worth mentioning to your groomer, especially if your dog has had any back issues. A groomer experienced with the breed typically supports a Dachshund's body carefully during handling, avoiding unnecessary jumping or being held in a way that strains the back. If your dog has a known back condition, let the groomer know before the appointment starts.",
+      },
+      { type: "h2", text: "Nails Matter More Than They Look" },
+      {
+        type: "p",
+        html: "Because Dachshunds are low to the ground, long nails can affect how their feet and legs sit when standing or walking, adding strain to a frame that's already long relative to its legs. Regular nail trims are a small thing that's easy to stay on top of. Our <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a> covers how often that should happen.",
+      },
+      { type: "h2", text: "A Simple Routine by Coat Type" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Smooth:</strong> weekly wipe-down, occasional bath, routine nail and ear care",
+          "<strong>Wirehaired:</strong> regular brushing, periodic hand-stripping or trimming, routine nail and ear care",
+          "<strong>Longhaired:</strong> brushing several times a week with attention to feathering, routine nail and ear care",
+        ],
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, <a href="/groomers/apex-nc" class="text-brand hover:underline font-medium">Apex</a>, and <a href="/groomers/chapel-hill-nc" class="text-brand hover:underline font-medium">Chapel Hill</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
