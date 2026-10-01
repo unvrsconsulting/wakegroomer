@@ -1496,6 +1496,70 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "dog-paw-care-why-groomers-trim-fur-between-toes",
+    title: "Dog Paw Care: Why Groomers Trim the Fur Between Your Dog's Toes",
+    metaDescription:
+      "Trimming the fur around a dog's paw pads is a small grooming step with a real purpose: traction, less debris buildup, and fewer mats between the toes.",
+    excerpt:
+      "It's an easy part of grooming to overlook, but the fur around your dog's paw pads affects traction, debris buildup, and comfort. Here's why groomers trim it.",
+    publishedAt: "2026-10-01",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/0/08/Border_collie_running_down_the_beach_at_low_tide.jpg",
+      alt: "A black and white Border Collie running along the shoreline",
+      width: 640,
+      height: 640,
+      author: "Kyknoord",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Border_collie_running_down_the_beach_at_low_tide.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "A dog's paws do a lot of work. They cover pavement, trails, grass, and gravel, and they're one of the few parts of the body that's in near-constant contact with whatever's underneath. Paw care is an easy detail to overlook in a grooming routine, but it's one that affects comfort and traction more than people expect.",
+      },
+      { type: "h2", text: "Why Fur Grows Between the Pads" },
+      {
+        type: "p",
+        html: "Many dogs, especially breeds with thicker or longer coats, grow fur between and around their paw pads. In small amounts this is normal, but when it gets long it can hide what's actually touching the ground and start causing problems the owner doesn't immediately notice.",
+      },
+      { type: "h2", text: "What Overgrown Paw Fur Can Cause" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Less traction:</strong> fur between the pads can make hardwood floors, tile, and smooth surfaces slicker for a dog to walk on",
+          "<strong>Matting:</strong> dirt, grass seeds, and moisture collect in the fur and tangle, sometimes tight enough to be uncomfortable. See our <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">guide to matted fur</a> for how matting develops",
+          "<strong>Ice and debris buildup in cold weather:</strong> longer paw fur holds onto snow, ice, and salt more than a trimmed paw does",
+          "<strong>Hidden irritation:</strong> overgrown fur can mask redness, cracked pads, or something stuck between the toes until it's already bothering the dog",
+        ],
+      },
+      { type: "h2", text: "Signs Your Dog's Paws Could Use Attention" },
+      {
+        type: "ul",
+        items: [
+          "Slipping or sliding on smooth floors more than usual",
+          "Visibly long fur poking out between the toes or pads",
+          "Licking or chewing at the paws",
+          "Small mats or clumps visible when you check between the toes",
+        ],
+      },
+      { type: "h2", text: "How It's Usually Handled" },
+      {
+        type: "p",
+        html: "Paw trimming is typically a quick part of a regular groom rather than a separate appointment. A groomer trims the fur flush with the pad using scissors or clippers, which takes just a minute or two per paw. It's gentle when done carefully, and most dogs tolerate it well once they're used to having their paws handled.",
+      },
+      { type: "h2", text: "Checking Paws Between Grooms" },
+      {
+        type: "p",
+        html: "Between appointments, it's worth glancing at your dog's paws every so often, especially after muddy walks or icy weather. A quick check for stuck debris, small mats, or cracked pads can catch a problem early. This pairs naturally with the rest of a home routine. Our guide to <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing between grooming appointments</a> and our <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a> cover the rest of what deserves regular attention.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, <a href="/groomers/apex-nc" class="text-brand hover:underline font-medium">Apex</a>, and <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

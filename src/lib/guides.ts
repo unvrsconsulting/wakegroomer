@@ -54,6 +54,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "dog-nail-trims-why-they-matter-nick-the-quick",
       "dog-ear-cleaning-humidity-infection-prevention",
       "dog-dental-health-teeth-brushing-grooming-routine",
+      "dog-paw-care-why-groomers-trim-fur-between-toes",
     ],
   },
   {
