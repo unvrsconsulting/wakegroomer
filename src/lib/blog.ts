@@ -1701,6 +1701,86 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cairn-terrier-grooming-guide",
+    title: "Cairn Terrier Grooming Guide: Hand-Stripping, Coat Care, and What to Expect",
+    metaDescription:
+      "Cairn Terriers have a harsh double coat that's often hand-stripped rather than clipped. Learn how the coat works, how to maintain it, and what to ask a groomer.",
+    excerpt:
+      "That scruffy Cairn Terrier look is the result of a specific coat type. Here's how hand-stripping compares to clipping, and how to keep the coat in shape between grooms.",
+    publishedAt: "2026-10-02",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Cairn_Terrier_portrait.jpg",
+      alt: "Portrait of a Cairn Terrier with a shaggy, harsh-textured coat and upright ears",
+      width: 1600,
+      height: 1600,
+      author: "John",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cairn_Terrier_portrait.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "The Cairn Terrier's shaggy, slightly untidy look isn't an accident. It comes from a specific double coat that's different from the soft, fluffy coat many people picture on a small dog. That coat is also why Cairn owners often ask about hand-stripping, a technique many groomers don't offer. Here's how the coat works and what your options are.",
+      },
+      { type: "h2", text: "How a Cairn Terrier's Coat Works" },
+      {
+        type: "p",
+        html: "Cairn Terriers have two layers: a harsh, weather-resistant outer coat and a soft undercoat beneath it. The outer coat is the one that gives the breed its rugged texture, and it was originally bred to protect the dog while working in rough, damp terrain. Compared with many breeds, Cairns are generally described as low-shedding, but the dead outer hair still needs to come out somehow.",
+      },
+      { type: "h2", text: "Hand-Stripping vs. Clipping" },
+      {
+        type: "p",
+        html: "There are two common ways to keep a Cairn's coat tidy, and they produce different results.",
+      },
+      {
+        type: "ul",
+        items: [
+          "<strong>Hand-stripping:</strong> a groomer pulls out dead outer hair by hand or with a stripping tool. It's commonly preferred for keeping the coat's harsh texture and natural color, and it's the traditional method for the breed. It takes skill and time, and not every groomer offers it",
+          "<strong>Clipping:</strong> clippers cut the coat to a shorter, tidier length. It's faster and widely available, but clipping tends to soften the outer coat over time and can change its color and texture, which some owners are happy with and others aren't",
+        ],
+      },
+      {
+        type: "p",
+        html: "Neither is wrong. Pet owners often choose based on lifestyle, budget, and how much they care about preserving the traditional coat. If hand-stripping matters to you, ask a groomer directly whether they offer it before you book, since this is a specialized skill.",
+      },
+      { type: "h2", text: "Brushing Between Grooms" },
+      {
+        type: "p",
+        html: "Even a well-kept Cairn coat can tangle, especially in the longer hair on the legs, beard, and eyebrows. A slicker brush and a metal comb are the usual tools, and brushing a few times a week keeps small tangles from becoming mats. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers technique, and our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains what happens when tangles get ahead of you.",
+      },
+      { type: "h2", text: "Bathing Without Softening the Coat" },
+      {
+        type: "p",
+        html: "Over-bathing can strip natural oils and soften a harsh coat. Cairns generally don't need frequent baths unless they've gotten into something, so it's worth keeping the schedule modest. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers how coat type affects the right rhythm.",
+      },
+      { type: "h2", text: "Ears, Eyes, and Face" },
+      {
+        type: "p",
+        html: "A Cairn's upright ears get better airflow than a floppy-eared breed's, but hair around the ears and eyes still collects debris. A quick tidy of the hair around the eyes and a regular ear check are good habits. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to look for.",
+      },
+      { type: "h2", text: "Nails and Paws" },
+      {
+        type: "p",
+        html: "Like any terrier that loves to dig and run, a Cairn benefits from regular nail trims and a check of the fur between the paw pads. See our guides on <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trims</a> and <a href=\"/blog/dog-paw-care-why-groomers-trim-fur-between-toes\" class=\"text-brand hover:underline font-medium\">paw care</a> for the basics.",
+      },
+      { type: "h2", text: "What to Ask a Groomer" },
+      {
+        type: "ul",
+        items: [
+          "Do you offer hand-stripping, or only clipping?",
+          "What coat length and style do you recommend for my dog's lifestyle?",
+          "How often should I book to keep the coat in shape?",
+          "Do you do a tidy of the face, feet, and sanitary areas as part of a standard groom?",
+        ],
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/morrisville-nc" class="text-brand hover:underline font-medium">Morrisville</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

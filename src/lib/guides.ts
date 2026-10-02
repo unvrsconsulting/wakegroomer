@@ -43,6 +43,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "matted-dog-fur-when-shaving-is-necessary",
       "golden-retriever-grooming-guide",
       "dachshund-grooming-guide",
+      "cairn-terrier-grooming-guide",
       "how-to-brush-your-dog-between-grooming-appointments",
       "how-often-should-you-bathe-your-dog",
       "dog-anal-gland-expression-what-to-know",
