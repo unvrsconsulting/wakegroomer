@@ -1781,6 +1781,93 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "poodle-grooming-guide",
+    title: "Poodle Grooming Guide: Coat Care, Clip Styles, and How Often to Book",
+    metaDescription:
+      "Poodles have a curly, continuously growing coat that needs regular professional grooming. Learn how the coat works, common clip styles, and how to keep it from matting.",
+    excerpt:
+      "A Poodle's curly coat doesn't shed much, but it never stops growing and it mats quickly. Here's how the coat works, what clip styles are common, and how to stay ahead of tangles.",
+    publishedAt: "2026-10-05",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Miniature_poodle.jpg",
+      alt: "A groomed apricot Miniature Poodle lying down with a rounded topknot and fluffy leg and tail pom-poms",
+      width: 3947,
+      height: 2652,
+      author: "Boxerista96",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Miniature_poodle.jpg",
+      license: "CC BY 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Poodles are known for being low-shedding, which is a big part of their appeal. But low-shedding doesn't mean low-maintenance. A Poodle's dense, curly coat grows continuously, and the hair that does fall out tends to stay trapped in the curls instead of drifting onto your floor. That's why Poodles generally need regular professional grooming and consistent brushing at home.",
+      },
+      { type: "h2", text: "Three Sizes, One Coat Type" },
+      {
+        type: "p",
+        html: "Poodles come in Toy, Miniature, and Standard sizes. The coat is the same type across all three, so the care principles are the same, but size affects handling, how long a groom takes, and how much coat there is to maintain. A Standard Poodle has much more hair to brush through than a Toy.",
+      },
+      { type: "h2", text: "Why Poodle Coats Mat" },
+      {
+        type: "p",
+        html: "Tight curls and constantly growing hair create plenty of places for tangles to start, especially behind the ears, under the legs, around the collar, and along the tail. Because shed hair gets caught in the curls rather than falling out, a Poodle can look fine on the surface while a mat builds underneath. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur and when shaving is necessary</a> explains what happens when that goes too long.",
+      },
+      { type: "h2", text: "Common Clip Styles" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Short all-over pet clip:</strong> a trimmed, even length across the body that's easy to maintain and popular for everyday pets",
+          "<strong>Styled pet cuts:</strong> a longer, rounded topknot and ears with trimmed body and legs, sometimes with leg and tail pom-poms, for a more classic Poodle look",
+          "<strong>Traditional show clips:</strong> styles such as the Continental and English Saddle are mainly seen in the show ring and take significant upkeep",
+        ],
+      },
+      {
+        type: "p",
+        html: "Most pet Poodles do best with a pet-friendly clip that matches how much brushing the owner is realistically able to do. A longer, more styled coat looks great but needs more frequent care, so it's worth being honest with your groomer about your routine.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "Many Poodle owners book a professional groom every four to six weeks, which is the same general range we cover in our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a>. A shorter clip can stretch toward the longer end of that range, while a longer styled coat usually needs the shorter end.",
+      },
+      { type: "h2", text: "Brushing at Home" },
+      {
+        type: "p",
+        html: "A slicker brush followed by a metal comb is the usual combination for a Poodle. Brush in sections down to the skin, and use the comb to check that you've reached the base of the coat. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique, and several brushing sessions a week are common for longer coats.",
+      },
+      { type: "h2", text: "Bathing and Drying" },
+      {
+        type: "p",
+        html: "Always brush a Poodle before the bath, since water can tighten tangles. A thorough dry afterward matters just as much, because a damp curly coat can trap moisture against the skin. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing by coat type.",
+      },
+      { type: "h2", text: "Ears, Face, and Tear Staining" },
+      {
+        type: "p",
+        html: "Poodles can grow hair inside the ear canal, and some groomers remove excess hair as part of a groom. Opinions on how much to remove vary, so it's worth following your veterinarian's advice if your dog is prone to ear problems. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to watch for. Poodles, especially light-colored ones, can also develop tear staining around the eyes, and keeping the face trimmed and clean helps.",
+      },
+      { type: "h2", text: "Poodle or Poodle Mix?" },
+      {
+        type: "p",
+        html: "If you have a Poodle mix rather than a purebred, the coat can behave differently. Our <a href=\"/blog/doodle-poodle-mix-grooming-guide-different-coat-routine\" class=\"text-brand hover:underline font-medium\">doodle and poodle mix guide</a> covers how those coats differ and why the routine isn't always the same.",
+      },
+      { type: "h2", text: "What to Ask a Groomer" },
+      {
+        type: "ul",
+        items: [
+          "What clip would you recommend for my dog's lifestyle and my brushing routine?",
+          "How often should I book to keep the coat from matting?",
+          "How do you handle ear hair and face trimming?",
+          "Is there a different approach for a puppy's first grooms?",
+        ],
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

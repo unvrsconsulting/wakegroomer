@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
     root: path.join(__dirname),
   },
   images: {
+    loader: "custom",
+    loaderFile: "./src/lib/wikimediaLoader.ts",
     remotePatterns: [
       {
         protocol: "https",

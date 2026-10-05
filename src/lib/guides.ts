@@ -44,6 +44,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "golden-retriever-grooming-guide",
       "dachshund-grooming-guide",
       "cairn-terrier-grooming-guide",
+      "poodle-grooming-guide",
       "how-to-brush-your-dog-between-grooming-appointments",
       "how-often-should-you-bathe-your-dog",
       "dog-anal-gland-expression-what-to-know",
