@@ -1868,6 +1868,88 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "shih-tzu-grooming-guide",
+    title: "Shih Tzu Grooming Guide: Coat Care, Face and Eye Care, and Popular Cuts",
+    metaDescription:
+      "Shih Tzus have a long, silky coat that tangles easily, plus a flat face that needs regular cleaning. Here's how to care for the coat, face, and eyes, and which cuts are common.",
+    excerpt:
+      "A Shih Tzu's flowing coat looks effortless, but it takes consistent upkeep. Here's how to handle the coat, the face and eyes, and which cuts keep things manageable.",
+    publishedAt: "2026-10-06",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Shih_tzu_running.jpg",
+      alt: "A black and white Shih Tzu running across a lawn with its long coat flowing",
+      width: 5184,
+      height: 3456,
+      author: "SpanishSnake",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Shih_tzu_running.jpg",
+      license: "CC0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Shih Tzus were bred as companions, and their long, silky coat is a big part of their look. It's also one of the higher-maintenance coats among small dogs. Left unbrushed, it tangles quickly, and the flat face and prominent eyes add a few care steps that other breeds don't need. Here's how to keep a Shih Tzu comfortable and tidy.",
+      },
+      { type: "h2", text: "A Long Coat That Tangles Easily" },
+      {
+        type: "p",
+        html: "A Shih Tzu has a long, flowing outer coat over a softer undercoat. They're generally considered low-shedding, but, like Poodles, the loose hair tends to stay in the coat, which is how mats form. The most common trouble spots are behind the ears, under the legs, around the collar or harness, and in the beard.",
+      },
+      { type: "h2", text: "Brushing at Home" },
+      {
+        type: "p",
+        html: "Many Shih Tzu owners brush several times a week, and daily if the coat is kept long. A pin brush and a metal comb are the usual tools. Brush in sections down to the skin and use the comb to confirm there are no tangles left underneath. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique, and our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains what happens when tangles get ahead of you.",
+      },
+      { type: "h2", text: "Popular Cuts" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Puppy or teddy-bear cut:</strong> the coat is trimmed to an even, shorter length all over, with a rounded face. It's a popular choice because it's far easier to maintain",
+          "<strong>Longer show-style coat:</strong> the full-length, flowing coat, often with a topknot tied up out of the eyes. It looks striking but takes daily upkeep",
+          "<strong>Short summer trim:</strong> a shorter cut that many owners choose for warmer months, since flat-faced dogs can be more sensitive to heat",
+        ],
+      },
+      {
+        type: "p",
+        html: "Most pet Shih Tzus are happiest, and easiest to care for, in a shorter cut that matches how much time the owner has to brush. Be honest with your groomer about your routine when choosing a style.",
+      },
+      { type: "h2", text: "Face and Eye Care" },
+      {
+        type: "p",
+        html: "The Shih Tzu's flat face and large, slightly prominent eyes make this one of the breeds where daily face care is worth building into the routine. Hair around the eyes can irritate them, so many owners keep it tied up or trimmed short. Light-colored Shih Tzus can show tear staining, and gently wiping the corners of the eyes helps keep the area clean. If you notice redness, squinting, or heavy discharge, check with your veterinarian rather than assuming it's just staining.",
+      },
+      { type: "h2", text: "Beard, Wrinkles, and Mouth" },
+      {
+        type: "p",
+        html: "A Shih Tzu's beard picks up food and water, and the folds around the muzzle can hold moisture. A quick wipe after meals helps keep skin healthy. Small breeds are also prone to dental buildup, so our <a href=\"/blog/dog-dental-health-teeth-brushing-grooming-routine\" class=\"text-brand hover:underline font-medium\">dental care guide</a> is worth a read.",
+      },
+      { type: "h2", text: "Ears" },
+      {
+        type: "p",
+        html: "Shih Tzus have long, hair-covered drop ears that limit airflow. Check them regularly and keep the hair around the opening tidy. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to watch for, especially in North Carolina's humid months.",
+      },
+      { type: "h2", text: "Bathing and Drying" },
+      {
+        type: "p",
+        html: "Always brush out tangles before the bath, since water can tighten them. A thorough dry afterward matters, particularly for a dense coat and a flat-faced breed. Many groomers keep drying heat gentle for flat-faced dogs, so mention it if your dog gets uncomfortable. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing, and our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers how often to book a professional groom.",
+      },
+      { type: "h2", text: "What to Ask a Groomer" },
+      {
+        type: "ul",
+        items: [
+          "What cut would you recommend for my dog's coat and my brushing routine?",
+          "How do you handle drying for a flat-faced breed?",
+          "Do you trim around the eyes and clean the face as part of a standard groom?",
+          "How often should I book to keep the coat from matting?",
+        ],
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, and <a href="/groomers/morrisville-nc" class="text-brand hover:underline font-medium">Morrisville</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
