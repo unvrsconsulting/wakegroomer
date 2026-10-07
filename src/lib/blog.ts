@@ -1950,6 +1950,88 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "siberian-husky-grooming-guide",
+    title: "Siberian Husky Grooming Guide: Shedding, the Double Coat, and Why You Shouldn't Shave",
+    metaDescription:
+      "Huskies blow their coat heavily twice a year. Learn how the double coat works, how to manage shedding in North Carolina's heat, and why shaving usually backfires.",
+    excerpt:
+      "A Husky's coat is built for the Arctic, which makes a Carolina summer tricky. Here's how the double coat works, how to handle coat blows, and why shaving isn't the fix it seems.",
+    publishedAt: "2026-10-07",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Siberian_Husky_%28Unsplash%29.jpg",
+      alt: "A Siberian Husky with blue eyes standing in a snowy yard",
+      width: 5184,
+      height: 3456,
+      author: "Ellie Lord",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Siberian_Husky_(Unsplash).jpg",
+      license: "CC0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Siberian Huskies were bred to work in extreme cold, and their coat is a big part of how. That same coat is why Husky owners in North Carolina ask so many questions: how to handle the shedding, whether to shave in summer, and how often a groomer is needed. Here's how the coat works and what actually helps.",
+      },
+      { type: "h2", text: "How the Husky Double Coat Works" },
+      {
+        type: "p",
+        html: "A Husky has two layers: a dense, soft undercoat that insulates, and a straighter outer coat of guard hairs that sheds water and dirt. The undercoat is what comes out in clumps. Huskies are known as clean dogs with little odor, and they tend to groom themselves, but they shed a lot, and the shedding peaks during seasonal coat blows.",
+      },
+      { type: "h2", text: "Coat Blows: What to Expect" },
+      {
+        type: "p",
+        html: "Most Huskies shed lightly year-round and then \"blow\" the undercoat heavily, commonly twice a year as the seasons change, over a period of a few weeks. During a blow, the undercoat can come out in large amounts and mat if it stays trapped in the outer coat. More frequent brushing and a professional de-shedding treatment during these stretches can make a big difference. Our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">grooming double-coated dogs in North Carolina</a> covers how the state's humidity affects timing.",
+      },
+      { type: "h2", text: "The Right Tools" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Undercoat rake:</strong> reaches the undercoat and pulls loose hair out without cutting the guard hairs",
+          "<strong>Slicker brush:</strong> good for smoothing and catching tangles after the rake",
+          "<strong>Metal comb:</strong> to check that you've reached the skin, particularly behind the ears, on the britches, and around the tail",
+        ],
+      },
+      {
+        type: "p",
+        html: "Brush a few times a week most of the year, and daily during a blow. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the line-brushing technique that works well for thick coats.",
+      },
+      { type: "h2", text: "Why Shaving a Husky Usually Backfires" },
+      {
+        type: "p",
+        html: "It's tempting to shave a Husky for the Carolina summer, but groomers and veterinarians generally advise against it. The double coat helps regulate temperature in both directions and protects skin from sun, so removing it can leave the dog more exposed rather than cooler. Shaved coats can also grow back unevenly or with a different texture. Thinning out loose undercoat does far more to help a Husky stay comfortable than shaving does. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">when shaving is actually necessary</a> covers the real exceptions, which are mostly medical.",
+      },
+      { type: "h2", text: "Keeping a Husky Comfortable in the Heat" },
+      {
+        type: "ul",
+        items: [
+          "Keep up with brushing so air can reach the skin through the coat",
+          "Provide shade, fresh water, and cooler indoor time during the hottest part of the day",
+          "Exercise early in the morning or in the evening during summer",
+          "Never leave a dog in a parked car",
+        ],
+      },
+      { type: "h2", text: "Bathing" },
+      {
+        type: "p",
+        html: "Huskies usually don't need frequent baths. When they do get one, a thorough rinse and a full dry matter most, since a damp undercoat can hold moisture against the skin. Many groomers use a high-velocity dryer to blow loose undercoat out, which is much of what a de-shedding service is. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing by coat type.",
+      },
+      { type: "h2", text: "Nails, Paws, and Ears" },
+      {
+        type: "p",
+        html: "Active dogs still need regular nail care, and the fur between the paw pads can collect debris. See our guides on <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trims</a> and <a href=\"/blog/dog-paw-care-why-groomers-trim-fur-between-toes\" class=\"text-brand hover:underline font-medium\">paw care</a>. Huskies have upright ears with good airflow, but a routine ear check is still worthwhile.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A bath and de-shedding treatment every six to eight weeks is a common rhythm for a Husky, with extra visits during a heavy coat blow. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> has the general ranges.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a>, and <a href="/groomers/high-point-nc" class="text-brand hover:underline font-medium">High Point</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
