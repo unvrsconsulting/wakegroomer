@@ -2032,6 +2032,84 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "australian-shepherd-mini-aussie-grooming-guide",
+    title: "Australian Shepherd and Mini Aussie Grooming Guide: Coat Care, Shedding, and Mats",
+    metaDescription:
+      "Australian Shepherds and Miniature American Shepherds have a thick double coat with feathering that mats and sheds. Here's how to care for it, and why shaving isn't the answer.",
+    excerpt:
+      "Aussies are active, outdoorsy dogs with a coat to match. Here's how the double coat and feathering work, where mats form, and how to keep up with the shedding.",
+    publishedAt: "2026-10-08",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Miniature_American_Shepherd_red_merle.jpg",
+      alt: "A red merle Australian-type shepherd standing in profile showing a thick, feathered double coat",
+      width: 2048,
+      height: 1365,
+      author: "Jugabe3b",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Miniature_American_Shepherd_red_merle.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Australian Shepherds and their smaller cousins are energetic, outdoorsy dogs, and their coat reflects it. It's a thick, weather-resistant double coat with longer feathering in places, which means a lot of shedding and a few predictable spots where tangles form. The smaller version is officially called the Miniature American Shepherd, though many owners still search for \"mini Aussie.\" The coat care is essentially the same for both.",
+      },
+      { type: "h2", text: "How the Aussie Coat Works" },
+      {
+        type: "p",
+        html: "An Aussie has a medium-length outer coat over a dense, soft undercoat. The hair is longer on the chest, the backs of the legs, the ears, and the britches, the area around the hindquarters. The undercoat sheds year-round and then heavily during seasonal coat blows. The merle and tricolor patterns look different but don't change how the coat is cared for.",
+      },
+      { type: "h2", text: "Where Mats Tend to Form" },
+      {
+        type: "ul",
+        items: [
+          "Behind the ears, where hair rubs against the collar",
+          "Under the front legs and in the armpits",
+          "The britches and backs of the hind legs",
+          "The chest feathering and along the tail",
+        ],
+      },
+      {
+        type: "p",
+        html: "Active Aussies also pick up burrs, seeds, and debris on walks and hikes, which can start a mat. A quick check of the coat after outdoor time helps. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur and when shaving is necessary</a> explains what happens when tangles aren't caught early.",
+      },
+      { type: "h2", text: "Brushing Routine" },
+      {
+        type: "p",
+        html: "An undercoat rake and a slicker brush are the usual tools, followed by a metal comb to confirm the brush has reached the skin. Brush a few times a week, and daily during a heavy shed. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the line-brushing technique that works well for feathered double coats.",
+      },
+      { type: "h2", text: "Shedding and Coat Blows" },
+      {
+        type: "p",
+        html: "Expect steady shedding all year and a heavier blow when the seasons change. A de-shedding treatment at a grooming appointment, which typically uses a bath and a high-velocity dryer to release loose undercoat, can cut down on the hair around the house. Our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">double-coated dogs in North Carolina</a> covers how our humidity affects timing.",
+      },
+      { type: "h2", text: "Don't Shave the Double Coat" },
+      {
+        type: "p",
+        html: "As with other double-coated breeds, groomers and veterinarians generally advise against shaving an Aussie. The coat helps regulate temperature and protects the skin from sun, and shaved coats can grow back unevenly. Removing loose undercoat does much more to keep an Aussie comfortable. A trim of the feathering, the paw fur, and a tidy sanitary area is a more typical grooming approach.",
+      },
+      { type: "h2", text: "Ticks and Outdoor Dogs" },
+      {
+        type: "p",
+        html: "Active dogs in North Carolina pick up ticks easily, and a thick coat can hide them. Checking the coat after time outdoors is worth the habit, especially around the ears, neck, and between the toes. Our <a href=\"/blog/fall-dog-grooming-guide-north-carolina-flea-tick-season\" class=\"text-brand hover:underline font-medium\">fall grooming and flea and tick guide</a> covers the seasonal side of this.",
+      },
+      { type: "h2", text: "Ears, Nails, and Paws" },
+      {
+        type: "p",
+        html: "Aussies have semi-erect ears that fold at the tip, with decent airflow, but they still benefit from a routine check. Active dogs can wear nails down on their own, though many still need regular trims. See our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> and <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a>.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A bath and de-shedding treatment every six to eight weeks is a common rhythm for double-coated breeds like Aussies, with extra visits during a heavy blow. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/morrisville-nc" class="text-brand hover:underline font-medium">Morrisville</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
