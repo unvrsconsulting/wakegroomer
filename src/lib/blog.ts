@@ -2110,6 +2110,70 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "labrador-retriever-grooming-guide",
+    title: "Labrador Retriever Grooming Guide: Shedding, Ears, and Keeping a Short Coat Healthy",
+    metaDescription:
+      "Labs have a short coat that sheds a lot. Learn how the double coat works, how to manage shedding, why ears need extra care, and why shaving isn't the answer.",
+    excerpt:
+      "A Labrador's short coat is easy to keep tidy but sheds constantly. Here's how the double coat works, how to keep up with shedding, and why ears and skin deserve attention.",
+    publishedAt: "2026-10-09",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/6/66/Labrador_Retriever_yellow_portrait.jpg",
+      alt: "Close-up portrait of a yellow Labrador Retriever with floppy ears",
+      width: 1280,
+      height: 960,
+      author: "Franca from Le Muids, Switzerland",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Labrador_Retriever_yellow_portrait.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Labrador Retrievers look like low-maintenance dogs, and compared with a Poodle or a Shih Tzu they are. The coat is short and doesn't mat. But Labs are also famous for shedding, and their love of water and mud means a few other grooming details matter more than owners expect. Here's how to keep a Lab's coat and skin in good shape.",
+      },
+      { type: "h2", text: "A Short Double Coat That Sheds" },
+      {
+        type: "p",
+        html: "A Lab has a short, dense, water-resistant outer coat over a soft undercoat. Labs shed year-round, and most owners notice heavier shedding when the seasons change. The coat doesn't tangle the way a long coat does, so the work is about managing loose hair rather than preventing mats.",
+      },
+      { type: "h2", text: "Brushing Is Simple, but Worth Doing" },
+      {
+        type: "p",
+        html: "A rubber curry brush or grooming mitt loosens dead hair and spreads natural skin oils, and many Labs enjoy it. A weekly session is a common baseline, with more frequent brushing during heavy shedding. During a blow, an undercoat rake can pull out the loose undercoat. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> matches tools to coat types.",
+      },
+      { type: "h2", text: "Why Not to Shave a Lab" },
+      {
+        type: "p",
+        html: "Shaving a Lab won't stop the shedding, and it removes the coat that insulates and protects the skin. Shorn hair also tends to grow back unevenly, and the short stiff hairs can work their way into skin and furniture. A bath and a thorough de-shedding treatment does much more to cut down on loose hair. Our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">double-coated dogs in North Carolina</a> covers the seasonal side.",
+      },
+      { type: "h2", text: "Ears Need Real Attention" },
+      {
+        type: "p",
+        html: "Labs have floppy ears that trap moisture, and they love to swim. That combination, plus North Carolina's humidity, makes ear problems common in the breed. Drying the ears after a swim or bath and checking them weekly for redness, odor, or debris is a worthwhile habit. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to look for.",
+      },
+      { type: "h2", text: "Skin and Bathing" },
+      {
+        type: "p",
+        html: "Labs don't need frequent baths, but their love of mud and water means they sometimes need one. Over-bathing can dry the skin, and a wet coat that's never fully dried can lead to skin irritation. Watch for scratching, flaky skin, or red patches, and check with your veterinarian if irritation doesn't clear up. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing by coat and lifestyle.",
+      },
+      { type: "h2", text: "Nails, Paws, and Ticks" },
+      {
+        type: "p",
+        html: "Labs on hard floors and pavement still need regular nail trims, and they pick up ticks easily on outdoor adventures. A quick check after hikes and swims is worth it. See our guides on <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trims</a>, <a href=\"/blog/dog-paw-care-why-groomers-trim-fur-between-toes\" class=\"text-brand hover:underline font-medium\">paw care</a>, and <a href=\"/blog/fall-dog-grooming-guide-north-carolina-flea-tick-season\" class=\"text-brand hover:underline font-medium\">fall flea and tick season</a>.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A bath and de-shedding treatment every six to eight weeks is a common rhythm for double-coated breeds like Labs, with extra visits during heavy shedding. Labs on a lighter schedule often do fine with a groom every couple of months. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, and <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

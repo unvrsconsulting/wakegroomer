@@ -48,6 +48,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "shih-tzu-grooming-guide",
       "siberian-husky-grooming-guide",
       "australian-shepherd-mini-aussie-grooming-guide",
+      "labrador-retriever-grooming-guide",
       "how-to-brush-your-dog-between-grooming-appointments",
       "how-often-should-you-bathe-your-dog",
       "dog-anal-gland-expression-what-to-know",
