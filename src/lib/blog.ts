@@ -2174,6 +2174,83 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "german-shepherd-grooming-guide",
+    title: "German Shepherd Grooming Guide: Heavy Shedding, Coat Care, and What Helps",
+    metaDescription:
+      "German Shepherds shed heavily year-round and blow their undercoat twice a year. Here's how the double coat works, how to manage the fur, and why shaving doesn't help.",
+    excerpt:
+      "German Shepherds are famous for shedding, and the coat is built to do it. Here's how the double coat works, which tools help, and how a mobile groomer fits in for a big dog.",
+    publishedAt: "2026-10-10",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/3/3b/German-shepherd-4055031920.jpg",
+      alt: "A German Shepherd standing in a grassy field dotted with dandelions",
+      width: 1920,
+      height: 1281,
+      author: "Hans Kemperman",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:German-shepherd-4055031920.jpg",
+      license: "CC0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Ask any German Shepherd owner about grooming and the first thing you'll hear is shedding. The breed has a dense double coat that sheds all year and heavily during seasonal blows, enough that the joke about a \"German Shedder\" is familiar to anyone who owns one. The good news is that the coat is straightforward to maintain. It mostly comes down to consistent brushing and the right tools.",
+      },
+      { type: "h2", text: "How the Coat Works" },
+      {
+        type: "p",
+        html: "A German Shepherd has a medium-length, straight outer coat over a dense, soft undercoat. The outer coat repels water and dirt, and the undercoat insulates. Most Shepherds have this standard coat, while long-haired Shepherds have extra feathering on the ears, legs, and tail that can tangle and needs more brushing.",
+      },
+      { type: "h2", text: "Shedding and Coat Blows" },
+      {
+        type: "p",
+        html: "Shepherds shed steadily all year, and then blow the undercoat heavily, commonly twice a year, when the seasons change. During a blow, loose undercoat comes out in clumps and can mat if it stays trapped. More frequent brushing and a de-shedding treatment help a lot. Our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">grooming double-coated dogs in North Carolina</a> covers how our humidity affects the timing.",
+      },
+      { type: "h2", text: "Tools That Work" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Undercoat rake:</strong> pulls out loose undercoat without damaging the outer coat",
+          "<strong>Slicker brush:</strong> good for smoothing and catching small tangles, especially on long-haired Shepherds",
+          "<strong>Rubber curry brush or mitt:</strong> loosens dead hair and works well after a walk",
+        ],
+      },
+      {
+        type: "p",
+        html: "A few sessions a week is a reasonable baseline, and daily brushing during a blow. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique.",
+      },
+      { type: "h2", text: "Don't Shave the Coat" },
+      {
+        type: "p",
+        html: "Shaving a German Shepherd doesn't reduce shedding, and it strips away the coat that helps regulate temperature and protects the skin. Shaved coats can also grow back patchy or with a different texture. A thorough bath and de-shedding treatment does far more to cut down on loose hair in the house. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">when shaving is actually necessary</a> covers the real exceptions.",
+      },
+      { type: "h2", text: "Bathing" },
+      {
+        type: "p",
+        html: "Shepherds don't generally need frequent baths. Over-bathing can strip the skin's natural oils, so bathe when the coat is actually dirty or smelly, and rinse thoroughly. A complete dry afterward matters for a dense undercoat. If your dog has a history of skin problems, talk to your veterinarian about shampoo and timing. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers how to set a schedule.",
+      },
+      { type: "h2", text: "Ears, Nails, and Teeth" },
+      {
+        type: "p",
+        html: "A German Shepherd's upright ears get good airflow, but a routine check for wax and debris is still worth doing. Large, active dogs also need regular nail trims. See our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a>, <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a>, and <a href=\"/blog/dog-dental-health-teeth-brushing-grooming-routine\" class=\"text-brand hover:underline font-medium\">dental care guide</a>.",
+      },
+      { type: "h2", text: "Why Mobile Grooming Suits Big Dogs" },
+      {
+        type: "p",
+        html: "A large dog that's tense in cars or unsettled in a busy salon can find mobile grooming easier, because the groomer comes to your driveway and there's no drive, no waiting room, and no other dogs nearby. Our <a href=\"/blog/mobile-dog-grooming-vs-salon-which-is-right\" class=\"text-brand hover:underline font-medium\">mobile grooming versus a salon guide</a> covers the tradeoffs in more detail.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A bath and de-shedding treatment every six to eight weeks is a common rhythm for German Shepherds, with extra visits during heavy blows. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/apex-nc" class="text-brand hover:underline font-medium">Apex</a>, and <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
