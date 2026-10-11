@@ -2251,6 +2251,88 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "pomeranian-grooming-guide",
+    title: "Pomeranian Grooming Guide: Double Coat Care, Cuts, and Mats",
+    metaDescription:
+      "Pomeranians have a thick double coat that mats and sheds. Learn how to brush it, which cuts are common, why shaving can backfire, and how to care for the teeth and face.",
+    excerpt:
+      "A Pomeranian's fluffy coat is a big part of the breed's charm, and a big part of the upkeep. Here's how the double coat works, which cuts are common, and what to avoid.",
+    publishedAt: "2026-10-11",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pomeranian_orange-sable_Coco.jpg",
+      alt: "An orange sable Pomeranian standing on a wooden deck with a full, fluffy double coat",
+      width: 2799,
+      height: 2055,
+      author: "Rob Hanson",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Pomeranian_orange-sable_Coco.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "A Pomeranian is a small dog with a very large coat. That thick, fluffy double coat is the breed's signature, and it's also why Poms need more grooming than their size suggests. It sheds, it mats in predictable places, and it can be damaged by the wrong cut. Here's what to know to keep it healthy.",
+      },
+      { type: "h2", text: "How the Double Coat Works" },
+      {
+        type: "p",
+        html: "A Pomeranian has a soft, dense undercoat that provides the volume and a longer, harsher outer coat of guard hairs. The undercoat sheds, and like other double-coated breeds, Poms tend to blow it heavily a couple of times a year. Young Pomeranians also go through an awkward coat change as the puppy fluff gives way to the adult coat, sometimes called the \"puppy uglies.\"",
+      },
+      { type: "h2", text: "Where Mats Form" },
+      {
+        type: "ul",
+        items: [
+          "Behind the ears",
+          "Under the legs and in the armpits",
+          "The chest ruff and around the collar",
+          "The britches and the base of the tail",
+        ],
+      },
+      {
+        type: "p",
+        html: "Because the coat is so dense, a mat can hide close to the skin while the surface looks fine. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur and when shaving is necessary</a> explains what happens when tangles aren't caught early.",
+      },
+      { type: "h2", text: "Brushing at Home" },
+      {
+        type: "p",
+        html: "A pin brush or slicker brush and a metal comb are the usual tools. Brush in sections down to the skin, and use the comb to confirm there are no tangles underneath. A few times a week works for most Poms, and daily during a heavy shed. Lightly misting the coat with water or a dog-safe conditioning spray before brushing helps reduce breakage. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique.",
+      },
+      { type: "h2", text: "Common Cuts" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Natural or lightly tidied coat:</strong> the full fluffy look, with trimming limited to the feet, sanitary area, and a neatened outline. It's the most upkeep",
+          "<strong>Teddy-bear or puppy cut:</strong> an even, shorter length with a rounded face. Popular because it's far easier to maintain",
+          "<strong>Lion or other styled cuts:</strong> a stylized look that some owners choose for fun, which a skilled groomer can do",
+        ],
+      },
+      { type: "h2", text: "Why Shaving a Pomeranian Can Backfire" },
+      {
+        type: "p",
+        html: "Many groomers advise against shaving a Pomeranian down to the skin. A very short clip can disrupt the double coat, and in some dogs the coat comes back patchy, thin, or with a different texture, sometimes after a long delay. A shorter trim that leaves some length is a safer way to keep a Pom cool in a North Carolina summer. If you're considering a very short cut, ask your groomer about the tradeoffs first.",
+      },
+      { type: "h2", text: "Teeth and Face" },
+      {
+        type: "p",
+        html: "Pomeranians are one of the small breeds that are prone to dental problems, so daily or regular tooth brushing is worth the effort. Our <a href=\"/blog/dog-dental-health-teeth-brushing-grooming-routine\" class=\"text-brand hover:underline font-medium\">dental care guide</a> covers how to start. Light-colored Poms can also show tear staining, and keeping the face clean and the hair around the eyes trimmed helps.",
+      },
+      { type: "h2", text: "Ears, Nails, and Handling" },
+      {
+        type: "p",
+        html: "A Pom's upright ears get decent airflow, but a routine check is still worthwhile. Nails need regular trims, and with a small dog, gentle handling matters. See our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> and <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a>.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A professional groom every four to eight weeks is a common range for Pomeranians, depending on the cut. A shorter cut can stretch toward the longer end. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges, and our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers baths.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, <a href="/groomers/apex-nc" class="text-brand hover:underline font-medium">Apex</a>, and <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
