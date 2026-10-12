@@ -2333,6 +2333,89 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "chow-chow-grooming-guide",
+    title: "Chow Chow Grooming Guide: Mane Care, Shedding, and Staying Cool in NC",
+    metaDescription:
+      "Chow Chows have one of the thickest double coats of any breed. Learn how to brush the mane, manage shedding, keep the dog cool in North Carolina heat, and why not to shave.",
+    excerpt:
+      "A Chow Chow's lion-like mane takes serious upkeep, and a Carolina summer makes it trickier. Here's how the coat works, how to brush it, and how to keep your Chow comfortable.",
+    publishedAt: "2026-10-12",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/b/be/Chow_Chow_portrait_red.jpg",
+      alt: "Close-up portrait of a red Chow Chow with a thick, lion-like mane",
+      width: 1023,
+      height: 1024,
+      author: "Seamus Murray",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Chow_Chow_portrait_red.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "The Chow Chow's lion-like mane and teddy-bear face make it one of the most recognizable breeds around, and the coat behind that look is one of the thickest of any dog. It's also one of the more demanding ones to maintain. Add a North Carolina summer to the mix and the questions come fast: how to brush it, how often to book, and whether to shave. Here's what to know.",
+      },
+      { type: "h2", text: "A Very Dense Double Coat" },
+      {
+        type: "p",
+        html: "Chows come in two coat types, a rough coat and a smooth coat. The rough coat is the full fluffy look with the heavy mane, and it's the more common one. Both have a dense, woolly undercoat under a coarser outer coat. The undercoat sheds throughout the year and blows heavily when the seasons change, and the density means loose hair doesn't release easily without help.",
+      },
+      { type: "h2", text: "Where Mats Hide" },
+      {
+        type: "ul",
+        items: [
+          "Behind the ears and under the chin",
+          "The mane and chest ruff",
+          "Under the legs and in the armpits",
+          "The britches and the base of the tail",
+        ],
+      },
+      {
+        type: "p",
+        html: "A coat this dense can look smooth on top while a mat forms against the skin. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur and when shaving is necessary</a> explains what happens when tangles go unnoticed.",
+      },
+      { type: "h2", text: "Brushing Routine" },
+      {
+        type: "p",
+        html: "An undercoat rake and a slicker brush, followed by a metal comb, are the usual tools. Work in sections from the skin outward, since brushing only the surface misses the problem. Several sessions a week is common for a Chow, and daily during a heavy blow. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the line-brushing technique.",
+      },
+      { type: "h2", text: "Staying Cool in North Carolina" },
+      {
+        type: "p",
+        html: "A thick coat and a short muzzle make heat a real concern for many Chows. Plenty of shade and water, cooler indoor time during the hottest hours, and exercise early or late in the day are the basics. Our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">grooming double-coated dogs in North Carolina</a> covers how the state's humidity affects the coat.",
+      },
+      { type: "h2", text: "Should You Shave a Chow?" },
+      {
+        type: "p",
+        html: "Groomers and veterinarians generally advise against shaving a Chow Chow. The coat protects against both heat and sun, and a shaved double coat can grow back patchy or with a different texture. Thinning out the undercoat and keeping the coat brushed does more to help a Chow stay comfortable than shaving does. If you're considering a short cut for medical or severe-matting reasons, talk to your groomer and vet first.",
+      },
+      { type: "h2", text: "Bathing and Drying" },
+      {
+        type: "p",
+        html: "A Chow's coat can take a long time to dry, and damp undercoat held against the skin can lead to irritation. A thorough blow-dry matters as much as the bath itself. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing. If your Chow is scratching or has red patches, check with your veterinarian rather than assuming it's the coat.",
+      },
+      { type: "h2", text: "A Note on Temperament" },
+      {
+        type: "p",
+        html: "Chows are often described as reserved with strangers and sometimes protective. That makes familiarity with the groomer worth building, and some owners find mobile grooming easier because the dog stays on home turf with one person. Mention anything that makes your dog uneasy when you book. Our <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">guide to grooming senior and anxious dogs</a> covers how groomers adapt.",
+      },
+      { type: "h2", text: "Ears, Nails, and Teeth" },
+      {
+        type: "p",
+        html: "Chow ears are small and upright, but furry, and worth a routine check. Nails need regular trims, and dental care matters for any breed. See our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a>, <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a>, and <a href=\"/blog/dog-dental-health-teeth-brushing-grooming-routine\" class=\"text-brand hover:underline font-medium\">dental care guide</a>.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A bath and de-shedding treatment every six to eight weeks is a common rhythm for a heavily double-coated breed like a Chow, with extra visits during a blow. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
