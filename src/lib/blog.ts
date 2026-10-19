@@ -2416,6 +2416,89 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "great-pyrenees-grooming-guide",
+    title: "Great Pyrenees Grooming Guide: Shedding, Mats, and Why a Mobile Groomer Helps",
+    metaDescription:
+      "Great Pyrenees have a thick white double coat that sheds heavily and mats behind the ears and on the britches. Learn how to brush it, why not to shave, and what to expect from a groom.",
+    excerpt:
+      "A Great Pyrenees is a very large dog with a very large coat. Here's how the double coat works, where mats form, and why bringing the groomer to you can make a big dog's visit easier.",
+    publishedAt: "2026-10-18",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Great_Pyrenees_Mountain_Dog.jpg",
+      alt: "A white Great Pyrenees standing in a wooded area, showing its thick double coat",
+      width: 5616,
+      height: 3744,
+      author: "HeartSpoon",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Great_Pyrenees_Mountain_Dog.jpg",
+      license: "CC BY-SA 3.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Great Pyrenees were bred to guard flocks in cold mountain weather, and the coat shows it. It's thick, white, weather-resistant, and a lot of dog to maintain, especially in a North Carolina summer. If you share your home with one, here's what the coat needs and what a groomer typically does.",
+      },
+      { type: "h2", text: "A Heavy Double Coat" },
+      {
+        type: "p",
+        html: "A Great Pyrenees has a long, coarse outer coat over a dense, woolly undercoat. They shed year-round, and they typically blow the undercoat heavily once or twice a year, when large amounts of loose hair come out at once. Because the outer coat is long and the undercoat is dense, loose hair tends to stay trapped, which is how mats form.",
+      },
+      { type: "h2", text: "Where Mats Form" },
+      {
+        type: "ul",
+        items: [
+          "Behind the ears",
+          "The britches, the long feathered hair on the back of the thighs",
+          "The tail and the ruff around the neck and chest",
+          "Under the legs and in the armpits",
+        ],
+      },
+      {
+        type: "p",
+        html: "Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur and when shaving is necessary</a> covers how mats develop and what happens when they're left too long.",
+      },
+      { type: "h2", text: "Brushing Routine" },
+      {
+        type: "p",
+        html: "An undercoat rake, a slicker brush, and a long-toothed metal comb are the usual tools. Brush in sections down to the skin, and use the comb to confirm the brush has reached the base of the coat. Several sessions a week is common, and more often during a blow. It takes time on a dog this size, so short, regular sessions tend to work better than one marathon. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the line-brushing technique.",
+      },
+      { type: "h2", text: "Why Not to Shave" },
+      {
+        type: "p",
+        html: "It's tempting to shave a Pyr for the summer, but groomers and veterinarians generally advise against it. The double coat helps regulate temperature and protects the skin from sun, and a shaved coat can grow back unevenly. Thinning out the undercoat and keeping the dog cool with shade, water, and cooler indoor time works better. Our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">grooming double-coated dogs in North Carolina</a> covers how our humidity affects the coat.",
+      },
+      { type: "h2", text: "Bathing and Drying" },
+      {
+        type: "p",
+        html: "A white coat shows dirt, and a thick coat takes a long time to dry. A full, thorough dry matters, because damp undercoat held against the skin can lead to irritation. Many Pyrs don't need frequent baths, and over-bathing can strip natural oils. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers how to set a schedule.",
+      },
+      { type: "h2", text: "Nails and Dewclaws" },
+      {
+        type: "p",
+        html: "Great Pyrenees commonly have extra dewclaws on the rear legs, and dewclaw nails don't wear down on their own the way paw nails do, so they can overgrow and curl. If your dog has them, ask your groomer to check them at each visit. Our <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a> covers why regular trims matter.",
+      },
+      { type: "h2", text: "Ears" },
+      {
+        type: "p",
+        html: "A Pyr's drop ears are well furred and limit airflow, so a routine check for wax, redness, or odor is worth doing, especially in humid months. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to look for.",
+      },
+      { type: "h2", text: "Why Mobile Grooming Suits a Big Dog" },
+      {
+        type: "p",
+        html: "A very large dog can be hard to load into a car, and a long salon visit can be tiring. A mobile groomer comes to your driveway, so there's no drive and no waiting room. Our <a href=\"/blog/mobile-dog-grooming-vs-salon-which-is-right\" class=\"text-brand hover:underline font-medium\">mobile versus salon guide</a> covers the tradeoffs. Mention your dog's size and coat when you book, because a large, heavy coat takes more time than a standard appointment.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A bath and de-shedding treatment every six to eight weeks is a common rhythm for a heavily double-coated breed, with extra visits during a blow. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/pittsboro-nc" class="text-brand hover:underline font-medium">Pittsboro</a>, <a href="/groomers/hillsborough-nc" class="text-brand hover:underline font-medium">Hillsborough</a>, and <a href="/groomers/chapel-hill-nc" class="text-brand hover:underline font-medium">Chapel Hill</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

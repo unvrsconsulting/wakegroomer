@@ -52,6 +52,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "german-shepherd-grooming-guide",
       "pomeranian-grooming-guide",
       "chow-chow-grooming-guide",
+      "great-pyrenees-grooming-guide",
       "how-to-brush-your-dog-between-grooming-appointments",
       "how-often-should-you-bathe-your-dog",
       "dog-anal-gland-expression-what-to-know",
