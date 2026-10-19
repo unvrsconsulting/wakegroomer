@@ -2499,6 +2499,88 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "yorkshire-terrier-grooming-guide",
+    title: "Yorkshire Terrier Grooming Guide: Silky Coat Care, Cuts, and Small-Dog Basics",
+    metaDescription:
+      "Yorkies have a fine, silky coat that grows continuously and tangles easily. Learn how to brush it, which cuts are popular, and how to care for the teeth, ears, and face.",
+    excerpt:
+      "A Yorkie's silky coat grows like human hair, which means regular brushing and regular haircuts. Here's how to keep it tangle-free and which cuts make life easier.",
+    publishedAt: "2026-10-19",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Yorkshire_Terrier_portrait.jpg",
+      alt: "A Yorkshire Terrier with a long, silky golden and tan coat looking up at the camera",
+      width: 3648,
+      height: 2736,
+      author: "Jeronimo Palacios",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Yorkshire_Terrier_portrait.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Yorkshire Terriers are small, but their coat isn't low-maintenance. It's long, fine, and silky, and it grows continuously, closer to human hair than to the fur of a typical dog. That means it doesn't shed much, but it tangles easily and needs regular upkeep. Here's what a Yorkie's coat needs and which cuts make it manageable.",
+      },
+      { type: "h2", text: "A Coat That Grows Like Hair" },
+      {
+        type: "p",
+        html: "Unlike double-coated breeds, a Yorkie has a single layer of fine hair. It sheds very little, so the hair that does fall out tends to stay caught in the coat, which is how tangles start. The silky texture also means mats can form quickly in friction spots, especially behind the ears, under the legs, and around the collar or harness.",
+      },
+      { type: "h2", text: "Brushing at Home" },
+      {
+        type: "p",
+        html: "Daily brushing is ideal for a Yorkie in a longer coat, and every couple of days works for a shorter one. A pin brush and a fine-toothed metal comb are the usual tools. Brush in sections down to the skin, and use the comb to confirm no tangles remain underneath. Lightly misting the coat with water or a dog-safe conditioning spray reduces breakage. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique, and our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains what happens when tangles are left alone.",
+      },
+      { type: "h2", text: "Popular Cuts" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Puppy cut:</strong> an even, short length all over, often with a little more length on the face and ears. It's the most common pet cut because it's easy to maintain",
+          "<strong>Teddy-bear style:</strong> a short body with a rounded, fuller face",
+          "<strong>Longer show-style coat:</strong> the full-length, floor-sweeping look, which takes daily brushing and a lot of care",
+        ],
+      },
+      {
+        type: "p",
+        html: "Most pet Yorkies live happily in a shorter cut. Be honest with your groomer about how much brushing you can realistically do, and pick a style to match.",
+      },
+      { type: "h2", text: "Topknots and Hair Around the Eyes" },
+      {
+        type: "p",
+        html: "Many Yorkie owners tie the hair on top of the head into a small topknot to keep it out of the eyes. If you do, use a soft, gentle band made for dogs and remove it regularly so it doesn't cause tangles or pull. Trimming the hair around the eyes is another option, and a groomer can show you how short is safe.",
+      },
+      { type: "h2", text: "Teeth: A Priority for Small Breeds" },
+      {
+        type: "p",
+        html: "Yorkies, like many small breeds, are prone to dental problems, so regular tooth brushing is worth the effort. Our <a href=\"/blog/dog-dental-health-teeth-brushing-grooming-routine\" class=\"text-brand hover:underline font-medium\">dental care guide</a> covers how to start and what to watch for.",
+      },
+      { type: "h2", text: "Ears, Face, and Eyes" },
+      {
+        type: "p",
+        html: "A Yorkie's upright ears get decent airflow, but hair around the ear opening can trap debris, so a routine check is worthwhile. Tear staining can show up on the face, and gently wiping the area keeps it clean. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to look for. If you notice persistent redness or discharge from the eyes, check with your veterinarian.",
+      },
+      { type: "h2", text: "Bathing and Drying" },
+      {
+        type: "p",
+        html: "Always brush a Yorkie before the bath, since water can tighten tangles. A thorough dry matters too, because damp hair stays tangle-prone. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing.",
+      },
+      { type: "h2", text: "Gentle Handling" },
+      {
+        type: "p",
+        html: "Yorkies are tiny, and a calm, gentle approach matters. A quiet one-on-one appointment suits many small dogs, which is one reason mobile grooming works well for them. Our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> covers how groomers adapt for nervous dogs.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A professional groom every four to six weeks is a common range for Yorkies, depending on the cut. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/morrisville-nc" class="text-brand hover:underline font-medium">Morrisville</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
