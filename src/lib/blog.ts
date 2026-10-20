@@ -2581,6 +2581,93 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "maltese-grooming-guide",
+    title: "Maltese Grooming Guide: Keeping a White Silky Coat Clean and Tangle-Free",
+    metaDescription:
+      "Maltese dogs have a long, silky white coat that tangles and stains easily. Learn how to brush it, manage tear staining, choose a cut, and care for the teeth.",
+    excerpt:
+      "A Maltese's flowing white coat is gorgeous and demanding. Here's how to brush it, handle tear staining, pick a cut that fits your routine, and keep a tiny dog comfortable.",
+    publishedAt: "2026-10-20",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Oyku-Maltese.jpg",
+      alt: "A Maltese in a long, flowing white coat sitting on grass among flowers",
+      width: 1334,
+      height: 890,
+      author: "Ellocopocho95",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Oyku-Maltese.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "A Maltese in full coat is one of the prettiest sights in the dog world, and one of the more demanding. The coat is long, fine, and silky, and it's white, which means tangles and stains both show up fast. Here's how to keep a Maltese's coat comfortable and clean, and which cuts make it easier.",
+      },
+      { type: "h2", text: "A Single Silky Coat That Doesn't Shed Much" },
+      {
+        type: "p",
+        html: "A Maltese has a single layer of long, silky hair with no undercoat. It sheds very little, but loose hair stays caught in the coat, so tangles form easily, especially behind the ears, under the legs, in the armpits, and around the collar or harness. The fine texture means even a small tangle can become a mat quickly.",
+      },
+      { type: "h2", text: "Brushing Routine" },
+      {
+        type: "p",
+        html: "Daily brushing is the goal for a Maltese in a long coat, and every couple of days for a shorter cut. A pin brush and a fine-toothed metal comb are the usual tools. Brush in sections down to the skin, and use the comb to confirm nothing is tangled underneath. Lightly misting the coat with water or a dog-safe conditioning spray helps prevent breakage. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique, and our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains what happens when tangles go unchecked.",
+      },
+      { type: "h2", text: "Tear Staining" },
+      {
+        type: "p",
+        html: "White-coated dogs like Maltese commonly show reddish-brown staining under the eyes. Wiping the area gently every day with a soft, damp cloth or a dog-safe eye wipe helps, and keeping the hair around the eyes trimmed short reduces moisture buildup. Heavy or sudden staining, redness, or discharge can point to an eye or tear-duct issue, so check with your veterinarian if it's more than occasional.",
+      },
+      { type: "h2", text: "Popular Cuts" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Puppy cut:</strong> an even, short length all over. It's the easiest to maintain and the most common for pet Maltese",
+          "<strong>Teddy-bear style:</strong> a short body with a rounded, fuller face",
+          "<strong>Long show-style coat:</strong> the floor-length coat that takes daily brushing and careful bathing",
+        ],
+      },
+      {
+        type: "p",
+        html: "Most pet Maltese do well in a shorter cut. Be honest with your groomer about your routine, and choose a style you can keep up between visits.",
+      },
+      { type: "h2", text: "Bathing and Drying" },
+      {
+        type: "p",
+        html: "A white coat shows dirt, so many Maltese owners bathe fairly often, but always brush the coat out first, since water tightens tangles. A thorough dry afterward matters too. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing by coat type.",
+      },
+      { type: "h2", text: "Teeth Need Real Attention" },
+      {
+        type: "p",
+        html: "Maltese, like many toy breeds, are prone to dental problems, so regular tooth brushing is worth building into your routine. Our <a href=\"/blog/dog-dental-health-teeth-brushing-grooming-routine\" class=\"text-brand hover:underline font-medium\">dental care guide</a> covers how to start.",
+      },
+      { type: "h2", text: "Ears and Face" },
+      {
+        type: "p",
+        html: "A Maltese's drop ears are covered in long hair, which limits airflow, so a routine ear check is important, especially in North Carolina's humid months. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to look for. Keeping the hair around the muzzle clean after meals also helps prevent staining and odor.",
+      },
+      { type: "h2", text: "Sun and Skin" },
+      {
+        type: "p",
+        html: "A Maltese with a very short cut has less coat to protect the skin, so limit long stretches in direct sun. If your dog is scratching or has red patches, check with your veterinarian rather than assuming it's the coat.",
+      },
+      { type: "h2", text: "Gentle Handling" },
+      {
+        type: "p",
+        html: "Maltese are tiny and often sensitive, and a quiet, one-on-one appointment suits many of them. Mobile grooming works well for small dogs for that reason. Our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> covers how groomers adapt for nervous dogs.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A professional groom every four to six weeks is a common range for Maltese, depending on the cut. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, and <a href="/groomers/apex-nc" class="text-brand hover:underline font-medium">Apex</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
