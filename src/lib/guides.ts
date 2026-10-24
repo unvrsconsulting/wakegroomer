@@ -55,6 +55,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "great-pyrenees-grooming-guide",
       "yorkshire-terrier-grooming-guide",
       "maltese-grooming-guide",
+      "corgi-grooming-guide",
       "how-to-brush-your-dog-between-grooming-appointments",
       "how-often-should-you-bathe-your-dog",
       "dog-anal-gland-expression-what-to-know",

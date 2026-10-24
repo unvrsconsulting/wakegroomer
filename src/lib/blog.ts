@@ -2668,6 +2668,88 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "corgi-grooming-guide",
+    title: "Corgi Grooming Guide: Shedding, the Double Coat, and Why Shaving Is a Bad Idea",
+    metaDescription:
+      "Corgis shed year-round and blow their undercoat twice a year. Learn how the double coat works, how to manage shedding, handle the low-to-the-ground belly, and why not to shave.",
+    excerpt:
+      "Corgis are small but shed like big dogs. Here's how the double coat works, where mats and mud collect on a short-legged dog, and what actually helps with the fur.",
+    publishedAt: "2026-10-24",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/9/99/Welsh_Pembroke_Corgi.jpg",
+      alt: "A happy Pembroke Welsh Corgi with its tongue out standing in dappled sunlight",
+      width: 1377,
+      height: 1032,
+      author: "Dog breed facts",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Welsh_Pembroke_Corgi.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "Corgis look compact and easy, but anyone who shares a house with one knows the truth: they shed an astonishing amount for their size. Both the Pembroke and the Cardigan Welsh Corgi have a dense double coat, and managing it is most of what grooming a Corgi is about. Here's how the coat works and what helps.",
+      },
+      { type: "h2", text: "How the Corgi Coat Works" },
+      {
+        type: "p",
+        html: "A Corgi has a medium-length, weather-resistant outer coat over a thick, soft undercoat. It sheds steadily all year and blows the undercoat heavily, typically twice a year, in clumps that can fill a vacuum bag fast. Some Corgis are born with a longer, fluffier coat, often called a \"fluffy\" Corgi, which has feathering on the ears, chest, legs, and tail and tangles more easily.",
+      },
+      { type: "h2", text: "Tools That Help" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Undercoat rake:</strong> reaches the loose undercoat and pulls it out without damaging the outer coat",
+          "<strong>Slicker brush:</strong> good for smoothing and catching small tangles, especially on the feathering",
+          "<strong>Metal comb:</strong> to check behind the ears, on the britches, and around the chest",
+        ],
+      },
+      {
+        type: "p",
+        html: "A few sessions a week is a good baseline, and daily during a blow. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique.",
+      },
+      { type: "h2", text: "Shedding Season" },
+      {
+        type: "p",
+        html: "During a blow, a bath followed by a thorough blow-dry can release a lot of loose undercoat in one session, which is the heart of a professional de-shedding treatment. Our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">grooming double-coated dogs in North Carolina</a> covers how our humidity affects the timing.",
+      },
+      { type: "h2", text: "Don't Shave a Corgi" },
+      {
+        type: "p",
+        html: "Shaving a Corgi doesn't stop shedding, and it removes the coat that helps regulate temperature and protects the skin. A shaved double coat can grow back uneven, patchy, or with a different texture, and the fuzzy puppy-like regrowth can take a long time to fill in. Thinning out the undercoat does far more to keep a Corgi comfortable. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">when shaving is actually necessary</a> covers the real exceptions.",
+      },
+      { type: "h2", text: "A Dog Built Close to the Ground" },
+      {
+        type: "p",
+        html: "A Corgi's belly and leg feathering sit right at ground level, so mud, grass, and burrs collect there quickly. Wiping the belly and paws after a muddy walk, and checking the feathering behind the legs and on the britches for tangles, saves a lot of trouble later. Our <a href=\"/blog/dog-paw-care-why-groomers-trim-fur-between-toes\" class=\"text-brand hover:underline font-medium\">paw care guide</a> covers the fur between the toes.",
+      },
+      { type: "h2", text: "Back and Handling" },
+      {
+        type: "p",
+        html: "Like other long-bodied, short-legged breeds, Corgis can be prone to back problems, so careful handling is worth mentioning to a groomer, especially if your dog has had any back issues. Supporting the body when lifting and avoiding unnecessary jumping helps. Our <a href=\"/blog/dachshund-grooming-guide\" class=\"text-brand hover:underline font-medium\">Dachshund guide</a> covers the same handling considerations for a long-backed breed.",
+      },
+      { type: "h2", text: "Bathing" },
+      {
+        type: "p",
+        html: "Corgis don't need frequent baths. Over-bathing can strip natural oils, and a damp undercoat held against the skin can lead to irritation, so a thorough dry matters. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing by coat type.",
+      },
+      { type: "h2", text: "Ears and Nails" },
+      {
+        type: "p",
+        html: "Corgi ears are large and upright, so they get good airflow, but a routine check is still worthwhile. Nails need regular trims, since long nails affect how a short-legged dog stands and walks. See our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> and <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a>.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A bath and de-shedding treatment every six to eight weeks is a common rhythm for double-coated breeds like Corgis, with extra visits during a heavy blow. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/wake-forest-nc" class="text-brand hover:underline font-medium">Wake Forest</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
