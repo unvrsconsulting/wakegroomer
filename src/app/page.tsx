@@ -229,6 +229,24 @@ export default async function Home() {
           <div className="mt-8">
             <CityHeatmap cityCounts={cityCounts} />
           </div>
+
+          <div className="mt-12">
+            <h3 className="text-center text-xl font-bold text-foreground">
+              Browse Mobile Dog Groomers by City
+            </h3>
+            <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-3 lg:grid-cols-4">
+              {[...cityCounts]
+                .map((c) => c.city)
+                .sort((a, b) => a.localeCompare(b))
+                .map((c) => (
+                  <li key={c}>
+                    <Link href={`/groomers/${citySlug(c)}`} className="text-brand hover:underline">
+                      Mobile groomers in {c}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
         </div>
       </section>
 
