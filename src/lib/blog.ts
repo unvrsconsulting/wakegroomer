@@ -2750,6 +2750,88 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "bichon-frise-grooming-guide",
+    title: "Bichon Frise Grooming Guide: The Powder-Puff Cut, Mats, and Tear Stains",
+    metaDescription:
+      "Bichon Frises have a curly, cotton-soft coat that doesn't shed much but mats easily. Learn how to brush it, why professional scissoring matters, and how to manage tear stains.",
+    excerpt:
+      "A Bichon's fluffy white coat looks effortless, but it takes regular brushing and professional trims. Here's how the coat works, what the classic cut involves, and how to keep it tangle-free.",
+    publishedAt: "2026-10-25",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/2/24/Bichon_Fris%C3%A9_0012.jpg",
+      alt: "A fluffy white Bichon Frise with a rounded, scissored head sitting on a mossy rock",
+      width: 4496,
+      height: 3000,
+      author: "Bernt Fransson",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Bichon_Fris%C3%A9_0012.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "A well-groomed Bichon Frise looks like a little white cloud, and that look doesn't happen on its own. The coat is soft, curly, and constantly growing, and it needs regular brushing at home plus professional trimming to stay in shape. Here's how the coat works and what to expect.",
+      },
+      { type: "h2", text: "A Curly Coat That Hardly Sheds" },
+      {
+        type: "p",
+        html: "A Bichon has a soft, dense undercoat under a curly outer coat that feels like cotton or silk. It sheds very little, which is part of the breed's appeal, but loose hair stays caught in the curls, so tangles and mats form quickly if the coat isn't brushed out. The coat also never stops growing, so it needs regular trimming whether or not you want a show look.",
+      },
+      { type: "h2", text: "Brushing Routine" },
+      {
+        type: "p",
+        html: "A slicker brush and a fine-toothed metal comb are the usual tools, and daily brushing is ideal. Brush in sections down to the skin, and use the comb to confirm nothing is tangled underneath, because the surface curls can hide mats. Common trouble spots include behind the ears, under the legs, around the collar, and in the beard. Lightly misting the coat with water or a dog-safe conditioning spray helps prevent breakage. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique, and our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains what happens when tangles are left alone.",
+      },
+      { type: "h2", text: "The Classic Powder-Puff Trim" },
+      {
+        type: "p",
+        html: "The traditional Bichon look is a rounded, fluffy head and a trimmed body with the coat scissored to shape. It's a skilled technique, and many groomers use scissors for the head and face rather than clippers. Not every groomer offers a full scissored finish, so it's worth asking when you book if that look matters to you.",
+      },
+      { type: "h2", text: "Easier Cuts for Everyday Life" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Short puppy cut:</strong> an even, shorter length all over, which is much easier to maintain between grooms",
+          "<strong>Teddy-bear style:</strong> a short body with a rounded, fuller face",
+          "<strong>Classic powder-puff:</strong> the fuller, scissored look, which needs more brushing and more frequent visits",
+        ],
+      },
+      {
+        type: "p",
+        html: "Most pet Bichons do well in a shorter cut. Be honest with your groomer about how much brushing you can realistically do, and choose a style to match.",
+      },
+      { type: "h2", text: "Tear Stains and the Face" },
+      {
+        type: "p",
+        html: "White-coated dogs like Bichons often show reddish-brown staining under the eyes. Gently wiping the area daily with a soft, damp cloth or a dog-safe eye wipe helps, and keeping the hair around the eyes trimmed short reduces moisture buildup. If the staining is heavy or sudden, or if you see redness or discharge, check with your veterinarian.",
+      },
+      { type: "h2", text: "Ears" },
+      {
+        type: "p",
+        html: "Bichons have drop ears covered in curly hair, which limits airflow, so a routine ear check is important, especially in North Carolina's humid months. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to look for.",
+      },
+      { type: "h2", text: "Bathing, Drying, and Skin" },
+      {
+        type: "p",
+        html: "Always brush a Bichon before the bath, since water can tighten tangles, and dry the coat thoroughly afterward. A white coat shows dirt, so many owners bathe fairly regularly. If your dog scratches a lot or has red or flaky skin, talk to your veterinarian, since some small breeds are prone to skin sensitivities. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing.",
+      },
+      { type: "h2", text: "Teeth" },
+      {
+        type: "p",
+        html: "Like most small breeds, Bichons are prone to dental buildup, so regular tooth brushing is worth the effort. Our <a href=\"/blog/dog-dental-health-teeth-brushing-grooming-routine\" class=\"text-brand hover:underline font-medium\">dental care guide</a> covers how to start.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A professional groom every four to six weeks is a common range for Bichons, since the coat grows continuously and mats easily. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/holly-springs-nc" class="text-brand hover:underline font-medium">Holly Springs</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
