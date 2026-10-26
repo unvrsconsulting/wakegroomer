@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!service) return {};
 
   const title = `${service} | Mobile Dog Groomers in NC`;
-  const description = `Find real mobile dog groomers across North Carolina offering ${service.toLowerCase()}. Compare cities, ratings, and pricing. They come to you.`;
+  const description = `Find real mobile dog groomers across North Carolina offering ${service.toLowerCase()}. Compare groomers by city and rating. They come to you.`;
 
   return {
     title,
