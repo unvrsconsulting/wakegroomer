@@ -2832,6 +2832,93 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "what-is-a-dog-blowout-do-you-need-one",
+    title: "What Is a Dog Blowout, and Does Your Dog Need One?",
+    metaDescription:
+      "A dog blowout uses a high-velocity dryer to blast loose undercoat out of the fur. Learn what it is, which dogs benefit, what to expect, and how it differs from a regular blow-dry.",
+    excerpt:
+      "If a groomer offers a blowout, it usually means a powerful dryer and a lot less loose hair in your house. Here's what it is, who it helps, and what to expect.",
+    publishedAt: "2026-10-27",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/2/26/Keeshond_Majic_standing_cropped.jpg",
+      alt: "A fluffy gray Keeshond standing on grass with a thick double coat",
+      width: 1161,
+      height: 1064,
+      author: "dancing with wolves",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Keeshond_Majic_standing_cropped.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "If you've seen \"blowout\" on a groomer's service menu, or searched for one near you, you're not alone in wondering what it means. The term gets used a few different ways, which adds to the confusion. Here's what a dog blowout usually is, which dogs benefit most, and what to expect at an appointment.",
+      },
+      { type: "h2", text: "What a Dog Blowout Is" },
+      {
+        type: "p",
+        html: "In most grooming contexts, a blowout means using a high-velocity dryer to blast loose undercoat and dead hair out of a dog's coat after a bath. The dryer moves a large volume of air at high speed, which lifts and separates the fur and pushes loose hair out far more effectively than a regular household hair dryer. It's the core of what many groomers call a <a href=\"/services/de-shedding-treatment\" class=\"text-brand hover:underline font-medium\">de-shedding treatment</a>.",
+      },
+      { type: "h2", text: "Why It Works" },
+      {
+        type: "p",
+        html: "A bath loosens shedding hair, and the dryer removes it before it ends up on your furniture. Much of what a dog sheds is undercoat that has already detached from the skin but is still caught in the outer coat. Brushing alone often can't reach all of it. A blowout, usually combined with an undercoat rake or brush, clears much more of it in one session.",
+      },
+      { type: "h2", text: "Which Dogs Benefit Most" },
+      {
+        type: "ul",
+        items: [
+          "Double-coated breeds that shed heavily, such as Huskies, Golden Retrievers, German Shepherds, Corgis, and Labradors",
+          "Dogs in the middle of a seasonal coat blow, when large amounts of undercoat release at once",
+          "Owners who want less hair around the house between grooms",
+        ],
+      },
+      {
+        type: "p",
+        html: "Our guides to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">double-coated dogs in North Carolina</a>, <a href=\"/blog/golden-retriever-grooming-guide\" class=\"text-brand hover:underline font-medium\">Golden Retrievers</a>, <a href=\"/blog/siberian-husky-grooming-guide\" class=\"text-brand hover:underline font-medium\">Huskies</a>, and <a href=\"/blog/german-shepherd-grooming-guide\" class=\"text-brand hover:underline font-medium\">German Shepherds</a> cover how each coat behaves.",
+      },
+      { type: "h2", text: "Which Dogs Don't Need One" },
+      {
+        type: "p",
+        html: "A blowout is aimed at dogs with a dense undercoat. Dogs with a single coat that sheds very little, such as many Poodles, Maltese, and Yorkies, don't have undercoat to remove. They still get dried, but the goal is a smooth, tangle-free finish rather than hair removal. Short-coated breeds can benefit from a lighter version, though the difference is less dramatic.",
+      },
+      { type: "h2", text: "A Blowout Versus a Regular Blow-Dry" },
+      {
+        type: "p",
+        html: "A regular blow-dry just gets the dog dry and fluffs the coat, often with a stand or table dryer set to a gentle level. A blowout is a deliberate, more intense step focused on removing loose coat. Some groomers also use \"blowout\" loosely to mean a styled finish, so it's worth asking what exactly is included when you book.",
+      },
+      { type: "h2", text: "What to Expect at the Appointment" },
+      {
+        type: "ul",
+        items: [
+          "A bath with shampoo and often a conditioner or de-shedding product",
+          "A thorough dry with a high-velocity dryer, usually with brushing or raking along the way",
+          "A lot of loose fur, often much more than owners expect. Plan for a good amount to come out",
+          "A fluffier, lighter coat afterward, and noticeably less shedding for the next several weeks",
+        ],
+      },
+      { type: "h2", text: "Noise and Nervous Dogs" },
+      {
+        type: "p",
+        html: "High-velocity dryers are loud, and some dogs find them stressful. If your dog is sensitive, let the groomer know before the appointment, since many can adjust the airflow, take breaks, or introduce the dryer gradually. Our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> covers how groomers adapt.",
+      },
+      { type: "h2", text: "Is It a Substitute for Brushing?" },
+      {
+        type: "p",
+        html: "No. A blowout reduces shedding for a few weeks, but loose hair keeps coming, and mats can still form between visits. Regular brushing is still the foundation of coat care. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the tools and technique, and our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains why shaving isn't the answer to shedding.",
+      },
+      { type: "h2", text: "How Often and How Much" },
+      {
+        type: "p",
+        html: "Many double-coated dogs do well with a bath and blowout every six to eight weeks, with extra visits during a heavy coat blow. Prices vary by groomer, dog size, and coat, so ask for a quote before booking. Our <a href=\"/blog/mobile-dog-grooming-cost-guide-raleigh-durham-triangle\" class=\"text-brand hover:underline font-medium\">mobile grooming cost guide</a> explains what drives the price, and our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed frequency guide</a> covers timing.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/services/de-shedding-treatment" class="text-brand hover:underline font-medium">Browse groomers offering de-shedding treatment</a>, <a href="/search" class="text-brand hover:underline font-medium">search the full directory</a>, or look at local listings in <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, <a href="/groomers/wake-forest-nc" class="text-brand hover:underline font-medium">Wake Forest</a>, and <a href="/groomers/holly-springs-nc" class="text-brand hover:underline font-medium">Holly Springs</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
