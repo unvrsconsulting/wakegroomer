@@ -2919,6 +2919,88 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cage-free-dog-grooming-what-it-means",
+    title: "Cage-Free Dog Grooming: What It Means and What to Ask Your Groomer",
+    metaDescription:
+      "\"Cage-free\" has no official definition. Here's what it usually means in dog grooming, why salons use crates, how mobile grooming compares, and the questions worth asking.",
+    excerpt:
+      "Cage-free sounds reassuring, but the phrase has no official standard. Here's what it usually means, why some salons use crates, and what to ask any groomer before you book.",
+    publishedAt: "2026-10-28",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/7/77/Cavalier_King_Charles_Spaniel_at_repose.jpg",
+      alt: "A calm tricolor Cavalier King Charles Spaniel lying down and looking relaxed",
+      width: 4912,
+      height: 2760,
+      author: "Mário Simoes",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cavalier_King_Charles_Spaniel_at_repose.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "\"Cage-free dog grooming\" shows up in a lot of searches and a lot of marketing. It sounds like a clear promise, but it isn't a regulated term, so it can mean different things at different businesses. Here's what it usually means, why some salons use crates in the first place, and the questions worth asking before you book.",
+      },
+      { type: "h2", text: "What \"Cage-Free\" Usually Means" },
+      {
+        type: "p",
+        html: "In most cases, a cage-free groomer means your dog isn't kept in a crate or kennel while waiting between grooming steps or while drying. Instead, the dog is with the groomer, or in an open area, for the whole appointment. There's no official standard, though, so one business's \"cage-free\" may be stricter than another's.",
+      },
+      { type: "h2", text: "Why Many Salons Use Cages" },
+      {
+        type: "p",
+        html: "A busy salon may groom many dogs in a day, and crates are a way to hold dogs between their turns: after drop-off, between the bath and the dryer, or while waiting for pickup. Some salons also use crate-mounted dryers to dry dogs while the groomer works on another. Crates themselves aren't automatically harmful. The concerns are how long a dog spends in one, how well they're supervised, and what a dog experiences when drying equipment is involved.",
+      },
+      { type: "h2", text: "Why Some Owners Prefer Cage-Free" },
+      {
+        type: "ul",
+        items: [
+          "Dogs who are anxious or confined-averse can find a crate stressful, especially in a loud room with other dogs",
+          "Senior dogs and dogs with joint problems may be more comfortable moving or resting freely than being confined",
+          "Owners want less time between drop-off and pickup that the dog spends waiting alone",
+        ],
+      },
+      {
+        type: "p",
+        html: "Our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> covers why a quieter setup often helps.",
+      },
+      { type: "h2", text: "How Mobile Grooming Compares" },
+      {
+        type: "p",
+        html: "Mobile grooming works differently by design. A mobile groomer typically works with one dog at a time, in a van or trailer at your home, so there's no waiting room and no line of dogs waiting for their turn. That structure usually removes the reason crates are used in a busy salon, though practices still vary by groomer. If this matters to you, ask directly instead of assuming. Our guide to <a href=\"/blog/mobile-dog-grooming-vs-salon-which-is-right\" class=\"text-brand hover:underline font-medium\">mobile grooming versus a salon</a> covers the broader differences.",
+      },
+      { type: "h2", text: "Questions Worth Asking Any Groomer" },
+      {
+        type: "ul",
+        items: [
+          "Will my dog ever be in a crate, and if so, for how long and why?",
+          "How do you dry dogs? Do you use a crate-mounted dryer, a stand dryer, or a handheld one, and is my dog supervised the whole time?",
+          "How do you keep my dog secure on the grooming table, and is my dog ever left unattended?",
+          "How many dogs do you groom at once?",
+          "What do you do if my dog gets stressed or overheated?",
+        ],
+      },
+      {
+        type: "p",
+        html: "A good groomer will answer these without defensiveness. Our guide to <a href=\"/blog/how-to-choose-a-trustworthy-mobile-dog-groomer-checklist\" class=\"text-brand hover:underline font-medium\">choosing a trustworthy mobile groomer</a> has a longer checklist.",
+      },
+      { type: "h2", text: "When a Crate Isn't a Red Flag" },
+      {
+        type: "p",
+        html: "Cage-free isn't automatically better in every situation. Some dogs are comfortable in a crate and feel safer in one, and a crate can be the safest option for a dog who might bolt or hurt themselves. What matters is that the groomer is transparent, the time is short and supervised, and the dog is comfortable. If your dog is crate-trained, tell the groomer.",
+      },
+      { type: "h2", text: "Setting Up a Good First Visit" },
+      {
+        type: "p",
+        html: "Mention your dog's temperament, any fears, and health conditions when you book. Our <a href=\"/blog/how-to-prepare-for-first-mobile-grooming-appointment\" class=\"text-brand hover:underline font-medium\">first appointment prep guide</a> covers how to get ready, and our <a href=\"/blog/what-happens-during-mobile-dog-grooming-appointment-walkthrough\" class=\"text-brand hover:underline font-medium\">appointment walkthrough</a> covers what the visit looks like. For puppies, see our <a href=\"/blog/puppys-first-grooming-appointment-when-to-start\" class=\"text-brand hover:underline font-medium\">puppy grooming guide</a>.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/burlington-nc" class="text-brand hover:underline font-medium">Burlington</a>, <a href="/groomers/graham-nc" class="text-brand hover:underline font-medium">Graham</a>, and <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a> to find a mobile groomer near you, then ask the questions above.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
