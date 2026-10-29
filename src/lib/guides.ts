@@ -58,6 +58,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "maltese-grooming-guide",
       "corgi-grooming-guide",
       "bichon-frise-grooming-guide",
+      "shichon-zuchon-grooming-guide",
       "what-is-a-dog-blowout-do-you-need-one",
       "how-to-brush-your-dog-between-grooming-appointments",
       "how-often-should-you-bathe-your-dog",

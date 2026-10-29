@@ -3001,6 +3001,92 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "shichon-zuchon-grooming-guide",
+    title: "Shichon (Zuchon) Grooming Guide: Coat Types, Teddy-Bear Cuts, and Mats",
+    metaDescription:
+      "Shichons, also called Zuchons or Teddy Bear dogs, are Shih Tzu and Bichon Frise mixes with coats that vary. Learn how to brush, which cuts are popular, and how often to book.",
+    excerpt:
+      "A Shichon can inherit a silky Shih Tzu coat, a curly Bichon coat, or a mix of both. Here's how to figure out which you have, how to keep it tangle-free, and which cuts make it easy.",
+    publishedAt: "2026-10-29",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/5/57/Zuchon.jpg",
+      alt: "A happy Shichon with a curly gray-and-white coat looking at the camera",
+      width: 960,
+      height: 898,
+      author: "Alexrstone",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Zuchon.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "The Shichon, also known as the Zuchon or the Teddy Bear dog, is a cross between a Shih Tzu and a Bichon Frise. It's a popular small companion dog, and it's one of the breeds that Triangle owners search for grooming help with. Because it's a mix, the coat isn't predictable. Here's how to work out what you have and how to care for it.",
+      },
+      { type: "h2", text: "Why Shichon Coats Vary" },
+      {
+        type: "p",
+        html: "A Shih Tzu has a long, silky coat, and a Bichon has a soft, curly one. A Shichon can land anywhere between the two: straight and silky, wavy, or tightly curly, sometimes with different textures on different parts of the body. Mixed breeds don't follow a single pattern, so it's worth paying attention to how your own dog's coat behaves. Our guide to <a href=\"/blog/doodle-poodle-mix-grooming-guide-different-coat-routine\" class=\"text-brand hover:underline font-medium\">doodle and poodle mix coats</a> explains the same idea for another popular mix.",
+      },
+      { type: "h2", text: "What Most Shichons Share" },
+      {
+        type: "ul",
+        items: [
+          "A soft, dense coat that sheds little but tangles easily, because loose hair stays caught in the fur",
+          "Hair that keeps growing, so it needs regular trimming",
+          "A small size, which makes tangles and handling easier to manage but also more delicate",
+        ],
+      },
+      { type: "h2", text: "Brushing at Home" },
+      {
+        type: "p",
+        html: "A slicker brush and a metal comb are the usual tools. Brush in sections down to the skin and use the comb to confirm nothing is tangled underneath, because the surface can look smooth while a mat forms below. Daily brushing is ideal for a longer coat, and every couple of days works for a shorter cut. Common trouble spots include behind the ears, under the legs, around the collar, and in the beard. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique, and our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains what happens when tangles are left alone.",
+      },
+      { type: "h2", text: "Popular Cuts" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Teddy-bear cut:</strong> an even, shorter body with a rounded, fuller face. It's the style the nickname comes from, and the most popular",
+          "<strong>Puppy cut:</strong> a uniform short length all over, which is easy to maintain",
+          "<strong>Longer, flowing coat:</strong> closer to a Shih Tzu look, which needs much more brushing",
+        ],
+      },
+      {
+        type: "p",
+        html: "Most pet Shichons live happily in a teddy-bear or puppy cut. Tell your groomer how much brushing you can realistically do, and they'll recommend a length to match.",
+      },
+      { type: "h2", text: "Face, Eyes, and Tear Staining" },
+      {
+        type: "p",
+        html: "Both parent breeds are prone to tear staining, so Shichons often are too, especially light-colored ones. Gently wiping the eye area daily and keeping the hair around the eyes trimmed helps. Some Shichons inherit a shorter muzzle from the Shih Tzu side, so keep an eye on drying heat and breathing during warm weather. If you notice redness, squinting, or heavy discharge, check with your veterinarian. Our <a href=\"/blog/shih-tzu-grooming-guide\" class=\"text-brand hover:underline font-medium\">Shih Tzu guide</a> covers face and eye care in more detail.",
+      },
+      { type: "h2", text: "Ears and Teeth" },
+      {
+        type: "p",
+        html: "Shichons usually have drop ears covered in hair, which limits airflow, so a routine ear check matters, especially in North Carolina's humid months. See our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a>. Small breeds are also prone to dental buildup, so regular brushing is worth building into your routine. Our <a href=\"/blog/dog-dental-health-teeth-brushing-grooming-routine\" class=\"text-brand hover:underline font-medium\">dental care guide</a> covers how to start.",
+      },
+      { type: "h2", text: "Bathing and Drying" },
+      {
+        type: "p",
+        html: "Always brush a Shichon before the bath, since water can tighten tangles, and dry the coat thoroughly afterward. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing.",
+      },
+      { type: "h2", text: "Starting Young" },
+      {
+        type: "p",
+        html: "Short, positive grooming sessions from puppyhood help a Shichon get comfortable with handling. Our <a href=\"/blog/puppys-first-grooming-appointment-when-to-start\" class=\"text-brand hover:underline font-medium\">puppy grooming guide</a> covers when to start.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "A professional groom every four to six weeks is a common range for Shichons, since the coat grows continuously and mats easily. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges, and our <a href=\"/blog/bichon-frise-grooming-guide\" class=\"text-brand hover:underline font-medium\">Bichon Frise guide</a> covers the other parent breed's coat.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/cary-nc" class="text-brand hover:underline font-medium">Cary</a>, and <a href="/groomers/morrisville-nc" class="text-brand hover:underline font-medium">Morrisville</a> to find a mobile groomer near you.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
