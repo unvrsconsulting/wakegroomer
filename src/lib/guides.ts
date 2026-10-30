@@ -30,6 +30,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "mobile-dog-grooming-cost-guide-raleigh-durham-triangle",
       "how-to-choose-a-trustworthy-mobile-dog-groomer-checklist",
       "how-much-to-tip-a-mobile-dog-groomer",
+      "mobile-dog-grooming-vs-diy-at-home-what-you-save",
       "multi-pet-household-mobile-grooming-scheduling-guide",
     ],
   },

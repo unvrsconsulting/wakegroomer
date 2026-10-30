@@ -3087,6 +3087,96 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "mobile-dog-grooming-vs-diy-at-home-what-you-save",
+    title: "Mobile Dog Grooming vs. Doing It Yourself: What You Actually Save",
+    metaDescription:
+      "Is grooming your dog at home really cheaper than hiring a mobile groomer? Here's how to compare the true costs, which dogs suit DIY, and why a mix of both often works best.",
+    excerpt:
+      "DIY grooming looks cheaper until you count the tools, the time, and the cost of mistakes. Here's an honest way to compare, and which dogs are fine at home.",
+    publishedAt: "2026-10-30",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Dog_brush.JPG",
+      alt: "A slicker brush with fine bent wire pins, a common tool for brushing dogs at home",
+      width: 3648,
+      height: 2736,
+      author: "ZooFari",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Dog_brush.JPG",
+      license: "CC BY-SA 3.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "It's a fair question: if a groom costs money every few weeks, why not do it yourself? For some dogs, doing part of it at home makes real sense. For others, DIY ends up costing more than it saves once you count tools, time, and mistakes. Here's an honest way to compare, without pretending there's one right answer.",
+      },
+      { type: "h2", text: "The Short Answer" },
+      {
+        type: "p",
+        html: "It depends mostly on your dog's coat. A short-coated dog who needs a bath and a nail trim is a very different job from a doodle, a Shih Tzu, or a double-coated Husky. The more coat, the more time, skill, and equipment a full groom takes, and the more likely a mistake becomes expensive.",
+      },
+      { type: "h2", text: "What DIY Actually Requires" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Brushes and combs</strong> matched to your dog's coat. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers which ones",
+          "<strong>Clippers, blades, and scissors</strong>, if you plan to cut the coat. Quality clippers cost far more than a cheap set, and the wrong blade can leave a dog uncomfortable",
+          "<strong>A bathing setup</strong>, whether that's a tub, a sprayer, or a table, plus shampoo and towels",
+          "<strong>A dryer</strong> that's strong enough to dry a thick coat and quiet enough that your dog tolerates it",
+          "<strong>Nail tools and ear cleaner</strong>, and the confidence to use them. See our <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a> and <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a>",
+        ],
+      },
+      { type: "h2", text: "The Costs People Forget" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Your time.</strong> Bathing, drying, brushing, and trimming a larger or thicker-coated dog can take hours, and cleanup takes more",
+          "<strong>Startup costs.</strong> Tools are a one-time expense, but it adds up before the first groom",
+          "<strong>Mistakes.</strong> Nicks, clipper irritation, a cut that looks uneven, or a trapped mat made worse can mean a vet visit or a corrective groom, and sometimes a dog who now dislikes grooming",
+          "<strong>Your dog's stress.</strong> A dog who hates the bath or the dryer can make DIY miserable for everyone",
+        ],
+      },
+      { type: "h2", text: "Dogs Where DIY Often Works" },
+      {
+        type: "p",
+        html: "Short, smooth-coated dogs, such as many Labs, Boxers, and Beagles, can often be bathed and brushed at home without much trouble. Regular maintenance for any dog, like brushing, wiping the face, and checking the ears, is also well within most owners' reach.",
+      },
+      { type: "h2", text: "Dogs Where a Professional Pays Off" },
+      {
+        type: "ul",
+        items: [
+          "Curly or mat-prone coats such as Poodles, doodles, Bichons, and Shih Tzus, where tangles form quickly. See our guides to <a href=\"/blog/poodle-grooming-guide\" class=\"text-brand hover:underline font-medium\">Poodles</a> and <a href=\"/blog/doodle-poodle-mix-grooming-guide-different-coat-routine\" class=\"text-brand hover:underline font-medium\">doodles</a>",
+          "Heavy-shedding double coats such as Huskies and German Shepherds, where a professional dryer removes far more loose coat than a home dryer. See our <a href=\"/blog/what-is-a-dog-blowout-do-you-need-one\" class=\"text-brand hover:underline font-medium\">blowout guide</a>",
+          "Large dogs, which are hard to bathe and dry at home",
+          "Anxious, senior, or hard-to-handle dogs. See our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a>",
+          "Any dog with significant matting. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains why this is better left to a groomer",
+        ],
+      },
+      { type: "h2", text: "The Hybrid Approach Many Owners Choose" },
+      {
+        type: "p",
+        html: "A common middle path is to handle the easy, frequent tasks at home, such as brushing, quick wipe-downs, and nail checks, and book a professional groom every six to eight weeks for the bath, dry, and trim. Good brushing between visits keeps the coat easier to groom and can mean a shorter, smoother appointment. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed frequency guide</a> covers how often to book.",
+      },
+      { type: "h2", text: "How to Compare Fairly" },
+      {
+        type: "ul",
+        items: [
+          "Get a real quote from a mobile groomer for your dog's size and coat. Prices vary, and our <a href=\"/blog/mobile-dog-grooming-cost-guide-raleigh-durham-triangle\" class=\"text-brand hover:underline font-medium\">cost guide</a> explains what drives them",
+          "Add up the tools you'd need and what you already own",
+          "Estimate the hours per groom, honestly, including cleanup",
+          "Weigh the risk of a mistake for your dog's particular coat",
+        ],
+      },
+      {
+        type: "p",
+        html: "For many dogs with easy coats, DIY is a fair way to save money. For many others, especially the high-maintenance coats, a professional visit costs less than it first appears once everything is counted.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: '<a href="/search" class="text-brand hover:underline font-medium">Search the full directory</a> or browse local listings in <a href="/groomers/raleigh-nc" class="text-brand hover:underline font-medium">Raleigh</a>, <a href="/groomers/durham-nc" class="text-brand hover:underline font-medium">Durham</a>, and <a href="/groomers/greensboro-nc" class="text-brand hover:underline font-medium">Greensboro</a> to compare mobile groomers and ask for a quote.',
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
