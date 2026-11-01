@@ -3177,6 +3177,118 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "do-i-need-to-be-home-for-mobile-dog-grooming",
+    title: "Do I Need to Be Home for Mobile Dog Grooming?",
+    metaDescription:
+      "Do you have to be home while a mobile groomer works on your dog? It depends on the groomer and the dog. Here's when it matters, when it doesn't, and what to ask before you book.",
+    excerpt:
+      "Some mobile groomers want you home, others are fine once they know your dog. Here's how to decide, and what to settle with your groomer before the appointment.",
+    publishedAt: "2026-11-01",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Picography-dog-looking-out-window-1.jpg",
+      alt: "A tan and white dog looking out a window at the street, waiting for something outside",
+      width: 4896,
+      height: 3264,
+      author: "Picography",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Picography-dog-looking-out-window-1.jpg",
+      license: "CC0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "A lot of owners book a mobile groomer and then realize they have a work meeting, a school run, or a long commute that overlaps with the appointment. So the question comes up: do you actually have to be home while your dog is groomed? The honest answer is that it depends on the groomer, the dog, and how well you know each other. Here's how to think it through.",
+      },
+      { type: "h2", text: "The Short Answer" },
+      {
+        type: "p",
+        html: "There's no single rule. Many mobile groomers are fine with you being out once they know your dog and have a clear way to reach you. Others ask that an adult be home, at least for the first visit. Policies vary from one business to the next, so ask when you book rather than assuming, and get the answer before the day of the appointment.",
+      },
+      { type: "h2", text: "Why Some Groomers Want You Home" },
+      {
+        type: "ul",
+        items: [
+          "<strong>The first visit.</strong> A new dog is an unknown. The groomer wants to meet you, hear about your dog's quirks, and see how the dog reacts to the van or the dryer",
+          "<strong>Questions come up.</strong> How short to go, whether to address a tangle, what to do about a skin spot they notice. Having you reachable keeps the groom on your terms",
+          "<strong>Setup needs.</strong> Some setups need access to an outlet or a hose, and the groomer may need you to open a gate or a door. Our <a href=\"/blog/mobile-dog-grooming-apartment-no-driveway\" class=\"text-brand hover:underline font-medium\">apartment and no-driveway guide</a> covers parking and access",
+          "<strong>Handoff and payment.</strong> Handing the dog over, going over the results, and paying are simpler when you're there",
+          "<strong>Anxious or reactive dogs.</strong> A nervous dog may need an owner nearby to settle, or may do better if you step away. The groomer can tell you which, and our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> explains why",
+        ],
+      },
+      { type: "h2", text: "When Being Away Often Works" },
+      {
+        type: "p",
+        html: "Regulars are the usual case. If your dog has been groomed by the same person several times, is relaxed with them, and you've agreed on how the visit works, many owners step out. It tends to go smoothly when:",
+      },
+      {
+        type: "ul",
+        items: [
+          "The dog already knows and trusts the groomer",
+          "You've agreed on the cut, the services, and the price ahead of time, ideally in writing",
+          "Payment is handled in advance or by a method that doesn't need you there",
+          "A gate, door, or lockbox is sorted out and the dog can be brought out safely",
+          "You're reachable by phone in case something comes up",
+        ],
+      },
+      {
+        type: "p",
+        html: "If anything about that list feels shaky, stay home for now. You can always give the groomer more freedom later.",
+      },
+      { type: "h2", text: "Before You Hand Over Your Dog" },
+      {
+        type: "p",
+        html: "Leaving a dog with someone you've only just met is a real decision, not a formality. Before you do, run through our <a href=\"/blog/how-to-choose-a-trustworthy-mobile-dog-groomer-checklist\" class=\"text-brand hover:underline font-medium\">checklist</a>.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Are they insured, and can they tell you how they handle a dog who becomes distressed?",
+          "Do they have your contact number and a vet's name in case of an emergency?",
+          "Do they know about health issues, allergies, or past incidents with grooming?",
+          "Is your dog current on the vaccinations the groomer requires? See <a href=\"/blog/does-my-dog-need-vaccinations-before-mobile-grooming\" class=\"text-brand hover:underline font-medium\">do dogs need vaccinations before mobile grooming</a>",
+        ],
+      },
+      { type: "h2", text: "If You Are Home" },
+      {
+        type: "p",
+        html: "Being home doesn't mean hovering. Most groomers work better when the dog isn't looking to you for rescue. A few things help:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Hand your dog over at the door or the van, and then go inside",
+          "Stay somewhere you can hear your phone, and don't pop in and out",
+          "Keep other pets and kids away from the grooming area",
+          "Save questions for the start and the finish",
+          "Ask the groomer whether they'd prefer you nearby or out of sight, since some dogs settle faster once the owner is gone",
+        ],
+      },
+      {
+        type: "p",
+        html: "Our <a href=\"/blog/what-happens-during-mobile-dog-grooming-appointment-walkthrough\" class=\"text-brand hover:underline font-medium\">walkthrough of a mobile grooming appointment</a> covers what the groomer is doing at each stage, and our <a href=\"/blog/how-to-prepare-for-first-mobile-grooming-appointment\" class=\"text-brand hover:underline font-medium\">first-appointment preparation guide</a> covers what to do beforehand.",
+      },
+      { type: "h2", text: "Questions to Ask When You Book" },
+      {
+        type: "ul",
+        items: [
+          "Do you need me to be home for the first appointment? For later ones?",
+          "If I'm not home, how do you handle access to my dog, and how do you reach me?",
+          "How do you take payment? Can it be handled ahead of time?",
+          "What happens if my dog gets stressed or you notice a health concern?",
+          "How will you let me know when the groom is finished? See <a href=\"/blog/how-much-to-tip-a-mobile-dog-groomer\" class=\"text-brand hover:underline font-medium\">our tipping guide</a> if you're sorting out the end of the visit",
+        ],
+      },
+      {
+        type: "p",
+        html: "Whatever the answers, you're the one who knows your dog best. If a groomer is happy to explain their process and doesn't push you either way, that's a good sign.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: "<a href=\"/search\" class=\"text-brand hover:underline font-medium\">Search the full directory</a> or browse local listings in <a href=\"/groomers/raleigh-nc\" class=\"text-brand hover:underline font-medium\">Raleigh</a>, <a href=\"/groomers/durham-nc\" class=\"text-brand hover:underline font-medium\">Durham</a>, and <a href=\"/groomers/cary-nc\" class=\"text-brand hover:underline font-medium\">Cary</a>. Each listing shows how to contact the groomer, so you can ask their policy before you book.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

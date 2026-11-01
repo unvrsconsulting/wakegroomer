@@ -17,6 +17,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "how-to-prepare-for-first-mobile-grooming-appointment",
       "mobile-dog-grooming-vs-salon-which-is-right",
       "cage-free-dog-grooming-what-it-means",
+      "do-i-need-to-be-home-for-mobile-dog-grooming",
       "mobile-dog-grooming-apartment-no-driveway",
       "puppys-first-grooming-appointment-when-to-start",
       "does-my-dog-need-vaccinations-before-mobile-grooming",
