@@ -3289,6 +3289,111 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cavalier-king-charles-spaniel-grooming-guide",
+    title: "Cavalier King Charles Spaniel Grooming Guide: Silky Feathering, Long Ears, and Mats",
+    metaDescription:
+      "Cavalier King Charles Spaniels have a silky coat and long, feathered ears. Learn how to brush it, prevent mats, care for the ears, and what a groomer usually does.",
+    excerpt:
+      "A Cavalier's silky coat and long ears look effortless, but the feathering tangles and the ears need regular checks. Here's what to do at home and what a groomer handles.",
+    publishedAt: "2026-11-02",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Cavalier_King_Charles_Spaniel_Blenheim_Spot.jpg",
+      alt: "Front and back views of a Blenheim Cavalier King Charles Spaniel standing on a table, showing long silky ears and feathered coat",
+      width: 2880,
+      height: 2160,
+      author: "Meij.kobayashi",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cavalier_King_Charles_Spaniel_Blenheim_Spot.jpg",
+      license: "CC BY-SA 3.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "The Cavalier King Charles Spaniel is known for a gentle, affectionate nature and a silky coat with long, feathered ears. The coat looks soft and easy, and it mostly is, but the feathering tangles in predictable places and those big ears need attention. Here's what keeps a Cavalier looking and feeling good.",
+      },
+      { type: "h2", text: "The Cavalier Coat" },
+      {
+        type: "p",
+        html: "A Cavalier has a medium-length, silky coat that's straight or slightly wavy, with longer feathering on the ears, chest, legs, and tail. The breed comes in four recognized colors: Blenheim (chestnut and white), tricolor, ruby, and black and tan. Cavaliers shed lightly year-round, with a bit more during seasonal changes, so they're far easier to live with than a heavy-shedding double-coated breed. The silky texture means loose hair doesn't mat as fast as a curly coat, but it does tangle where the feathering rubs.",
+      },
+      { type: "h2", text: "Brushing Routine" },
+      {
+        type: "p",
+        html: "A few times a week with a pin brush or slicker brush and a metal comb is a good baseline for most Cavaliers. Brush in sections down to the skin, and use the comb to check that nothing is knotted underneath. The usual trouble spots are:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Behind the ears, where the hair is fine and rubs against the collar",
+          "Under the front legs and along the chest feathering",
+          "The feathering on the back of the legs",
+          "The tail",
+        ],
+      },
+      {
+        type: "p",
+        html: "Mats are easier to prevent than to remove. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique, and our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains what to do if tangles get ahead of you.",
+      },
+      { type: "h2", text: "Those Long Ears" },
+      {
+        type: "p",
+        html: "Cavaliers have long, heavy, drop ears covered in feathering. That limits airflow into the ear canal, and moisture and wax can build up, which is a particular concern in North Carolina's humid months. Check the ears weekly for redness, odor, or discharge, and see your veterinarian if you notice any, since a persistent problem needs a proper diagnosis. A groomer can keep the hair at the ear opening tidy, and our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to look for.",
+      },
+      {
+        type: "p",
+        html: "Long ears also dip into food and water bowls. A tall, narrow bowl, or a quick wipe of the ears after meals, helps keep them clean.",
+      },
+      { type: "h2", text: "What a Groomer Usually Does" },
+      {
+        type: "p",
+        html: "Most Cavaliers aren't given a drastic haircut. A typical groom is a bath, a thorough dry and brush-out, and a tidy-up rather than a full clip. Common touches include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Trimming the hair between the paw pads and around the feet. See our <a href=\"/blog/dog-paw-care-why-groomers-trim-fur-between-toes\" class=\"text-brand hover:underline font-medium\">paw care guide</a>",
+          "Tidying the feathering on the legs, tail, and ears so it stays neat",
+          "A sanitary trim for hygiene",
+          "Nail trimming. Our <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a> explains why it matters",
+          "Cleaning the ears",
+        ],
+      },
+      {
+        type: "p",
+        html: "Many groomers prefer to leave the feathering natural rather than shave it, so ask your groomer what they'd recommend for your dog, and mention if you'd like a shorter, easier-care trim for summer.",
+      },
+      { type: "h2", text: "Bathing and Drying" },
+      {
+        type: "p",
+        html: "Brush before the bath, since water can tighten tangles, and dry the coat completely afterward. A damp coat and damp ears can lead to skin and ear trouble. Many Cavaliers do well with a bath every few weeks to every couple of months, depending on lifestyle. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing.",
+      },
+      { type: "h2", text: "Tell Your Groomer About Health Issues" },
+      {
+        type: "p",
+        html: "Cavaliers are prone to certain inherited health conditions, including heart conditions and some neurological and eye problems. That's a good reason to be open with your groomer about your dog's health and any limits your veterinarian has given you. A dog with a heart murmur may need shorter sessions and calmer handling, and a groomer who knows can plan for it. If your dog is nervous, our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> explains how mobile grooming helps.",
+      },
+      { type: "h2", text: "Teeth" },
+      {
+        type: "p",
+        html: "Like many small breeds, Cavaliers are prone to dental buildup, so regular tooth brushing is worth starting early. Our <a href=\"/blog/dog-dental-health-teeth-brushing-grooming-routine\" class=\"text-brand hover:underline font-medium\">dental care guide</a> covers how to begin.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "Many Cavalier owners book a professional groom every six to eight weeks, with brushing at home in between. More frequent visits make sense if the feathering tangles quickly, or if you want the ears and feet kept especially neat. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Why Mobile Grooming Suits Cavaliers" },
+      {
+        type: "p",
+        html: "Cavaliers are people-oriented dogs, and many dislike being separated from their owners and left in a noisy salon. A mobile groom keeps the visit calm and in your driveway, with one dog at a time and no waiting in a crate. Our <a href=\"/blog/mobile-dog-grooming-vs-salon-which-is-right\" class=\"text-brand hover:underline font-medium\">mobile vs. salon comparison</a> goes through the trade-offs.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: "<a href=\"/search\" class=\"text-brand hover:underline font-medium\">Search the full directory</a> or browse local listings in <a href=\"/groomers/raleigh-nc\" class=\"text-brand hover:underline font-medium\">Raleigh</a>, <a href=\"/groomers/cary-nc\" class=\"text-brand hover:underline font-medium\">Cary</a>, and <a href=\"/groomers/apex-nc\" class=\"text-brand hover:underline font-medium\">Apex</a> to find a mobile groomer near you.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
