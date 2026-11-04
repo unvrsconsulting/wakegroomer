@@ -3394,6 +3394,89 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "mobile-dog-grooming-in-rain-heat-cold-north-carolina",
+    title: "Does Mobile Dog Grooming Happen in Rain, Heat, or Cold?",
+    metaDescription:
+      "What happens to a mobile grooming appointment when it rains, storms, freezes, or gets hot in North Carolina? Here's what to expect and what to ask your groomer.",
+    excerpt:
+      "Rain usually doesn't cancel a mobile groom, but storms and ice might. Here's how weather affects mobile dog grooming in North Carolina and what to ask before you book.",
+    publishedAt: "2026-11-04",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Farm_Dog_in_the_Rain_%28Unsplash%29.jpg",
+      alt: "A wet golden-coated dog sitting on a grassy field in the rain",
+      width: 3804,
+      height: 2340,
+      author: "Overture Creations",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Farm_Dog_in_the_Rain_(Unsplash).jpg",
+      license: "CC0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "North Carolina weather doesn't make things easy: humid summers, afternoon thunderstorms, the occasional tropical storm, and winter cold snaps and ice. If you've booked a mobile groomer, it's reasonable to wonder what happens when the forecast turns. Does the appointment still go ahead, and is it safe for your dog? Here's what to expect and what to ask.",
+      },
+      { type: "h2", text: "The Short Answer" },
+      {
+        type: "p",
+        html: "A mobile groomer works from a van or trailer, so a rainy day isn't automatically a problem. Light rain usually doesn't stop an appointment. Severe weather is different. Policies vary from one groomer to the next, so treat this as a general picture and confirm how yours handles it.",
+      },
+      { type: "h2", text: "Rain" },
+      {
+        type: "p",
+        html: "The bath happens inside the van, so rain mostly affects the short trip between your door and the vehicle. A few things help on a wet day:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Keep your dog's paws and legs wiped dry at the door so mud doesn't come along. A muddy dog just before a groom makes the groomer's job harder, and our <a href=\"/blog/dog-paw-care-why-groomers-trim-fur-between-toes\" class=\"text-brand hover:underline font-medium\">paw care guide</a> covers why paws matter",
+          "Clear a spot where the groomer can park close to your door, so the walk is short",
+          "Don't bathe your dog the morning of a groom. They'll be bathed anyway",
+          "Expect the groomer to dry your dog completely before the dog goes back out into the damp",
+        ],
+      },
+      { type: "h2", text: "Heat and Humidity" },
+      {
+        type: "p",
+        html: "Summer in the Triangle and the Triad is hot and humid, which makes grooming comfort a safety issue, not just a convenience. Dogs, especially thick-coated and short-nosed breeds, overheat more easily than people. Ask your groomer how they keep the grooming space cool, and plan the appointment for the cooler part of the day when you can. Never leave a dog unattended in a parked car, whatever the temperature. Our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">grooming double-coated dogs in North Carolina</a> explains how humidity and shedding interact.",
+      },
+      {
+        type: "p",
+        html: "Humidity also affects ears. Damp, heavy ears hold moisture, and our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to watch for.",
+      },
+      { type: "h2", text: "Cold and Ice" },
+      {
+        type: "p",
+        html: "Winter in North Carolina is mild compared with much of the country, but cold snaps and freezing rain happen, especially in the Piedmont. A freshly bathed dog loses heat faster if the coat is damp, so the dry stage matters, and so does keeping the trip back inside short. If roads are icy, many groomers will reschedule rather than drive in unsafe conditions, which is better for everyone.",
+      },
+      { type: "h2", text: "Storms and Severe Weather" },
+      {
+        type: "p",
+        html: "Thunderstorms, tropical storm remnants, ice storms, and strong winds are the situations where groomers most often reschedule. A groomer may reasonably cancel if it isn't safe to drive, park, or work, and many dogs are stressed by storms anyway. If your dog reacts badly to thunder, it's worth knowing in advance, and our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> covers how to make appointments calmer.",
+      },
+      { type: "h2", text: "Questions to Ask When You Book" },
+      {
+        type: "ul",
+        items: [
+          "What's your policy if the weather is bad on the day? Do you reschedule, and how much notice do you give?",
+          "Is there a fee if I need to cancel because of weather?",
+          "How do you keep the van comfortable in hot or cold weather?",
+          "How will you contact me if the schedule changes? Make sure they have a number that you actually answer",
+          "Do you need access to power or a spot sheltered from rain? See our <a href=\"/blog/mobile-dog-grooming-apartment-no-driveway\" class=\"text-brand hover:underline font-medium\">apartment and no-driveway guide</a> for parking and access",
+        ],
+      },
+      { type: "h2", text: "Plan Ahead for Hurricane Season and Winter" },
+      {
+        type: "p",
+        html: "The late-summer and fall storm season and winter ice are the busiest times for cancellations, and the calendar can fill up fast when everyone reschedules at once. Booking a recurring slot a few weeks out helps, and our <a href=\"/blog/fall-dog-grooming-guide-north-carolina-flea-tick-season\" class=\"text-brand hover:underline font-medium\">fall grooming guide</a> covers seasonal care. If you're new to mobile grooming, our <a href=\"/blog/how-to-prepare-for-first-mobile-grooming-appointment\" class=\"text-brand hover:underline font-medium\">first-appointment guide</a> is a good place to start.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: "<a href=\"/search\" class=\"text-brand hover:underline font-medium\">Search the full directory</a> or browse local listings in <a href=\"/groomers/raleigh-nc\" class=\"text-brand hover:underline font-medium\">Raleigh</a>, <a href=\"/groomers/cary-nc\" class=\"text-brand hover:underline font-medium\">Cary</a>, and <a href=\"/groomers/greensboro-nc\" class=\"text-brand hover:underline font-medium\">Greensboro</a>. Each listing shows how to contact the groomer, so you can ask about weather policies before you book.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

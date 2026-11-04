@@ -19,6 +19,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "cage-free-dog-grooming-what-it-means",
       "do-i-need-to-be-home-for-mobile-dog-grooming",
       "mobile-dog-grooming-apartment-no-driveway",
+      "mobile-dog-grooming-in-rain-heat-cold-north-carolina",
       "puppys-first-grooming-appointment-when-to-start",
       "does-my-dog-need-vaccinations-before-mobile-grooming",
     ],
