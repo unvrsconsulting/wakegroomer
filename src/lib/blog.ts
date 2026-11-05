@@ -1202,7 +1202,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "how-often-should-you-bathe-your-dog",
     title: "How Often Should You Bathe Your Dog? A Guide by Coat and Lifestyle",
     metaDescription:
-      "There's no single bathing schedule for every dog. Learn how coat type, activity, and skin affect how often to bathe your dog, and the signs you're overdoing it.",
+      "How often do dogs need a bath? Many healthy dogs do well with one every four to eight weeks, but coat type, activity, and skin change the answer. Here's how to decide, and the signs you're overdoing it.",
     excerpt:
       "Bathing too rarely leaves dirt and odor behind, and bathing too often can dry out the skin. Here's how to find the right rhythm for your dog's coat and lifestyle.",
     publishedAt: "2026-09-26",
@@ -1218,7 +1218,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       {
         type: "p",
-        html: "Ask five dog owners how often they bathe their dogs and you'll get five different answers, from every week to a couple of times a year. The truth is that the right schedule depends on the dog. Here's how to work out what fits yours, and how bathing fits alongside brushing and professional grooming.",
+        html: "<strong>The quick answer:</strong> many healthy dogs do well with a bath about every four to eight weeks. Short-coated dogs who stay fairly clean can go longer, while dogs with oily coats, skin conditions, or a love of mud may need baths more often. Ask five dog owners how often they bathe their dogs and you'll get five different answers, from every week to a couple of times a year, so here's how to work out what fits yours, and how bathing fits alongside brushing and professional grooming.",
       },
       { type: "h2", text: "A General Starting Point" },
       {
@@ -1954,7 +1954,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "siberian-husky-grooming-guide",
     title: "Siberian Husky Grooming Guide: Shedding, the Double Coat, and Why You Shouldn't Shave",
     metaDescription:
-      "Huskies blow their coat heavily twice a year. Learn how the double coat works, how to manage shedding in North Carolina's heat, and why shaving usually backfires.",
+      "Do Huskies shed? Yes, heavily, and they blow their coat about twice a year. Learn how the double coat works, how to manage shedding in North Carolina's heat, and why shaving usually backfires.",
     excerpt:
       "A Husky's coat is built for the Arctic, which makes a Carolina summer tricky. Here's how the double coat works, how to handle coat blows, and why shaving isn't the fix it seems.",
     publishedAt: "2026-10-07",
@@ -1970,7 +1970,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       {
         type: "p",
-        html: "Siberian Huskies were bred to work in extreme cold, and their coat is a big part of how. That same coat is why Husky owners in North Carolina ask so many questions: how to handle the shedding, whether to shave in summer, and how often a groomer is needed. Here's how the coat works and what actually helps.",
+        html: "<strong>Do Huskies shed?</strong> Yes, a lot. They shed moderately year-round and blow out their undercoat heavily about twice a year. Siberian Huskies were bred to work in extreme cold, and their coat is a big part of how. That same coat is why Husky owners in North Carolina ask so many questions: how to handle the shedding, whether to shave in summer, and how often a groomer is needed. Here's how the coat works and what actually helps.",
       },
       { type: "h2", text: "How the Husky Double Coat Works" },
       {
@@ -2052,7 +2052,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       {
         type: "p",
-        html: "Australian Shepherds and their smaller cousins are energetic, outdoorsy dogs, and their coat reflects it. It's a thick, weather-resistant double coat with longer feathering in places, which means a lot of shedding and a few predictable spots where tangles form. The smaller version is officially called the Miniature American Shepherd, though many owners still search for \"mini Aussie.\" The coat care is essentially the same for both.",
+        html: "<strong>Do Australian Shepherds shed?</strong> Yes, and they're double-coated, so they shed year-round with heavier seasonal blows. Australian Shepherds and their smaller cousins are energetic, outdoorsy dogs, and their coat reflects it. It's a thick, weather-resistant double coat with longer feathering in places, which means a lot of shedding and a few predictable spots where tangles form. The smaller version is officially called the Miniature American Shepherd, though many owners still search for \"mini Aussie.\" The coat care is essentially the same for both.",
       },
       { type: "h2", text: "How the Aussie Coat Works" },
       {
@@ -2130,7 +2130,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       {
         type: "p",
-        html: "Labrador Retrievers look like low-maintenance dogs, and compared with a Poodle or a Shih Tzu they are. The coat is short and doesn't mat. But Labs are also famous for shedding, and their love of water and mud means a few other grooming details matter more than owners expect. Here's how to keep a Lab's coat and skin in good shape.",
+        html: "<strong>Do Labs shed?</strong> Yes, a lot, year-round. Labrador Retrievers look like low-maintenance dogs, and compared with a Poodle or a Shih Tzu they are. The coat is short and doesn't mat. But Labs are also famous for shedding, and their love of water and mud means a few other grooming details matter more than owners expect. Here's how to keep a Lab's coat and skin in good shape.",
       },
       { type: "h2", text: "A Short Double Coat That Sheds" },
       {
@@ -2194,7 +2194,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       {
         type: "p",
-        html: "Ask any German Shepherd owner about grooming and the first thing you'll hear is shedding. The breed has a dense double coat that sheds all year and heavily during seasonal blows, enough that the joke about a \"German Shedder\" is familiar to anyone who owns one. The good news is that the coat is straightforward to maintain. It mostly comes down to consistent brushing and the right tools.",
+        html: "<strong>Do German Shepherds shed?</strong> Yes, heavily, all year, with bigger seasonal blows in spring and fall. Ask any German Shepherd owner about grooming and the first thing you'll hear is shedding. The breed has a dense double coat that sheds all year and heavily during seasonal blows, enough that the joke about a \"German Shedder\" is familiar to anyone who owns one. The good news is that the coat is straightforward to maintain. It mostly comes down to consistent brushing and the right tools.",
       },
       { type: "h2", text: "How the Coat Works" },
       {
@@ -2337,7 +2337,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "chow-chow-grooming-guide",
     title: "Chow Chow Grooming Guide: Mane Care, Shedding, and Staying Cool in NC",
     metaDescription:
-      "Chow Chows have one of the thickest double coats of any breed. Learn how to brush the mane, manage shedding, keep the dog cool in North Carolina heat, and why not to shave.",
+      "Do Chow Chows shed? Yes, heavily. They have one of the thickest double coats of any breed. Learn how to brush the mane, manage shedding, keep the dog cool in North Carolina heat, and why not to shave.",
     excerpt:
       "A Chow Chow's lion-like mane takes serious upkeep, and a Carolina summer makes it trickier. Here's how the coat works, how to brush it, and how to keep your Chow comfortable.",
     publishedAt: "2026-10-12",
@@ -2353,7 +2353,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       {
         type: "p",
-        html: "The Chow Chow's lion-like mane and teddy-bear face make it one of the most recognizable breeds around, and the coat behind that look is one of the thickest of any dog. It's also one of the more demanding ones to maintain. Add a North Carolina summer to the mix and the questions come fast: how to brush it, how often to book, and whether to shave. Here's what to know.",
+        html: "<strong>Do Chow Chows shed?</strong> Yes, and heavily. They shed some year-round and blow out their thick undercoat seasonally. The Chow Chow's lion-like mane and teddy-bear face make it one of the most recognizable breeds around, and the coat behind that look is one of the thickest of any dog. It's also one of the more demanding ones to maintain. Add a North Carolina summer to the mix and the questions come fast: how to brush it, how often to book, and whether to shave. Here's what to know.",
       },
       { type: "h2", text: "A Very Dense Double Coat" },
       {
@@ -2420,7 +2420,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "great-pyrenees-grooming-guide",
     title: "Great Pyrenees Grooming Guide: Shedding, Mats, and Why a Mobile Groomer Helps",
     metaDescription:
-      "Great Pyrenees have a thick white double coat that sheds heavily and mats behind the ears and on the britches. Learn how to brush it, why not to shave, and what to expect from a groom.",
+      "Do Great Pyrenees shed? Yes. Their thick white double coat sheds heavily and mats behind the ears and on the britches. Learn how to brush it, why not to shave, and what to expect from a groom.",
     excerpt:
       "A Great Pyrenees is a very large dog with a very large coat. Here's how the double coat works, where mats form, and why bringing the groomer to you can make a big dog's visit easier.",
     publishedAt: "2026-10-18",
@@ -2436,7 +2436,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       {
         type: "p",
-        html: "Great Pyrenees were bred to guard flocks in cold mountain weather, and the coat shows it. It's thick, white, weather-resistant, and a lot of dog to maintain, especially in a North Carolina summer. If you share your home with one, here's what the coat needs and what a groomer typically does.",
+        html: "<strong>Do Great Pyrenees shed?</strong> Yes. They shed year-round and heavily during seasonal coat blows. Great Pyrenees were bred to guard flocks in cold mountain weather, and the coat shows it. It's thick, white, weather-resistant, and a lot of dog to maintain, especially in a North Carolina summer. If you share your home with one, here's what the coat needs and what a groomer typically does.",
       },
       { type: "h2", text: "A Heavy Double Coat" },
       {
@@ -2688,7 +2688,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       {
         type: "p",
-        html: "Corgis look compact and easy, but anyone who shares a house with one knows the truth: they shed an astonishing amount for their size. Both the Pembroke and the Cardigan Welsh Corgi have a dense double coat, and managing it is most of what grooming a Corgi is about. Here's how the coat works and what helps.",
+        html: "<strong>Do Corgis shed?</strong> Yes, a lot, year-round, with heavier seasonal blows. Corgis look compact and easy, but anyone who shares a house with one knows the truth: they shed an astonishing amount for their size. Both the Pembroke and the Cardigan Welsh Corgi have a dense double coat, and managing it is most of what grooming a Corgi is about. Here's how the coat works and what helps.",
       },
       { type: "h2", text: "How the Corgi Coat Works" },
       {
