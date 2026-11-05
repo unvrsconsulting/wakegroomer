@@ -3477,6 +3477,87 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "can-mobile-groomers-handle-large-and-giant-breed-dogs",
+    title: "Can a Mobile Groomer Handle a Large or Giant-Breed Dog?",
+    metaDescription:
+      "Do mobile groomers take Great Danes, Mastiffs, and other big dogs? Many do, but size limits vary. Here's what to ask before you book and how to prepare a large dog.",
+    excerpt:
+      "Many mobile groomers handle big dogs, and a driveway visit can be easier than a salon trip. Here's what to ask about size limits, access, and time before you book.",
+    publishedAt: "2026-11-05",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/7/71/Great_Dane_brindle_portrait.jpg",
+      alt: "A brindle Great Dane in profile with a graying muzzle, standing on grass",
+      width: 3264,
+      height: 2448,
+      author: "Louis",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Great_Dane_brindle_portrait.jpg",
+      license: "CC BY-SA 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "If your dog is the size of a small pony, you may have wondered whether a mobile grooming van can fit them. Great Danes, Mastiffs, Saint Bernards, Newfoundlands, and other large and giant breeds are a real grooming challenge. The good news is that many owners find a mobile groomer easier for a big dog than a salon. The catch is that not every groomer takes every size, so it pays to ask first.",
+      },
+      { type: "h2", text: "The Short Answer" },
+      {
+        type: "p",
+        html: "Many mobile groomers do groom large dogs, but there's no universal rule. Some set a size or weight limit based on their equipment, and some charge more for big dogs because the job takes longer. Setups vary from one business to the next, so confirm that the groomer you're considering is comfortable with your dog's size before you book.",
+      },
+      { type: "h2", text: "Why Big Dogs Can Be Harder to Groom" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Time.</strong> There's simply more dog to wash, dry, and brush, so the appointment takes longer",
+          "<strong>Space.</strong> A large dog needs room to stand and turn around in the bathing area",
+          "<strong>Drying.</strong> A thick or long coat on a big frame takes a lot of air and time to dry completely",
+          "<strong>Handling.</strong> A strong dog who's nervous or doesn't like the dryer can be physically hard to manage",
+          "<strong>Joints.</strong> Standing for a long groom is tiring for large breeds, and many are prone to joint trouble as they age",
+        ],
+      },
+      { type: "h2", text: "Why Mobile Grooming Often Suits Large Dogs" },
+      {
+        type: "p",
+        html: "For a big dog, the difference between a salon and a mobile visit is the trip, as much as the groom. A very large dog can be hard to lift into a car, and a long salon day with kennel time can be tiring. A mobile groomer comes to your driveway, works with one dog at a time, and doesn't ask your dog to wait in a crate. Our <a href=\"/blog/mobile-dog-grooming-vs-salon-which-is-right\" class=\"text-brand hover:underline font-medium\">mobile vs. salon comparison</a> covers the trade-offs, and our guides to <a href=\"/blog/great-pyrenees-grooming-guide\" class=\"text-brand hover:underline font-medium\">Great Pyrenees</a> and <a href=\"/blog/german-shepherd-grooming-guide\" class=\"text-brand hover:underline font-medium\">German Shepherds</a> show how this plays out for two big, thick-coated breeds.",
+      },
+      { type: "h2", text: "Questions to Ask Before You Book" },
+      {
+        type: "ul",
+        items: [
+          "Do you groom dogs of my dog's size? Is there a weight or height limit?",
+          "Does a large dog change the price or the appointment time? Ask for a quote based on your dog's actual size and coat. Our <a href=\"/blog/mobile-dog-grooming-cost-guide-raleigh-durham-triangle\" class=\"text-brand hover:underline font-medium\">cost guide</a> explains what drives pricing",
+          "How does my dog get into the van? Is there a ramp, a lift, or a step, and is that comfortable for an older or heavy dog?",
+          "Does the grooming station work for my dog, and will the groomer need extra help?",
+          "How do you handle a big dog who's nervous or doesn't like the dryer?",
+        ],
+      },
+      { type: "h2", text: "If Your Dog Is Big and Getting Older" },
+      {
+        type: "p",
+        html: "Large breeds often slow down earlier than small ones, and stairs, ramps, and slippery floors can be a problem. Tell the groomer about any stiffness or joint issues, and ask whether shorter sessions or breaks are possible. Our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> covers what to mention and how mobile grooming can help.",
+      },
+      { type: "h2", text: "How to Help on Grooming Day" },
+      {
+        type: "ul",
+        items: [
+          "Brush your dog beforehand. Large dogs with long coats can hide tangles. See our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a>",
+          "Walk your dog first so they're calm and have had a chance to relieve themselves",
+          "Make sure the parking spot is level and close to your door. See our <a href=\"/blog/mobile-dog-grooming-apartment-no-driveway\" class=\"text-brand hover:underline font-medium\">apartment and no-driveway guide</a> if parking is tricky",
+          "Mention any health conditions, past injuries, or behavior concerns up front",
+        ],
+      },
+      { type: "h2", text: "Don't Skip the Basics Because They're Big" },
+      {
+        type: "p",
+        html: "Big dogs need the same care as small ones, including regular <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trims</a> and ear checks, and a heavy dog on long nails can end up with sore feet and posture problems. A groomer who's used to large dogs will handle these routinely.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: "<a href=\"/search\" class=\"text-brand hover:underline font-medium\">Search the full directory</a> or browse local listings in <a href=\"/groomers/raleigh-nc\" class=\"text-brand hover:underline font-medium\">Raleigh</a>, <a href=\"/groomers/durham-nc\" class=\"text-brand hover:underline font-medium\">Durham</a>, and <a href=\"/groomers/greensboro-nc\" class=\"text-brand hover:underline font-medium\">Greensboro</a>. Each listing shows how to contact the groomer, so you can ask about size limits before you book.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

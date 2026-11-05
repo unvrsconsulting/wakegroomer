@@ -20,6 +20,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "do-i-need-to-be-home-for-mobile-dog-grooming",
       "mobile-dog-grooming-apartment-no-driveway",
       "mobile-dog-grooming-in-rain-heat-cold-north-carolina",
+      "can-mobile-groomers-handle-large-and-giant-breed-dogs",
       "puppys-first-grooming-appointment-when-to-start",
       "does-my-dog-need-vaccinations-before-mobile-grooming",
     ],
