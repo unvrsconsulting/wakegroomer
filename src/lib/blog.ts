@@ -3558,6 +3558,99 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "bernese-mountain-dog-grooming-guide",
+    title: "Bernese Mountain Dog Grooming Guide: Do They Shed, and How to Keep the Coat Cool",
+    metaDescription:
+      "Do Bernese Mountain Dogs shed? Yes, a lot. Learn how the long double coat works, how to brush it, why not to shave, and how to keep a Bernese cool in North Carolina.",
+    excerpt:
+      "A Bernese Mountain Dog's long, silky coat sheds year-round and holds heat. Here's how to brush it, handle seasonal blows, and keep a big dog comfortable in North Carolina.",
+    publishedAt: "2026-11-07",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/3-BerneseMountainDogInGrass.jpg",
+      alt: "A Bernese Mountain Dog standing on grass with its tongue out, showing the long black, white, and rust coat",
+      width: 8870,
+      height: 5913,
+      author: "FriendlyToaster",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:3-BerneseMountainDogInGrass.jpg",
+      license: "CC BY 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "<strong>Do Bernese Mountain Dogs shed?</strong> Yes, a lot. They shed year-round and blow out their undercoat more heavily with the seasons. The breed's long, silky, tri-colored coat is one of its best features, and also the reason a Bernese is a big grooming commitment, especially in a North Carolina summer. Here's how the coat works and what actually helps.",
+      },
+      { type: "h2", text: "A Long Double Coat Built for the Alps" },
+      {
+        type: "p",
+        html: "A Bernese has a long, slightly wavy or straight outer coat over a thick, soft undercoat. The breed was developed in the Swiss Alps as a farm and draft dog, so the coat is made for cold weather. The outer coat sheds dirt, and the undercoat insulates, which is why shedding is constant and why heat is a bigger concern than cold for this breed.",
+      },
+      { type: "h2", text: "Brushing Routine" },
+      {
+        type: "p",
+        html: "A few times a week works for many Berners, and daily during a heavy shed. A slicker brush works through the surface, an undercoat rake or comb reaches the dense layer underneath, and a metal comb confirms there are no tangles near the skin. Brush in sections down to the skin, because the surface can look fine while the undercoat is packed. The usual trouble spots are:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Behind the ears",
+          "The feathering on the back of the front legs",
+          "The britches (the long hair on the back of the hind legs)",
+          "Under the collar and along the chest",
+          "The tail, which is plumed",
+        ],
+      },
+      {
+        type: "p",
+        html: "Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique, and our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains what to do when tangles get ahead of you.",
+      },
+      { type: "h2", text: "Seasonal Coat Blows" },
+      {
+        type: "p",
+        html: "Twice a year, many double-coated dogs release a large amount of undercoat in a short time, and a Bernese does it on a big frame. A bath followed by a high-velocity dry can pull out far more loose coat than home brushing can. Our guide to <a href=\"/blog/what-is-a-dog-blowout-do-you-need-one\" class=\"text-brand hover:underline font-medium\">dog blowouts</a> explains what that involves, and our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">grooming double-coated dogs in North Carolina</a> covers how humidity changes the timing.",
+      },
+      { type: "h2", text: "Don't Shave a Bernese" },
+      {
+        type: "p",
+        html: "It's tempting to shave a thick-coated dog in July, but a double coat helps regulate temperature, and shaving can leave the coat uneven or slow to grow back. A thorough brush-out and removing the loose undercoat does more for comfort than a close shave. If you're thinking about a shorter trim, talk with your groomer about what's realistic for your dog.",
+      },
+      { type: "h2", text: "Keeping a Bernese Cool in North Carolina" },
+      {
+        type: "ul",
+        items: [
+          "Offer shade and fresh water, and keep walks to early morning or evening in summer",
+          "Provide cool indoor time and good airflow during the hottest hours",
+          "Remove loose undercoat regularly, since a packed coat holds heat",
+          "Watch for heavy panting, drooling, or lethargy, and call your veterinarian if you're worried about overheating",
+        ],
+      },
+      { type: "h2", text: "Bathing and Drying" },
+      {
+        type: "p",
+        html: "A dense, long coat on a large dog takes a long time to dry, and a coat left damp can lead to skin irritation. Brush before the bath, rinse thoroughly, and dry all the way down to the skin. Hot spots can develop under a thick, damp coat, so if you see red, irritated, or oozing patches, check with your veterinarian. Our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing.",
+      },
+      { type: "h2", text: "Feet, Nails, and Ears" },
+      {
+        type: "p",
+        html: "The hair between the paw pads collects mud and debris, and groomers usually trim it. See our <a href=\"/blog/dog-paw-care-why-groomers-trim-fur-between-toes\" class=\"text-brand hover:underline font-medium\">paw care guide</a>. A big dog on long nails can end up with sore feet, so regular <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trims</a> matter. The drop ears also limit airflow, so a routine check is worth it. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to look for.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "Many Bernese owners book a professional groom every six to eight weeks, with more frequent visits during heavy shedding seasons. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Why Mobile Grooming Suits a Bernese" },
+      {
+        type: "p",
+        html: "A Bernese is a big dog, and a long salon visit with kennel time can be tiring. A mobile groomer comes to your driveway and works with one dog at a time, with no car ride and no waiting room. If you're wondering whether a mobile groomer can handle a dog this size, our guide to <a href=\"/blog/can-mobile-groomers-handle-large-and-giant-breed-dogs\" class=\"text-brand hover:underline font-medium\">grooming large and giant-breed dogs</a> covers what to ask before you book.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: "<a href=\"/search\" class=\"text-brand hover:underline font-medium\">Search the full directory</a> or browse local listings in <a href=\"/groomers/raleigh-nc\" class=\"text-brand hover:underline font-medium\">Raleigh</a>, <a href=\"/groomers/apex-nc\" class=\"text-brand hover:underline font-medium\">Apex</a>, and <a href=\"/groomers/chapel-hill-nc\" class=\"text-brand hover:underline font-medium\">Chapel Hill</a> to find a mobile groomer near you.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
