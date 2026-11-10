@@ -18,6 +18,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       "mobile-dog-grooming-vs-salon-which-is-right",
       "cage-free-dog-grooming-what-it-means",
       "do-i-need-to-be-home-for-mobile-dog-grooming",
+      "how-far-in-advance-to-book-a-mobile-dog-groomer",
       "mobile-dog-grooming-apartment-no-driveway",
       "mobile-dog-grooming-in-rain-heat-cold-north-carolina",
       "can-mobile-groomers-handle-large-and-giant-breed-dogs",

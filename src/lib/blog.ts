@@ -3651,6 +3651,101 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-far-in-advance-to-book-a-mobile-dog-groomer",
+    title: "How Far in Advance Should You Book a Mobile Dog Groomer?",
+    metaDescription:
+      "How far ahead should you book a mobile dog groomer? Mobile calendars fill up. Here's a sensible booking window, how recurring appointments work, and what to ask about cancellations.",
+    excerpt:
+      "Mobile groomers see one dog at a time, so good ones book up. Here's how early to book, how recurring slots work, and what to ask about cancellation policies.",
+    publishedAt: "2026-11-10",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Waiting_patiently_for_my_master_..._%2850463918271%29.jpg",
+      alt: "A shaggy gray dog in a green coat standing on a floating dock, waiting",
+      width: 3744,
+      height: 2499,
+      author: "Winniepix",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Waiting_patiently_for_my_master_..._(50463918271).jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "<strong>How far ahead should you book a mobile dog groomer?</strong> There's no fixed rule, but booking earlier than you think you need to is a safe bet. Mobile groomers see one dog at a time, so their calendars are limited and good ones fill up. Here's how to plan, how recurring appointments work, and what to know about cancellations before you book.",
+      },
+      { type: "h2", text: "Why Mobile Calendars Fill Up" },
+      {
+        type: "p",
+        html: "A mobile groomer works with one dog at a time and spends part of the day driving between homes, so there are only so many appointments in a day. A popular groomer can be booked out for a while, especially for a new customer. How long varies a lot from one business to the next, so ask what the current wait is when you contact them rather than assuming.",
+      },
+      { type: "h2", text: "A Sensible Booking Window" },
+      {
+        type: "ul",
+        items: [
+          "<strong>For a first appointment,</strong> start looking at least a few weeks before you'd like to be groomed, and sooner if you want a specific groomer or a specific day",
+          "<strong>For a regular groom,</strong> rebook before the last appointment is over. Many groomers will put your next visit on the calendar at the end of the current one",
+          "<strong>Before a big event,</strong> such as a trip, a family gathering, or a photo, book earlier and don't wait until the week before",
+          "<strong>If your dog is matted or overdue,</strong> don't wait. Our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains why it's worth acting early",
+        ],
+      },
+      { type: "h2", text: "Recurring Appointments Save Hassle" },
+      {
+        type: "p",
+        html: "Many owners set up a repeating slot, such as every six or eight weeks, so they never have to hunt for an opening. A standing appointment usually keeps your place in the groomer's schedule. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> can help you pick a schedule that fits your dog's coat. If you have more than one dog, our <a href=\"/blog/multi-pet-household-mobile-grooming-scheduling-guide\" class=\"text-brand hover:underline font-medium\">multi-pet scheduling guide</a> covers how to book them together.",
+      },
+      { type: "h2", text: "Busier Times of Year" },
+      {
+        type: "p",
+        html: "Some stretches tend to be busier than others. Think about the weeks before holidays, the start of summer when owners want a cooler cut, and the spring and fall shedding seasons. Weather can also bunch up the calendar when storms push appointments around. Our guide to <a href=\"/blog/mobile-dog-grooming-in-rain-heat-cold-north-carolina\" class=\"text-brand hover:underline font-medium\">mobile grooming in rain, heat, and cold</a> covers that side of it. Booking a few weeks ahead of those times helps.",
+      },
+      { type: "h2", text: "What to Ask About Cancellations" },
+      {
+        type: "p",
+        html: "Policies differ from one groomer to the next, and it's much easier to know yours before you need it. Ask when you book:",
+      },
+      {
+        type: "ul",
+        items: [
+          "How much notice do you need if I have to cancel or reschedule?",
+          "Is there a fee for a late cancellation or a missed appointment?",
+          "Do you take a deposit, and if so, is it refundable?",
+          "What happens if my dog is sick or in heat on the day?",
+          "What's the policy if you have to reschedule, for example because of weather or an emergency?",
+          "How do you confirm appointments, and by what method? Make sure they have a phone number you actually check",
+        ],
+      },
+      { type: "h2", text: "Good Etiquette Both Ways" },
+      {
+        type: "ul",
+        items: [
+          "Give as much notice as you can if you have to cancel, since the groomer may be able to fill the slot",
+          "Be reachable on the day, and be ready when the van arrives. Our <a href=\"/blog/how-to-prepare-for-first-mobile-grooming-appointment\" class=\"text-brand hover:underline font-medium\">first-appointment guide</a> has a prep checklist",
+          "Let the groomer know before the appointment if your dog is ill, anxious, or has had any change in health. If your dog is anxious, our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> is worth reading",
+          "Check what the groomer requires, including vaccinations. See <a href=\"/blog/does-my-dog-need-vaccinations-before-mobile-grooming\" class=\"text-brand hover:underline font-medium\">do dogs need vaccinations before mobile grooming</a>",
+          "If you're not sure whether you need to be home, our guide on <a href=\"/blog/do-i-need-to-be-home-for-mobile-dog-grooming\" class=\"text-brand hover:underline font-medium\">being home during a mobile groom</a> covers it",
+        ],
+      },
+      {
+        type: "p",
+        html: "It's also worth knowing how to settle up once the appointment is done. See our <a href=\"/blog/how-much-to-tip-a-mobile-dog-groomer\" class=\"text-brand hover:underline font-medium\">tipping guide</a>.",
+      },
+      { type: "h2", text: "If You Can't Get In Right Away" },
+      {
+        type: "ul",
+        items: [
+          "Ask to be put on a waitlist or cancellation list",
+          "Contact two or three groomers in your area, since availability varies",
+          "Ask whether they have shorter-notice openings for a quick bath and tidy-up while you wait",
+          "Keep up with brushing in the meantime. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers it",
+        ],
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: "<a href=\"/search\" class=\"text-brand hover:underline font-medium\">Search the full directory</a> or browse local listings in <a href=\"/groomers/raleigh-nc\" class=\"text-brand hover:underline font-medium\">Raleigh</a>, <a href=\"/groomers/durham-nc\" class=\"text-brand hover:underline font-medium\">Durham</a>, and <a href=\"/groomers/cary-nc\" class=\"text-brand hover:underline font-medium\">Cary</a>. Each listing shows how to contact the groomer, so you can ask about availability and cancellation policies before you book.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
