@@ -3746,6 +3746,94 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-long-does-a-mobile-dog-grooming-appointment-take",
+    title: "How Long Does a Mobile Dog Grooming Appointment Take?",
+    metaDescription:
+      "How long does a mobile dog grooming appointment take? It depends on your dog's size, coat, and condition. Here's what affects the time, what happens at each step, and how to get an estimate.",
+    excerpt:
+      "A quick bath and tidy-up and a full groom on a thick coat take very different amounts of time. Here's what drives the length of a mobile groom and how to plan for it.",
+    publishedAt: "2026-11-11",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/6/65/Miniature_Schnauzer_on_grass%2C_Short_Summer_Cut_%28Named_%22Fox%22_or_%22Mr._Sir%22%29.jpg",
+      alt: "A gray Miniature Schnauzer with a neat short summer cut standing on grass with its tongue out",
+      width: 2224,
+      height: 1482,
+      author: "Psiberfunk",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Miniature_Schnauzer_on_grass,_Short_Summer_Cut_(Named_%22Fox%22_or_%22Mr._Sir%22).jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "<strong>How long does a mobile dog grooming appointment take?</strong> It depends on the dog. A small, easy-coated dog who needs a bath and a tidy-up can be done much faster than a large, thick-coated, or tangled dog who needs a full groom. Your groomer can give you an estimate for your dog, and it's worth asking so you can plan your day. Here's what drives the time and how to make the visit go smoothly.",
+      },
+      { type: "h2", text: "What Affects the Length of a Groom" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Size.</strong> There's simply more dog to wash, dry, and trim. Our guide to <a href=\"/blog/can-mobile-groomers-handle-large-and-giant-breed-dogs\" class=\"text-brand hover:underline font-medium\">grooming large and giant-breed dogs</a> covers what changes",
+          "<strong>Coat type and length.</strong> A short, smooth coat is quick. A long, curly, or double coat takes longer to wash, dry, and brush out",
+          "<strong>Coat condition.</strong> Tangles and mats add time, sometimes a lot of it. See our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> for why",
+          "<strong>The services you book.</strong> A bath and brush is a different job from a full haircut with a nail trim, ear cleaning, and extras",
+          "<strong>Your dog's behavior.</strong> A dog who's nervous, wiggly, or sensitive to the dryer may need more breaks. Our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> explains how groomers handle that",
+          "<strong>How long since the last groom.</strong> An overgrown coat takes longer than a regular maintenance visit",
+          "<strong>How many dogs.</strong> If you're booking more than one, the groomer will usually schedule them back to back. See our <a href=\"/blog/multi-pet-household-mobile-grooming-scheduling-guide\" class=\"text-brand hover:underline font-medium\">multi-pet scheduling guide</a>",
+        ],
+      },
+      { type: "h2", text: "What Happens During the Appointment" },
+      {
+        type: "p",
+        html: "Most grooms follow the same general order, and each step takes part of the total time:",
+      },
+      {
+        type: "ul",
+        items: [
+          "<strong>Hello and setup.</strong> The groomer meets your dog, confirms what you want, and gets the dog settled in the van",
+          "<strong>Brushing and de-tangling.</strong> A coat that's been brushed regularly goes quickly here",
+          "<strong>The bath.</strong> Shampoo, a thorough rinse, and conditioner if needed",
+          "<strong>Drying.</strong> This is often one of the longer steps for a thick or long coat. See our guide to <a href=\"/blog/what-is-a-dog-blowout-do-you-need-one\" class=\"text-brand hover:underline font-medium\">dog blowouts</a> for how a high-velocity dryer works",
+          "<strong>Trimming and finishing.</strong> The haircut or tidy-up, plus nails, ears, and any extras",
+          "<strong>Handback.</strong> The groomer goes over the results and any concerns with you",
+        ],
+      },
+      {
+        type: "p",
+        html: "Our <a href=\"/blog/what-happens-during-mobile-dog-grooming-appointment-walkthrough\" class=\"text-brand hover:underline font-medium\">step-by-step walkthrough of a mobile grooming appointment</a> covers each stage in more detail.",
+      },
+      { type: "h2", text: "Is a First Visit Longer?" },
+      {
+        type: "p",
+        html: "Often, yes. A new dog may need extra time to settle in, and the groomer is learning your dog's coat and quirks. If the coat is overgrown or tangled, expect more time. Our <a href=\"/blog/how-to-prepare-for-first-mobile-grooming-appointment\" class=\"text-brand hover:underline font-medium\">first-appointment preparation guide</a> covers what to do beforehand.",
+      },
+      { type: "h2", text: "Mobile vs. Salon: How the Time Compares" },
+      {
+        type: "p",
+        html: "The grooming itself takes about as long either way, but the day around it is different. At a salon, a dog may be dropped off and kept for several hours while waiting between steps. A mobile groomer works with one dog at a time at your home, so the dog isn't away from you, and you're not driving back and forth. Our <a href=\"/blog/mobile-dog-grooming-vs-salon-which-is-right\" class=\"text-brand hover:underline font-medium\">mobile vs. salon comparison</a> goes through the trade-offs.",
+      },
+      { type: "h2", text: "How to Keep the Appointment on Schedule" },
+      {
+        type: "ul",
+        items: [
+          "Brush your dog beforehand. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers how",
+          "Take your dog for a walk first so they're calm and have relieved themselves",
+          "Have your dog ready when the groomer arrives, and make sure the parking spot is clear and close to your door",
+          "Be upfront about matting, behavior, or health concerns when you book, so the groomer can set aside enough time",
+          "Keep your phone nearby in case the groomer has a question",
+        ],
+      },
+      { type: "h2", text: "Ask for an Estimate" },
+      {
+        type: "p",
+        html: "Before you book, ask the groomer: How long do you expect my dog's groom to take? Does that include everything I've asked for? What happens if the dog needs more time, for example because of matting? You'll get a better estimate if you describe your dog's size, coat, and condition honestly. Our <a href=\"/blog/mobile-dog-grooming-cost-guide-raleigh-durham-triangle\" class=\"text-brand hover:underline font-medium\">cost guide</a> explains how time and pricing are often connected.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: "<a href=\"/search\" class=\"text-brand hover:underline font-medium\">Search the full directory</a> or browse local listings in <a href=\"/groomers/raleigh-nc\" class=\"text-brand hover:underline font-medium\">Raleigh</a>, <a href=\"/groomers/cary-nc\" class=\"text-brand hover:underline font-medium\">Cary</a>, and <a href=\"/groomers/greensboro-nc\" class=\"text-brand hover:underline font-medium\">Greensboro</a>. Each listing shows how to contact the groomer, so you can ask for a time estimate before you book.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
