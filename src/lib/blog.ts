@@ -3834,6 +3834,99 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "newfoundland-grooming-guide",
+    title: "Newfoundland Grooming Guide: Do They Shed, and How to Manage the Coat",
+    metaDescription:
+      "Do Newfoundlands shed? Yes, heavily. Learn how the thick water-resistant coat works, how to brush it, why not to shave, and how to handle drool, heat, and drying in North Carolina.",
+    excerpt:
+      "A Newfoundland's dense, water-resistant coat sheds year-round and takes a long time to dry. Here's how to brush it, handle seasonal blows, and keep a big dog comfortable in North Carolina.",
+    publishedAt: "2026-11-14",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/9/95/Finnegan_the_Newfoundland_Dog.jpg",
+      alt: "A black Newfoundland with a thick fluffy coat standing on a boat deck beside rigging",
+      width: 2611,
+      height: 2015,
+      author: "Ken Eckert",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Finnegan_the_Newfoundland_Dog.jpg",
+      license: "CC BY-SA 4.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "<strong>Do Newfoundlands shed?</strong> Yes, heavily. They shed year-round and blow out their undercoat more heavily with the seasons. A Newfoundland's thick, water-resistant coat is made for cold water, which makes it a big grooming job on a big dog, especially in North Carolina's heat and humidity. Here's how the coat works and what actually helps.",
+      },
+      { type: "h2", text: "A Coat Built for Cold Water" },
+      {
+        type: "p",
+        html: "A Newfoundland has a dense double coat: a coarse, oily-feeling outer coat that sheds water, over a soft, thick undercoat that insulates. The breed was developed as a working water dog, and that coat does its job. It also takes a long time to dry and holds a lot of loose hair. The most common colors are black, brown, and gray, and the Landseer variety is black and white.",
+      },
+      { type: "h2", text: "Brushing Routine" },
+      {
+        type: "p",
+        html: "A few times a week is a common baseline, and daily during a heavy shed. An undercoat rake or comb reaches the dense layer, a slicker brush works the surface, and a metal comb confirms there are no tangles near the skin. Brush in sections down to the skin, because the top layer can look smooth while the undercoat underneath is packed. The usual trouble spots are:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Behind the ears",
+          "The feathering on the backs of the legs and the britches",
+          "The chest and under the collar",
+          "The tail",
+          "The armpits and belly",
+        ],
+      },
+      {
+        type: "p",
+        html: "Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers the technique, and our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a> explains what to do when tangles get ahead of you.",
+      },
+      { type: "h2", text: "Seasonal Coat Blows" },
+      {
+        type: "p",
+        html: "Twice a year, many double-coated dogs release a large amount of undercoat in a short time. On a Newfoundland that's a lot of hair. A bath followed by a high-velocity dry removes far more loose coat than home brushing can. Our guide to <a href=\"/blog/what-is-a-dog-blowout-do-you-need-one\" class=\"text-brand hover:underline font-medium\">dog blowouts</a> explains what that involves, and our guide to <a href=\"/blog/grooming-double-coated-dogs-nc-humidity-shedding-season\" class=\"text-brand hover:underline font-medium\">grooming double-coated dogs in North Carolina</a> covers how humidity changes the timing.",
+      },
+      { type: "h2", text: "Don't Shave a Newfoundland" },
+      {
+        type: "p",
+        html: "In July it can be tempting to shave a thick-coated dog down, but the double coat helps regulate temperature, and shaving can leave the coat uneven or slow to grow back. A thorough brush-out that removes the loose undercoat usually does more for comfort. If you're considering a shorter trim, talk with your groomer about what's realistic.",
+      },
+      { type: "h2", text: "Heat and Humidity" },
+      {
+        type: "ul",
+        items: [
+          "Offer shade, fresh water, and cool indoor time, and keep exercise to early morning or evening in summer",
+          "Many Newfoundland owners provide a kiddie pool or a cool surface, which also suits the breed's love of water",
+          "Remove loose undercoat regularly, since a packed coat holds heat",
+          "Watch for heavy panting, drooling beyond normal, or lethargy, and call your veterinarian if you're worried about overheating",
+        ],
+      },
+      { type: "h2", text: "Drying, Skin, and Ears" },
+      {
+        type: "p",
+        html: "A Newfoundland who swims or gets bathed needs to be dried all the way to the skin. A damp, dense coat can lead to skin irritation, including hot spots. If you see red, irritated, or oozing patches, check with your veterinarian. Drop ears and a wet-weather lifestyle also raise the odds of ear trouble, so a routine check is worth it. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> covers what to look for, and our <a href=\"/blog/how-often-should-you-bathe-your-dog\" class=\"text-brand hover:underline font-medium\">bathing frequency guide</a> covers timing.",
+      },
+      { type: "h2", text: "Drool, Face, and Feet" },
+      {
+        type: "p",
+        html: "Newfoundlands have loose jowls and tend to drool, so wiping the face and beard helps keep the skin and the hair around the mouth clean. The breed's feet are webbed and the hair between the pads collects mud and debris, which groomers usually trim. See our <a href=\"/blog/dog-paw-care-why-groomers-trim-fur-between-toes\" class=\"text-brand hover:underline font-medium\">paw care guide</a>, and keep up with <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trims</a>, since a heavy dog on long nails can end up with sore feet.",
+      },
+      { type: "h2", text: "How Often to Book" },
+      {
+        type: "p",
+        html: "Many Newfoundland owners book a professional groom every six to eight weeks, with brushing at home in between and more frequent visits during heavy shedding seasons. Our <a href=\"/blog/how-often-should-you-groom-your-dog-breed-guide\" class=\"text-brand hover:underline font-medium\">breed-by-breed grooming frequency guide</a> covers the general ranges.",
+      },
+      { type: "h2", text: "Why Mobile Grooming Suits a Newfoundland" },
+      {
+        type: "p",
+        html: "A Newfoundland is a large dog with a thick coat, and a long salon visit with kennel time can be tiring. A mobile groomer comes to your driveway and works with one dog at a time, with no car ride and no waiting room. If you're wondering whether a mobile groomer can handle a dog this size, our guide to <a href=\"/blog/can-mobile-groomers-handle-large-and-giant-breed-dogs\" class=\"text-brand hover:underline font-medium\">grooming large and giant-breed dogs</a> covers what to ask before you book, and our <a href=\"/blog/how-long-does-a-mobile-dog-grooming-appointment-take\" class=\"text-brand hover:underline font-medium\">guide to how long a groom takes</a> will help you plan the day.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: "<a href=\"/search\" class=\"text-brand hover:underline font-medium\">Search the full directory</a> or browse local listings in <a href=\"/groomers/raleigh-nc\" class=\"text-brand hover:underline font-medium\">Raleigh</a>, <a href=\"/groomers/wake-forest-nc\" class=\"text-brand hover:underline font-medium\">Wake Forest</a>, and <a href=\"/groomers/greensboro-nc\" class=\"text-brand hover:underline font-medium\">Greensboro</a> to find a mobile groomer near you.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
