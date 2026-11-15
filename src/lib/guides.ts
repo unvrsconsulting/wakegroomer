@@ -92,6 +92,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
     slugs: [
       "fall-dog-grooming-guide-north-carolina-flea-tick-season",
       "mobile-grooming-for-senior-and-anxious-dogs-nc",
+      "how-to-help-a-nervous-dog-before-mobile-grooming",
       "mobile-cat-grooming-does-your-cat-need-it",
     ],
   },

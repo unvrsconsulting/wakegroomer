@@ -3927,6 +3927,115 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-help-a-nervous-dog-before-mobile-grooming",
+    title: "How to Help a Nervous Dog Get Ready for Mobile Grooming",
+    metaDescription:
+      "How do you help a nervous dog through grooming? Practice handling at home, introduce the dryer gradually, tell your groomer what bothers your dog, and keep the day calm. Here's a practical plan.",
+    excerpt:
+      "A nervous dog can learn to handle grooming with some preparation. Here's how to practice at home, what to tell your groomer, and what to ask before you book.",
+    publishedAt: "2026-11-15",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Black_dog_puppy_eyes.jpg",
+      alt: "A black dog lying down and looking up at the camera with wide, worried-looking eyes",
+      width: 3888,
+      height: 2592,
+      author: "Anastasia Basano",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Black_dog_puppy_eyes.jpg",
+      license: "CC BY 2.0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "<strong>How do you help a nervous dog get through grooming?</strong> Start before the appointment: get your dog used to being handled, introduce the noises gradually, tell the groomer what bothers your dog, and keep everything calm and positive. Many anxious dogs do better with a mobile groomer, since there's no car ride, no crowded salon, and no other dogs. Here's a practical plan.",
+      },
+      { type: "h2", text: "Signs a Dog Is Stressed" },
+      {
+        type: "p",
+        html: "Dogs don't always show fear with obvious trembling. Common signs include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Lip licking, yawning, or heavy panting when it isn't hot",
+          "A tucked tail, flattened ears, or a lowered body",
+          "Turning away, hiding, or refusing to move",
+          "Trembling, drooling, or shedding more than usual",
+          "Showing the whites of the eyes",
+          "Growling, snapping, or trying to bite, which is a signal to stop and slow down",
+        ],
+      },
+      {
+        type: "p",
+        html: "If you see these, tell your groomer. A groomer who knows what's stressing your dog can work around it. If your dog is aggressive or extremely fearful, talk with your veterinarian or a qualified trainer or behaviorist before booking.",
+      },
+      { type: "h2", text: "Weeks Before: Practice Handling at Home" },
+      {
+        type: "p",
+        html: "Much of what's stressful about grooming is being touched in unusual ways. You can practice at home in short, calm sessions with treats:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Gently touch and hold each paw, then reward",
+          "Lift the ears and look inside, then reward. Our <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a> shows what to look for",
+          "Brush a little each day, starting with a few strokes. See our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a>",
+          "Handle the nails and, if your dog tolerates it, touch them with a clipper. Our <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a> explains why this matters",
+          "Hold the muzzle and mouth briefly, then reward",
+        ],
+      },
+      {
+        type: "p",
+        html: "Keep each session short and stop while your dog is still relaxed, not after they've had enough.",
+      },
+      { type: "h2", text: "Get Used to the Sounds" },
+      {
+        type: "p",
+        html: "The dryer and clippers are often the hardest part. You can introduce similar sounds slowly: run a hair dryer or a vacuum at a distance in another room, reward calm behavior, and gradually move closer over days or weeks. Don't push a dog who isn't ready, and never point a hair dryer at your dog's face.",
+      },
+      { type: "h2", text: "The Day Before and the Morning Of" },
+      {
+        type: "ul",
+        items: [
+          "Give your dog a good walk or play session before the appointment so they're calm and have relieved themselves",
+          "Skip a large meal right before the groom. A full stomach and stress don't mix well",
+          "Brush out any tangles gently ahead of time, since matting makes grooming longer and more uncomfortable. See our guide to <a href=\"/blog/matted-dog-fur-when-shaving-is-necessary\" class=\"text-brand hover:underline font-medium\">matted fur</a>",
+          "Stay calm yourself. Dogs pick up on nervous owners",
+          "Have your dog ready when the groomer arrives, and keep the parking spot clear. Our <a href=\"/blog/how-to-prepare-for-first-mobile-grooming-appointment\" class=\"text-brand hover:underline font-medium\">first-appointment guide</a> has a checklist",
+        ],
+      },
+      { type: "h2", text: "Tell the Groomer Everything" },
+      {
+        type: "p",
+        html: "When you book, share what you know: past bad experiences, what your dog fears, whether they're sensitive about feet, ears, or the dryer, and any health issues. Good questions to ask in return:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Can you take breaks or work in shorter stages if my dog needs it?",
+          "Do you have experience with nervous dogs?",
+          "Is there a quieter or lower-speed way to dry my dog?",
+          "Do you offer a short introductory visit before a full groom? Some groomers do, and it's worth asking",
+          "Would you prefer I stay close, or step away? See our guide on <a href=\"/blog/do-i-need-to-be-home-for-mobile-dog-grooming\" class=\"text-brand hover:underline font-medium\">being home during a mobile groom</a>",
+        ],
+      },
+      { type: "h2", text: "Don't Medicate on Your Own" },
+      {
+        type: "p",
+        html: "Never give your dog calming supplements or human medication on your own. If your dog's anxiety is severe, talk to your veterinarian about options. Don't expect a groomer to sedate your dog, and be wary of anyone who offers to.",
+      },
+      { type: "h2", text: "After the Groom" },
+      {
+        type: "p",
+        html: "Keep the end of the appointment calm. Praise your dog, offer a treat, and give them quiet time to settle. Staying positive helps the next visit go more smoothly, and many dogs improve over a few visits with the same groomer. Our guide to <a href=\"/blog/mobile-grooming-for-senior-and-anxious-dogs-nc\" class=\"text-brand hover:underline font-medium\">grooming senior and anxious dogs</a> covers more, and our <a href=\"/blog/cage-free-dog-grooming-what-it-means\" class=\"text-brand hover:underline font-medium\">cage-free grooming guide</a> explains why the setting can matter for a nervous dog.",
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: "<a href=\"/search\" class=\"text-brand hover:underline font-medium\">Search the full directory</a> or browse local listings in <a href=\"/groomers/raleigh-nc\" class=\"text-brand hover:underline font-medium\">Raleigh</a>, <a href=\"/groomers/durham-nc\" class=\"text-brand hover:underline font-medium\">Durham</a>, and <a href=\"/groomers/cary-nc\" class=\"text-brand hover:underline font-medium\">Cary</a>. Each listing shows how to contact the groomer, so you can ask about their experience with nervous dogs before you book.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
