@@ -4036,6 +4036,90 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "whats-inside-a-mobile-dog-grooming-van",
+    title: "What's Inside a Mobile Dog Grooming Van?",
+    metaDescription:
+      "What does a mobile dog grooming van carry? A bathing station, table, dryers, tools, water, and power. Here's what most setups include and what to look for in a well-run van.",
+    excerpt:
+      "A mobile grooming van is a small salon on wheels, with a tub, table, dryers, and its own water and power. Here's what most setups include and what to ask your groomer about.",
+    publishedAt: "2026-11-18",
+    heroImage: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Dog_Comb.JPG",
+      alt: "A stainless steel dog grooming comb with fine and wide teeth lying on a white background",
+      width: 3648,
+      height: 2416,
+      author: "Bordercolliez",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Dog_Comb.JPG",
+      license: "CC0",
+    },
+    content: [
+      {
+        type: "p",
+        html: "<strong>What's inside a mobile dog grooming van?</strong> Think of it as a small grooming salon on wheels: a bath, a table, dryers, tools, and the water and power to run them. Setups vary from one business to the next, so treat this as a general picture. If you're curious about a specific groomer's van, ask them. Most are happy to show you.",
+      },
+      { type: "h2", text: "The Basics: What Most Mobile Setups Include" },
+      {
+        type: "ul",
+        items: [
+          "<strong>A bathing station.</strong> A tub or sink built into the vehicle, with a sprayer, so your dog can be washed without bringing them into your home",
+          "<strong>Water.</strong> Many vans carry a water supply and a way to heat it, so you don't need to provide water. Some setups use a hookup instead, so ask",
+          "<strong>A grooming table.</strong> A stable, non-slip surface, often adjustable in height, where the dog is brushed, trimmed, and finished",
+          "<strong>Dryers.</strong> Usually a high-velocity dryer for the coat, and sometimes a gentler one for the face and sensitive areas. Our guide to <a href=\"/blog/what-is-a-dog-blowout-do-you-need-one\" class=\"text-brand hover:underline font-medium\">dog blowouts</a> explains why that matters",
+          "<strong>Power.</strong> Many vans carry their own generator or power system. Others may ask for access to an outlet at your home",
+          "<strong>Clippers, blades, and scissors.</strong> Several sizes, kept clean and sharp",
+          "<strong>Brushes and combs.</strong> Slickers, pin brushes, undercoat rakes, and metal combs. Our <a href=\"/blog/how-to-brush-your-dog-between-grooming-appointments\" class=\"text-brand hover:underline font-medium\">brushing guide</a> covers what each is for",
+          "<strong>Shampoos and conditioners.</strong> Chosen for the dog's coat and skin",
+          "<strong>Nail and ear supplies.</strong> Nail trimmers or grinders, styptic powder, and ear cleaner. See our <a href=\"/blog/dog-nail-trims-why-they-matter-nick-the-quick\" class=\"text-brand hover:underline font-medium\">nail trim guide</a> and <a href=\"/blog/dog-ear-cleaning-humidity-infection-prevention\" class=\"text-brand hover:underline font-medium\">ear cleaning guide</a>",
+          "<strong>Towels and cleanup supplies.</strong> A lot of them",
+        ],
+      },
+      { type: "h2", text: "Safety and Comfort Features" },
+      {
+        type: "ul",
+        items: [
+          "<strong>Climate control.</strong> Heating and air conditioning, which matter in a North Carolina summer. Ask how your groomer keeps the van comfortable. See our guide to <a href=\"/blog/mobile-dog-grooming-in-rain-heat-cold-north-carolina\" class=\"text-brand hover:underline font-medium\">mobile grooming in rain, heat, and cold</a>",
+          "<strong>Grooming restraints.</strong> Many groomers use a grooming loop or a harness attached to the table to keep a dog steady. It's designed to keep the dog from jumping off, and it's not meant to hold a dog in place unattended. A good groomer never leaves a dog alone on the table",
+          "<strong>Ramps or lifts.</strong> Some vans have a ramp or a lift for bigger or older dogs. See our guide to <a href=\"/blog/can-mobile-groomers-handle-large-and-giant-breed-dogs\" class=\"text-brand hover:underline font-medium\">grooming large and giant-breed dogs</a>",
+          "<strong>Good lighting and ventilation.</strong> Both help the groomer see the skin and keep the air comfortable",
+          "<strong>First aid supplies.</strong> A responsible groomer has a plan for minor nicks, and a vet to call if a dog needs one",
+        ],
+      },
+      { type: "h2", text: "Why It's One Dog at a Time" },
+      {
+        type: "p",
+        html: "A mobile van is small, so a groomer typically works with one dog at a time, with no crowded waiting area, no other dogs barking, and no kennel time between steps. For many nervous dogs, that's the main appeal. See our guides to <a href=\"/blog/cage-free-dog-grooming-what-it-means\" class=\"text-brand hover:underline font-medium\">cage-free grooming</a> and <a href=\"/blog/how-to-help-a-nervous-dog-before-mobile-grooming\" class=\"text-brand hover:underline font-medium\">helping a nervous dog get ready for grooming</a>.",
+      },
+      { type: "h2", text: "What You'll Need to Provide" },
+      {
+        type: "ul",
+        items: [
+          "A legal, level spot for the van to park close to your door. See our <a href=\"/blog/mobile-dog-grooming-apartment-no-driveway\" class=\"text-brand hover:underline font-medium\">apartment and no-driveway guide</a> if parking is tricky",
+          "Sometimes access to an outlet or a hose. Ask when you book",
+          "A dog who's ready and a phone number you'll answer",
+        ],
+      },
+      {
+        type: "p",
+        html: "Our <a href=\"/blog/how-to-prepare-for-first-mobile-grooming-appointment\" class=\"text-brand hover:underline font-medium\">first-appointment guide</a> has a full checklist, and our <a href=\"/blog/what-happens-during-mobile-dog-grooming-appointment-walkthrough\" class=\"text-brand hover:underline font-medium\">walkthrough of a mobile grooming appointment</a> covers what happens once the groom begins.",
+      },
+      { type: "h2", text: "What to Look For in a Well-Run Van" },
+      {
+        type: "ul",
+        items: [
+          "It looks clean and organized, and tools are kept clean between dogs",
+          "The groomer is happy to answer questions about their setup and procedures",
+          "Your dog is never left alone on the table or in the tub",
+          "The groomer carries insurance and has a plan for emergencies. Our <a href=\"/blog/how-to-choose-a-trustworthy-mobile-dog-groomer-checklist\" class=\"text-brand hover:underline font-medium\">trustworthy groomer checklist</a> covers what to ask",
+        ],
+      },
+      { type: "h2", text: "Find a Mobile Groomer Near You" },
+      {
+        type: "p",
+        html: "<a href=\"/search\" class=\"text-brand hover:underline font-medium\">Search the full directory</a> or browse local listings in <a href=\"/groomers/raleigh-nc\" class=\"text-brand hover:underline font-medium\">Raleigh</a>, <a href=\"/groomers/cary-nc\" class=\"text-brand hover:underline font-medium\">Cary</a>, and <a href=\"/groomers/durham-nc\" class=\"text-brand hover:underline font-medium\">Durham</a>. Each listing shows how to contact the groomer, so you can ask about their setup before you book.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
